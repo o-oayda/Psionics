@@ -11,7 +11,127 @@
 \chapter{Introduction}
 
 \chapter{Using Psionics}
+This chapter explains the key rules behind manifesting and
+maintaining psionic powers.
+
+\section{Manifesting Powers}
+In order to manifest a psionic power,
+the power must be equal to or below the manifesting character's
+\define{psionic threshold}.
+The psionic threshold is determined by the character's class level
+in a psionic class.
+
+If the power satisfies this test,
+it can be manifested if they have sufficient \define{psi dice}
+to expend.
+The manifesting character will also need to note their
+current \define{mental bandwidth} and whether or not manifesting
+the power will exceed this bandwidth.
+These are both explained below.
+
+\subsection{Mental Bandwidth}
+Manifesting powers strains the mind and the body.
+Mental bandwidth represents the amount of psionic strain that
+a character can endure while using psionics,
+and is determined by the character's psionic class and level.
+Mental bandwidth is divided into slots,
+and each power takes up a different number of slots.
+When a character manifests a power,
+they note their current mental bandwidth and subtract from that
+any slots which are taken up by powers they are already concentrating on.
+If the chosen power has a mental bandwidth
+greater than the number of slots remaining,
+the character must make a Constitution saving throw
+with DC equal to 10
+plus twice the number of slots in excess of their remaining bandwidth.
+
+For example,
+suppose Kadoth is a 10th level psion
+and therefore has a mental bandwidth of 6.
+They are already concentrating on adapt body,
+which takes up 4 mental bandwidth slots.
+They then attempt to manifest the mind slam power,
+which takes up 3 slots.
+Since this puts them in excess of their bandwidth maximum by 1,
+they make a DC 12 Constitution saving throw ($10 + 2 \times 1)$.
+
+If a character fails this constitution saving throw,
+the power fails to manifest.
+In addition, the manifester gains the \textbf{strained} condition.
+The severity of the condition depends on the number of slots
+that were in excess of the available bandwidth when the attempt
+to manifest the power was made.
+This is shown in the table below.
+Note that the maluses are cumulative.
+For example,
+with two slots in excess,
+a character incurs the malus from being in excess by 1
+as well as the malus for being in excess by 2.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Strained Condition]{
+                     X X}
+        Slots in Excess & Cumulative Maluses \\
+        1 &  \\
+        2 & Gain level of exhaustion \\
+        3 & \\
+        4 & Gain level of exhaustion \\
+        5+ & 
+    \end{DndTable}
+\end{table}
+
+\subsection{Psi Die}
+When manifesting a power,
+a character must expend a number of psi dice
+equal to the number stated in the power's description.
+The number of psi dice a character has is determined
+by their class and level.
+If a character has less psi dice than the total psi dice cost
+of the power, the power fails (but no dice are expended).
+
+\subsection{Concentration}
+If stipulated in the power description,
+a power requires uninterrupted concentration
+in order to be continually used.
+There is no limit to the number of powers that may be
+simultaneously concentrated on,
+however each power concentrated on will take away from the
+available mental bandwidth slots, as mentioned above.
+
+Whenever a manifester takes damage while
+concentrating on any number of powers,
+they must make a Constitution saving throw.
+The DC of the save is either equal to 10 or half the damage taken,
+whichever is higher.
+Each separate source of damage prompts an separate save.
+If the save fails,
+the manifester loses concentration on all the powers they were
+concentrating on.
+
+A manifester may at any time stop concentrating on any power.
+However, a manifester will automatically stop concentrating on a power
+if they become incapacitated or if they die.
+
+\section{List of Powers}
+
+\DndPowerHeader%
+  {Demoralise}
+  {1st-level telepathy}
+  {1 action}
+  {30 feet}
+  {MB 1, PD 1}
+  {Concentration, up to 1 minute}
+Choose 3 hostile creatures that you can see within range.
+Each creature must make a Wisdom saving throw.
+If they fail, they target takes a 1d4 penalty to attack rolls and
+saving throws until the power ends.
+\higher{You may target one additional creature for
+        each additional level.}
 
 \chapter{Classes}
+
+\section{Psion}
+
 
 \end{document}
