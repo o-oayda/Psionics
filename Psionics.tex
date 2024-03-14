@@ -13,7 +13,7 @@
 
 \chapter{Using Psionics}
 
-This chapter explains the nature of psionics,
+\DndDropCapLine{T}{his chapter explains} the nature of psionics,
 as well as the key rules behind
 manifesting and maintaining psionic powers.
 
@@ -69,8 +69,8 @@ grimoire which explicitly interact with psioics.
 In order to manifest a psionic power,
 the \define{power level} must be equal to or below
 the manifesting character's \define{psionic threshold}.
-The psionic threshold is determined by the character's class level
-in a psionic class.
+The psionic threshold is determined by the number of levels
+a character has in classes with psionics.
 If the power satisfies this test,
 it can be manifested if they have sufficient \define{psi dice}
 to expend.
@@ -78,6 +78,24 @@ The manifesting character will also need to note their
 current \define{mental bandwidth} and whether or not manifesting
 the power will exceed this bandwidth.
 Each of these concepts are explained below.
+
+\subsection{Psionic Threshold}
+The psionic threshold represents the strongest powers
+that a psionics user can learn and manifest.
+The psionic threshold is determined by a character's class
+and level,
+as shown in the class tables of \secref{chap:classes}.
+When levelling,
+a character can only learn powers with level up
+their psionic threshold.
+This is explained in more detail in the same chapter.
+
+Each power has a level written in its description.
+If a character attempts to manifest a power with level
+greater than their psionic threshold,
+the power fails to manifest,
+however no cost is incurred in doing so,
+see \secref{sub:psi_dice}.
 
 \subsection{Mental Bandwidth}
 Manifesting powers strains the mind and the body.
@@ -140,6 +158,7 @@ as well as the malus for being in excess by 2.
 \end{table}
 
 \subsection{Psi Dice}
+\label{sub:psi_dice}
 When manifesting a power,
 a character must expend a number of psi dice
 equal to the number stated in the power's description.
@@ -148,15 +167,11 @@ by their class and level.
 If a character has less psi dice than the total psi dice cost
 of the power, the power fails (but no dice are expended).
 
-The total psi dice cost of a power
-is determined by the its level.
-The cost is equal to
-one less than double the power's level.
+The total psi dice cost of a power is determined by the its level.
+The cost is equal to one less than double the power's level.
 This is shown in the table below.
-For example, a 1st level power
-incurs a cost of 1 psi die,
-whereas a 5-th level power
-incurs a cost of 9 psi dice.
+For example, a 1st level power incurs a cost of 1 psi die,
+whereas a 5-th level power incurs a cost of 9 psi dice.
 \begin{table*}[htbp]%
     \begin{DndTable}[width=\textwidth,
                      header=Psi Dice Cost by Level]{
@@ -194,13 +209,13 @@ A manifester may at any time stop concentrating on any power.
 However, a manifester will automatically stop concentrating on a power
 if they become incapacitated or if they die.
 
-\section{Power Descriptions}
+\section{Power Attributes}
 In \secref{sec:list_of_powers},
 the available powers are given.
 In this section,
 the terminology and structure of the power descriptions are explained.
 
-\subsection{Level and discipline}
+\subsection{Level and Discipline}
 Beneath the name of the power,
 the power level and discipline are given.
 Each power is associated with a discipline,
@@ -342,7 +357,7 @@ a type of saving throw.
 If the power specifies an attack roll,
 then the manifester rolls a d20
 and adds their \define{psionic attack modifier},
-which is their psionic ability modifier (determined by class)
+which is their \define{psionic ability modifier} (determined by class)
 plus their proficiency bonus.
 
 If the power specifies a saving throw,
@@ -351,25 +366,201 @@ with DC equal to 8 + the manifester's psionic attack modifier.
 The type of saving throw
 is specified in the power's description.
 
+\subsection{Augmenting Powers}
+\label{sub:augmenting}
+Some powers will indicate that they can be \define{augmented},
+which is analogous to upcasting for a spellcaster.
+When augmenting a power,
+the manifester spends additional psi dice on top of the cost
+incurred from the level of the power itself.
+To augment a power to one additional level,
+the manifester spends two psi dice,
+since for every single increase in level,
+the psi dice cost increases by two,
+see \secref{sub:psi_dice}. 
+
+A power cannot be augmented to a level beyond the manifester's
+psionic threshold.
+For example,
+if a manifester has a psionic threshold of 3,
+they may spend four psi dice to augment a power from
+1st to 3rd level,
+but may not go beyond 3rd level.
+
 \section{List of Powers}
 \label{sec:list_of_powers}
-\DndPowerHeader%
-  {Demoralise}
-  {1st-level Voice}
-  {1 action}
-  {30 feet}
-  {MB 1, PD 1}
-  {Concentration, up to 1 minute}
-Choose 3 hostile creatures that you can see within range.
-Each creature must make a Wisdom saving throw.
-If they fail, they target takes a 1d4 penalty to attack rolls and
-saving throws until the power ends.
-\higher{You may target one additional creature for
-        each additional level.}
+\include{powers.tex}
 
 \chapter{Classes}
+\label{chap:classes}
 
 \section{Psion}
+\begin{figure*}[t]
+    \begin{ornamentedtabular}{c c l c c c c}[title={The Psion}]
+        \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
+        1st  & +2 & Powers, Discipline        & 2   & 2  & 3  & 1 \\
+        2nd  & +2 & Microsleep (one use)      & 5   & 2  & 5  & 1 \\
+        3rd  & +2 &                           & 10  & 3  & 7  & 2 \\
+        4th  & +2 & Ability Score Improvement & 13  & 3  & 9  & 2 \\
+        5th  & +3 &                           & 23  & 4  & 11 & 3 \\
+        6th  & +3 &                           & 28  & 4  & 13 & 3 \\
+        7th  & +3 &                           & 35  & 4  & 15 & 4 \\
+        8th  & +3 & Ability Score Improvement & 42  & 5  & 17 & 4 \\
+        9th  & +4 &                           & 58  & 5  & 19 & 5 \\
+        10th & +4 &                           & 67  & 6  & 21 & 5 \\
+        11th & +4 & Microsleep (two uses)     & 78  & 6  & 22 & 6 \\
+        12th & +4 & Ability Score Improvement & 78  & 6  & 24 & 6 \\
+        13th & +5 &                           & 91  & 7  & 25 & 7 \\
+        14th & +5 &                           & 91  & 7  & 27 & 7 \\
+        15h  & +5 &                           & 106 & 7  & 28 & 8 \\
+        16th & +5 & Ability Score Improvement & 106 & 8  & 30 & 9 \\
+        17th & +6 &                           & 123 & 8  & 31 & 9 \\
+        18th & +6 &                           & 132 & 8  & 33 & 9 \\
+        19th & +6 & Ability Score Improvement & 143 & 9  & 34 & 9 \\
+        20th & +6 &                           & 156 & 10 & 36 & 9 \\
+    \end{ornamentedtabular}
+\end{figure*}
 
+\subsection{Class Features}
+As a psion, you gain the following features.
+
+\subsubsection{Hit Points}
+
+\listparagraph[4pt]{Hit Dice}{
+    1d6 per psion level
+}
+\listparagraph{Hit Points at 1st Level}{
+    6 + your Constitution modifier
+}
+\listparagraph{Hit Points at Higher Levels}{
+    1d6 (or 4) + yuour Constitution modifier per psion level
+    after 1st
+}
+
+\subsubsection{Proficiencies}
+
+\listparagraph[4pt]{Armour}{
+    Light armour
+}
+\listparagraph{Weapons}{
+    Clubs, daggers, heavy crossbows, light crossbows,
+    quarterstaffs, spears
+}
+\listparagraph{Tools}{
+    None
+}
+\vspace{6pt}
+\listparagraph{Saving Throws}{
+    Intelligence, Wisdom
+}
+\listparagraph{Skills}{
+    Choose two from History, Religion, Nature,
+    Insight and Perception
+}
+
+In addition, depending on the psion's chosen discipline,
+they acquire an additional skill proficiency.
+This is shown in the table below.
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Additional Profciency]{
+                     X X}
+        Discipline & Proficiency \\
+        Prescience & Investigation \\
+        Prana Bindu & Athletics, Acrobatics or Stealth \\
+        Voice & Persuasion \\
+        Metacreativity & Survival \\
+        Spacefolding & Arcana \\
+        Psychokinesis & Intimidation
+    \end{DndTable}
+\end{table}
+
+\subsubsection{Equipment}
+You start with the following equipment,
+in addition to the equipment granted by your background:
+\begin{itemize}
+    \item (a) a club or (b) a dagger
+    \item a light crossbow and 20 bolts
+    \item (a) a scholar's pack or (b) a dungeoneer's pack
+    \item Leather armour
+\end{itemize}
+
+\subsection{Powers}
+\subsubsection{Psi Dice}
+The number of powers that you can manifest
+is limited by the number of psi dice that
+you have available.
+This is the principal limit on the output of a psion.
+For example, a 9-th level psion with 72 psi dice
+can manifest a power costing 1 psi dice 72 times.
+
+The number of available psi dice per level
+is shown in the psion class table.
+You regain all expended psi dice when you finish
+a long rest.
+
+\subsubsection{Mental Bandwidth}
+The powers you can manifest without straining yourself
+is reflected by your mental bandwidth.
+The total number of mental bandwidth slots you have
+is shown in the class table.
+
+\subsubsection{Discipline}
+At 1st level,
+you must decide upon a discipline.
+Your discipline grants you a specific sublist of powers
+which cannot be accessed by other disciplines.
+
+\subsubsection{Powers Known}
+At 1st level,
+you choose three psion powers of your choice
+from either the psion class power list
+or your chosen discipline sublist.
+You cannot choose powers from discipline sublists
+other than that of the discipline you have nominated.
+
+\subparagraph{Psionic Threshold}
+You cannot learn nor manifest powers with a level
+greater than your psionic threshold,
+shown in the class table.
+As mentioned in \secref{sub:augmenting},
+you also cannot augment powers to a level
+beyond your psionic threshold.
+
+\subsubsection{Manifesting Ability}
+Your psionic ability modifier is your Intelligence modifier.
+The save DC against your psionic powers and your
+psionic attack modifier respectively are therefore respectively:
+\small\begin{equation*}
+    \begin{gathered}
+        \text{\textbf{Psionics save DC}}
+            = 8 + \text{your proficiency bonus} + \\
+                  \text{your Intelligence modifier} \\
+        \text{\textbf{Psionics attack modifier}}
+            = \text{your proficiency bonus} + \\
+              \text{your Intelligence modifier}
+    \end{gathered}
+\end{equation*}\normalsize
+
+\subsection{Microsleep}
+Starting at 2nd level,
+as a bonus action on your turn,
+you may recover a number of psi dice equal to
+your Intelligence modifier multiplied by your psionc threshold.
+
+Once you use this feature,
+you must finish a long rest before you can use it again.
+Starting at 11th level,
+you can use it twice before a long rest.
+
+\subsection{Ability Score Improvement}
+When you reach 4th level,
+and again at 8th, 12th, 16th and 19th level,
+you can increase one ability score of your choice by 2,
+or you can increase two of your ability scores by 1.
+As normal,
+you can't increase an ability score above 20 using this feature.
+
+\newpage\section{Psi Knight}
 
 \end{document}
