@@ -10,24 +10,74 @@
 
 \chapter{Introduction}
 
+
 \chapter{Using Psionics}
-This chapter explains the key rules behind manifesting and
-maintaining psionic powers.
+
+This chapter explains the nature of psionics,
+as well as the key rules behind
+manifesting and maintaining psionic powers.
+
+\section{What are Psionics?}
+Psionics tap into the latent ability of the mind
+to master itself, its body and its environment.
+Whereas spellcasters manipulate the magical essence
+innate to the cosmological order,
+users of psionics rely on their mind's power alone.
+For many creatures,
+manifesting any psionic power,
+let alone mastering a psionic discipline,
+takes years, even decades of rigorous mental training.
+That being said,
+some creatures have a natural propensity for psionics,
+for example the children of Gith, illithids and aboleths.
+
+Many refer to psionics as \emph{the Old Way}.
+This is because there is a school of thought that
+the seeds of all creatures---the progenitor beings
+which gave rise to existence itself---were
+masters of the mind.
+According to this doctrine,
+magic and spellcraft were created by these
+beings when the reality was moulded to as it is today.
+To do this, they used psionics.
+
+\section{Types of Psionic Abilities}
+There are two types of psionic abilities.
+The main type are \textbf{powers},
+which are what most psionics users will be
+interacting with the most.
+The rules around powers are described in this chapter.
+
+A second type is an \textbf{innate talent}.
+
+\subsection{Interaction with Magic}
+Since psionics and magic are disparate entities,
+how do they interact together?
+A creature that manifests a psionic power is not
+casting a spell,
+and therefore any ability which negates the effects
+of magic cannot negate the power.
+For example, psionic powers cannot be affected by
+\spell{counterspell} or \spell{dispel magic}.
+
+However, certain psionic powers are explicitly stated
+to interact with magic.
+In addition, this supplement adds spells to the existing
+grimoire which explicitly interact with psioics.
 
 \section{Manifesting Powers}
 In order to manifest a psionic power,
-the power must be equal to or below the manifesting character's
-\define{psionic threshold}.
+the \define{power level} must be equal to or below
+the manifesting character's \define{psionic threshold}.
 The psionic threshold is determined by the character's class level
 in a psionic class.
-
 If the power satisfies this test,
 it can be manifested if they have sufficient \define{psi dice}
 to expend.
 The manifesting character will also need to note their
 current \define{mental bandwidth} and whether or not manifesting
 the power will exceed this bandwidth.
-These are both explained below.
+Each of these concepts are explained below.
 
 \subsection{Mental Bandwidth}
 Manifesting powers strains the mind and the body.
@@ -36,23 +86,31 @@ a character can endure while using psionics,
 and is determined by the character's psionic class and level.
 Mental bandwidth is divided into slots,
 and each power takes up a different number of slots.
+
 When a character manifests a power,
-they note their current mental bandwidth and subtract from that
+they note their total mental bandwidth
+as determined by their class and level.
+This is called the
+\define{maximum mental bandwidth}.
+They then subtract from the maximum mental bandwidth
 any slots which are taken up by powers they are already concentrating on.
+The number determined after this subtraction is called the
+\define{effective mental bandwidth}.
 If the chosen power has a mental bandwidth
-greater than the number of slots remaining,
+greater than the effective mental bandwidth,
 the character must make a Constitution saving throw
 with DC equal to 10
-plus twice the number of slots in excess of their remaining bandwidth.
+plus twice the number of slots in excess of their effective bandwidth.
 
 For example,
 suppose Kadoth is a 10th level psion
-and therefore has a mental bandwidth of 6.
+and therefore has a maximum mental bandwidth of 6.
 They are already concentrating on adapt body,
-which takes up 4 mental bandwidth slots.
+which takes up 4 mental bandwidth slots,
+so their effective mental bandwidth is 2.
 They then attempt to manifest the mind slam power,
 which takes up 3 slots.
-Since this puts them in excess of their bandwidth maximum by 1,
+Since this puts them in excess of their effective bandwidth by 1,
 they make a DC 12 Constitution saving throw ($10 + 2 \times 1)$.
 
 If a character fails this constitution saving throw,
@@ -81,7 +139,7 @@ as well as the malus for being in excess by 2.
     \end{DndTable}
 \end{table}
 
-\subsection{Psi Die}
+\subsection{Psi Dice}
 When manifesting a power,
 a character must expend a number of psi dice
 equal to the number stated in the power's description.
@@ -89,6 +147,24 @@ The number of psi dice a character has is determined
 by their class and level.
 If a character has less psi dice than the total psi dice cost
 of the power, the power fails (but no dice are expended).
+
+The total psi dice cost of a power
+is determined by the its level.
+The cost is equal to
+one less than double the power's level.
+This is shown in the table below.
+For example, a 1st level power
+incurs a cost of 1 psi die,
+whereas a 5-th level power
+incurs a cost of 9 psi dice.
+\begin{table*}[htbp]%
+    \begin{DndTable}[width=\textwidth,
+                     header=Psi Dice Cost by Level]{
+                     X X X X X X X X X X}
+         Level         & 1 & 2 & 3 & 4 & 5 & 6  & 7  & 8  & 9 \\
+        \textbf{Cost}  & 1 & 3 & 5 & 7 & 9 & 11 & 13 & 15 & 17
+    \end{DndTable}
+\end{table*}
 
 \subsection{Concentration}
 If stipulated in the power description,
@@ -104,20 +180,182 @@ concentrating on any number of powers,
 they must make a Constitution saving throw.
 The DC of the save is either equal to 10 or half the damage taken,
 whichever is higher.
-Each separate source of damage prompts an separate save.
+Each separate source of damage prompts a separate save.
 If the save fails,
 the manifester loses concentration on all the powers they were
 concentrating on.
+In addition, the DM may call the manifester to make a
+save with any DC in a circumstance that would
+jeopardise the manifester's concentration,
+like being thrown of a flying broom or
+being battered by an intense blizzard.
 
 A manifester may at any time stop concentrating on any power.
 However, a manifester will automatically stop concentrating on a power
 if they become incapacitated or if they die.
 
-\section{List of Powers}
+\section{Power Descriptions}
+In \secref{sec:list_of_powers},
+the available powers are given.
+In this section,
+the terminology and structure of the power descriptions are explained.
 
+\subsection{Level and discipline}
+Beneath the name of the power,
+the power level and discipline are given.
+Each power is associated with a discipline,
+of which there are six.
+These are described below.
+
+\subsubsection{Prescience}
+Strictly, the discipline of prescience relates to psionic powers
+which allow the manifester to peer through time and see future events.
+Prescient manifesters describe the future as
+an undulating cloth blowing in a swift breeze,
+with the hills and valleys of its surface representing
+future possibilities. 
+
+However, in more recent times,
+the discipline of prescience has incorporated additional tenets,
+and its adherents are also characterised by an uncanny ability to
+understand the past and know things not normally known to
+the untrained mind.
+
+\subsubsection{Prana Bindu}
+The discipline of Prana Bindu stresses that the mind and body
+must work in close concert with each other.
+Adherents have a profound mastery of nerve and muscle,
+and can react to situations with speeds nearly imperceptible
+to the untrained.
+The discipline also allows one to alter their internal equilibrium
+and metabolism at will,
+granting the body the ability to heal and adapt to hostile environments.
+
+\subsubsection{Voice}
+The Voice is a dangerous but supremely powerful tool
+used to dominate the minds and wills of others.
+Adherents hone their speech in such a way that,
+only by subtle changes in pitch, volume and speed,
+their Voice can control the behaviour of others.
+In addition, adherents to the discipline can telepathically
+communicate with other creatures.
+
+\subsubsection{Metacreativity}
+The discipline of metacreativity allows the manifester to mould
+matter as they desire,
+turning the mundane into useful tools or deadly weapons.
+A metacreator can also in this manner craft constructs
+which bend to their mind,
+allowing myriad servants to carry out their bidding.
+
+\subsubsection{Spacefolding}
+A spacefolder warps the fabric of space and time to
+transport themselves and others.
+Many powerful spacefolders can cross the gap between
+the planes themselves.
+
+\subsubsection{Psychokinesis}
+The discipline of psychokinesis allows one to transform
+their raw mental energy into destructive power,
+unleashing havoc on the battlefield.
+Psychokineticists can deal terrifying amounts of damage
+and leave their enemies trembling in awe and fear.
+
+\subsection{Manifesting Time}
+Each power has a \define{manifesting time},
+which may be a bonus action, action, or reaction.
+Unlike spellcasting,
+there is no level restriction to manifesting powers
+on the same turn where one has been manifested
+with a bonus action. 
+
+In addition, some powers may have longer casting times,
+in which case on each round the manifester must use their action
+to manifest the power while maintaining concentration.
+While the manifester is maintaining concentration in this way,
+the power will take up the specified number
+of mental bandwidth slots given in the power's description.
+If their concentration is broken, the power fails,
+but no psi dice are expended,
+and the mental bandwidth slots are freed up.
+
+\subsection{Range}
+A power's \define{range} indicates the extent
+to which its effects can reach when manifested.
+The \define{target} of the power must be within range.
+
+There are three types of ranges: self, touch and a range
+specified in feet.
+Powers with a range of self will always target the manifester.
+
+\subsubsection{Targets}
+When selecting a target for a power,
+in addition to the range requirement mentioned above,
+the manifester must have \define{line of sight}
+towards the target.
+The meaning line of sight has two prongs:
+\define{sight} and \define{uninterruption}.
+Respectively, these mean that the manifester must be able to
+(a) see the target
+and (b) draw a line to the target
+without that line passing through an obstacle,
+even if the target can be seen through that obstacle.
+
+Powers with a range of self (powers that target the manifester)
+are not bound by this requirement.
+In addition, a power may mention that the manifester does not need
+line of sight towards the target,
+or that the manifester does not need either of the
+two prongs of line of sight. 
+
+\subsection{Cost}
+The \define{cost} specifies the mental bandwidth and psi die
+that must be expended to manifest the power.
+For example,
+`MB 1, PD 1'
+means that the power takes up 1 slot of mental bandwidth
+and costs one psi die to manifest.
+
+\subsection{Duration}
+The \define{duration} of a power is how long the effects
+of a power remain active.
+Powers can be instantaneous,
+while others can last for any length of time
+as specified in the powers description.
+
+If the power requires concentration for throughout its duration,
+this will be indicated alongside the duration.
+
+\subsection{Areas of Effect}
+Some powers specify in their description an area of effect
+over which the effects manifest.
+In this case, the rules governing the area of effect
+are identical to those of spellcasting beginning at
+phb 202.
+
+\subsection{Affecting Targets}
+Some powers specify that the manifester makes an attack
+roll against each target,
+whereas some specify that all targets need to make
+a type of saving throw.
+
+If the power specifies an attack roll,
+then the manifester rolls a d20
+and adds their \define{psionic attack modifier},
+which is their psionic ability modifier (determined by class)
+plus their proficiency bonus.
+
+If the power specifies a saving throw,
+then each target must succeed on a saving throw
+with DC equal to 8 + the manifester's psionic attack modifier.
+The type of saving throw
+is specified in the power's description.
+
+\section{List of Powers}
+\label{sec:list_of_powers}
 \DndPowerHeader%
   {Demoralise}
-  {1st-level telepathy}
+  {1st-level Voice}
   {1 action}
   {30 feet}
   {MB 1, PD 1}
