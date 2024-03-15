@@ -86,7 +86,7 @@ The psionic threshold is determined by a character's class
 and level,
 as shown in the class tables of \secref{chap:classes}.
 When levelling,
-a character can only learn powers with level up
+a character can only learn powers with a level up to
 their psionic threshold.
 This is explained in more detail in the same chapter.
 
@@ -101,7 +101,8 @@ see \secref{sub:psi_dice}.
 Manifesting powers strains the mind and the body.
 Mental bandwidth represents the amount of psionic strain that
 a character can endure while using psionics,
-and is determined by the character's psionic class and level.
+and is determined by the character's psionic class and level,
+see \secref{chap:classes}.
 Mental bandwidth is divided into slots,
 and each power takes up a different number of slots.
 
@@ -111,14 +112,15 @@ as determined by their class and level.
 This is called the
 \define{maximum mental bandwidth}.
 They then subtract from the maximum mental bandwidth
-any slots which are taken up by powers they are already concentrating on.
+any slots which are taken up by powers they are already concentrating on,
+see \secref{sub:concentration}.
 The number determined after this subtraction is called the
 \define{effective mental bandwidth}.
-If the chosen power has a mental bandwidth
+If the power to be manifested has a mental bandwidth
 greater than the effective mental bandwidth,
-the character must make a Constitution saving throw
-with DC equal to 10
-plus twice the number of slots in excess of their effective bandwidth.
+the character must make a Constitution saving throw with
+DC equal to 10 plus twice the number of slots
+in excess of their effective bandwidth.
 
 For example,
 suppose Kadoth is a 10th level psion
@@ -131,13 +133,18 @@ which takes up 3 slots.
 Since this puts them in excess of their effective bandwidth by 1,
 they make a DC 12 Constitution saving throw ($10 + 2 \times 1)$.
 
-If a character fails this constitution saving throw,
+\subsubsection{Becoming Strained}
+If a character fails this Constitution saving throw,
 the power fails to manifest.
 In addition, the manifester gains the \textbf{strained} condition.
 The severity of the condition depends on the number of slots
 that were in excess of the available bandwidth when the attempt
 to manifest the power was made.
 This is shown in the table below.
+In Kadoth's example,
+they were only in excess by 1,
+and therefore would only incur the malus shown in the
+first row of the table.
 Note that the maluses are cumulative.
 For example,
 with two slots in excess,
@@ -149,13 +156,34 @@ as well as the malus for being in excess by 2.
                      header=Strained Condition]{
                      X X}
         Slots in Excess & Cumulative Maluses \\
-        1 &  \\
-        2 & Gain level of exhaustion \\
-        3 & \\
-        4 & Gain level of exhaustion \\
-        5+ & 
+        1  & AC bonus from Dexterity reduced to 0 \\
+        2  & Gain level of exhaustion \\
+        3  & MB reduced by 1 \\
+        4  & MB reduced by 1 \\
+        5+ & Gain level of exhaustion
     \end{DndTable}
 \end{table}
+
+\subsubsection{Recovering from Strain}
+A character loses the strained condition,
+including all of the accumulated maluses,
+when they finish a long rest.
+
+In addition, during a short rest,
+a character may spend hit dice to remove
+cumulative levels of strain on a 1 to 1 basis.
+For example,
+if a character was three slots in excess of their
+effective mental bandwidth when they attempted
+to manifest a power,
+and as a result they have accrued the first three
+rows of maluses in the table above,
+they can spend one hit die to remove the malus
+from the third row,
+another to remove the malus from the second row,
+and a final one to remove the malus from the first row.
+In this latter case, the strained condition
+is removed altogether. 
 
 \subsection{Psi Dice}
 \label{sub:psi_dice}
@@ -163,11 +191,11 @@ When manifesting a power,
 a character must expend a number of psi dice
 equal to the number stated in the power's description.
 The number of psi dice a character has is determined
-by their class and level.
+by their class and level, see \secref{chap:classes}.
 If a character has less psi dice than the total psi dice cost
 of the power, the power fails (but no dice are expended).
 
-The total psi dice cost of a power is determined by the its level.
+The total base psi dice cost of a power is determined by the its level.
 The cost is equal to one less than double the power's level.
 This is shown in the table below.
 For example, a 1st level power incurs a cost of 1 psi die,
@@ -181,7 +209,14 @@ whereas a 5-th level power incurs a cost of 9 psi dice.
     \end{DndTable}
 \end{table*}
 
+Some powers can be \define{augmented} with extra psi dice, in which
+case they usually have a stronger effect, see \secref{sub:augmenting}.
+If a power can be augmented,
+this will be explicitly stated in its description.
+The cost for augmenting a power is also given in its description.
+
 \subsection{Concentration}
+\label{sub:concentration}
 If stipulated in the power description,
 a power requires uninterrupted concentration
 in order to be continually used.
@@ -202,10 +237,11 @@ concentrating on.
 In addition, the DM may call the manifester to make a
 save with any DC in a circumstance that would
 jeopardise the manifester's concentration,
-like being thrown of a flying broom or
+like being thrown off a flying broom or
 being battered by an intense blizzard.
 
-A manifester may at any time stop concentrating on any power.
+A manifester may at any time on their turn
+stop concentrating on any power.
 However, a manifester will automatically stop concentrating on a power
 if they become incapacitated or if they die.
 
@@ -241,10 +277,14 @@ The discipline of Prana Bindu stresses that the mind and body
 must work in close concert with each other.
 Adherents have a profound mastery of nerve and muscle,
 and can react to situations with speeds nearly imperceptible
-to the untrained.
+to the untrained eye.
 The discipline also allows one to alter their internal equilibrium
 and metabolism at will,
 granting the body the ability to heal and adapt to hostile environments.
+
+The discipline of Prana Bindu is especially favoured by Psi Knights,
+powerful warriors who fuse martial and mental prowess.
+See \secref{sec:psi_knight} for details on the Psi Knight class.
 
 \subsubsection{Voice}
 The Voice is a dangerous but supremely powerful tool
@@ -252,7 +292,9 @@ used to dominate the minds and wills of others.
 Adherents hone their speech in such a way that,
 only by subtle changes in pitch, volume and speed,
 their Voice can control the behaviour of others.
-In addition, adherents to the discipline can telepathically
+
+In addition, adherents to the discipline can manifest their Voice
+in the minds of others, allowing them to telepathically
 communicate with other creatures.
 
 \subsubsection{Metacreativity}
@@ -266,7 +308,9 @@ allowing myriad servants to carry out their bidding.
 \subsubsection{Spacefolding}
 A spacefolder warps the fabric of space and time to
 transport themselves and others.
-Many powerful spacefolders can cross the gap between
+This also allows them to move effortlessly in conditions
+that would otherwise impede or slow down movement. 
+Many powerful spacefolders can even cross the gap between
 the planes themselves.
 
 \subsubsection{Psychokinesis}
@@ -338,14 +382,14 @@ Powers can be instantaneous,
 while others can last for any length of time
 as specified in the powers description.
 
-If the power requires concentration for throughout its duration,
+If the power requires concentration throughout its duration,
 this will be indicated alongside the duration.
 
 \subsection{Areas of Effect}
 Some powers specify in their description an area of effect
-over which the effects manifest.
-In this case, the rules governing the area of effect
-are identical to those of spellcasting beginning at
+over which the power manifests.
+In this case, the rules governing these areas of effect
+are identical to those of spellcasting, which begin at
 phb 202.
 
 \subsection{Affecting Targets}
@@ -372,20 +416,26 @@ Some powers will indicate that they can be \define{augmented},
 which is analogous to upcasting for a spellcaster.
 When augmenting a power,
 the manifester spends additional psi dice on top of the cost
-incurred from the level of the power itself.
-To augment a power to one additional level,
-the manifester spends two psi dice,
-since for every single increase in level,
-the psi dice cost increases by two,
-see \secref{sub:psi_dice}. 
+incurred from the level of the power itself
+(see \secref{sub:psi_dice} for the base cost by power level).
+
+The cost required to augment a power will be specified
+in the power's description.
+For example, the description might mention
+`For every two additional psi psi dice you spend\dots'
+In this case, the cost to augment the power is 2 psi dice.
+Each time the power is augmented,
+its level increases by 1.
+In the example above,
+spending an additional 6 psi dice increases the power's level by 3.
 
 A power cannot be augmented to a level beyond the manifester's
 psionic threshold.
 For example,
 if a manifester has a psionic threshold of 3,
-they may spend four psi dice to augment a power from
-1st to 3rd level,
-but may not go beyond 3rd level.
+they may spend 4 psi dice to augment a power from
+1st to 3rd level with an augment cost of 2,
+but may not go beyond 3rd level i.e. spend beyond 4 psi dice.
 
 \chapter{List of Powers}
 \label{sec:list_of_powers}
@@ -395,29 +445,113 @@ but may not go beyond 3rd level.
 \label{chap:classes}
 
 \section{Psion}
+
+In the audience chamber of the Duke of Baradstone,
+a half-elf pries into the pathways of Duke's mind---their
+thoughts, feelings, desires revealed to her
+with lucid precision.
+All the while, the Duke's retinue remain totally oblivious
+to the psionic intrusion.
+
+In an vanishing instant of time,
+the githzerai projects the movements of his
+githyanki foes two seconds into the future,
+giving himself the edge he needs desperately needs
+to stop their advance.
+
+The tiefling crouches imperceptibly behind the garrison,
+recalling her Prana Bindu training regimen to force
+her body to make no sound.
+Then, she focuses on the sword carried by the guardsmen;
+before he takes his next step,
+the steel burns a brilliant red before exploding in his
+very hand.
+
+In the underbelly of the city,
+the dwarf brushes his hand against the ancient stone.
+Its feeling, its texture, ignite a subconscious
+awareness within his mind,
+and he is borne back to the memory of countless aeons
+past.
+He watches in striking detail as the genetic memory unravels,
+showing his forebears laying the same stone---one piece
+of a much larger city which was lost to the entropic
+assault of time.
+
+\subsection{Masters of the Mind}
+While psions are diverse in their abilities and training,
+all are unified by a common thread---their unparalleled
+mastery over the latent powers that lie within their mind.
+While some turn to the magic essence which suffuses the cosmos,
+psions peer inwards,
+unlocking powers which might have laid dormant over many years.
+Only through strict training and profound mental discipline
+can these powers be unlocked,
+which all psions have been through in one way or another.
+
+Psions manifest distinct effects known as powers, which,
+depending on their discipline, achieve myriad effects.
+Powers are integral to the effectiveness of a psion,
+and the more experience they accrue,
+the more powers they unlock from deep within.
+
+\subsection{Creating a Psion}
+Creating a character with the psion class prompts
+important questions.
+How did your character first become aware of the
+powers of the mind?
+Perhaps they found an old, forgotten tome
+describing the \emph{Old Way} and the monks who adhered
+to it.
+Or they might have been awoken to it abruptly,
+awakening a dormant power which manifested fleetingly.
+
+One additional line of inquiry should be about the nature
+of their training.
+How did your character hone their psionic abilities?
+Did they train with the githzerai in their floating citadels
+on Limbo?
+Did they live with a reclusive order who have knowledge
+of psionic powers?
+Or did they train by themselves,
+experimenting with their mind through trial and error?
+
+\subsubsection{Quick Build}
+You can make a psion quickly by following these suggestions.
+First, Intelligence should be your highest ability score,
+followed by Constitution.
+Second, choose the following three 1st-level psion powers:.
+
+% \DndQuote%
+%   {`Sometimes, what you need and what you}
+%   {want turn out to be the same thing: An uplifting quote.'}
+%   {The Adventurer}
+
+  
+
 \begin{figure*}[t]
     \begin{ornamentedtabular}{c c l c c c c}[title={The Psion}]
         \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
         1st  & +2 & Powers, Discipline        & 2   & 2  & 3  & 1 \\
         2nd  & +2 & Microsleep (one use)      & 5   & 2  & 5  & 1 \\
-        3rd  & +2 &                           & 10  & 3  & 7  & 2 \\
+        3rd  & +2 & ---                       & 10  & 3  & 7  & 2 \\
         4th  & +2 & Ability Score Improvement & 13  & 3  & 9  & 2 \\
-        5th  & +3 &                           & 23  & 4  & 11 & 3 \\
-        6th  & +3 &                           & 28  & 4  & 13 & 3 \\
-        7th  & +3 &                           & 35  & 4  & 15 & 4 \\
+        5th  & +3 & ---                       & 23  & 4  & 11 & 3 \\
+        6th  & +3 & Discipline Tenet          & 28  & 4  & 13 & 3 \\
+        7th  & +3 & ---                       & 35  & 4  & 15 & 4 \\
         8th  & +3 & Ability Score Improvement & 42  & 5  & 17 & 4 \\
-        9th  & +4 &                           & 58  & 5  & 19 & 5 \\
-        10th & +4 &                           & 67  & 6  & 21 & 5 \\
+        9th  & +4 & ---                       & 58  & 5  & 19 & 5 \\
+        10th & +4 & Discipline Tenet          & 67  & 6  & 21 & 5 \\
         11th & +4 & Microsleep (two uses)     & 78  & 6  & 22 & 6 \\
         12th & +4 & Ability Score Improvement & 78  & 6  & 24 & 6 \\
-        13th & +5 &                           & 91  & 7  & 25 & 7 \\
-        14th & +5 &                           & 91  & 7  & 27 & 7 \\
-        15h  & +5 &                           & 106 & 7  & 28 & 8 \\
+        13th & +5 & ---                       & 91  & 7  & 25 & 7 \\
+        14th & +5 & Discipline Tenet          & 91  & 7  & 27 & 7 \\
+        15h  & +5 & ---                       & 106 & 7  & 28 & 8 \\
         16th & +5 & Ability Score Improvement & 106 & 8  & 30 & 9 \\
-        17th & +6 &                           & 123 & 8  & 31 & 9 \\
-        18th & +6 &                           & 132 & 8  & 33 & 9 \\
+        17th & +6 & ---                       & 123 & 8  & 31 & 9 \\
+        18th & +6 & ---                       & 132 & 8  & 33 & 9 \\
         19th & +6 & Ability Score Improvement & 143 & 9  & 34 & 9 \\
-        20th & +6 &                           & 156 & 10 & 36 & 9 \\
+        20th & +6 & ---                       & 156 & 10 & 36 & 9 \\
     \end{ornamentedtabular}
 \end{figure*}
 
@@ -433,7 +567,7 @@ As a psion, you gain the following features.
     6 + your Constitution modifier
 }
 \listparagraph{Hit Points at Higher Levels}{
-    1d6 (or 4) + yuour Constitution modifier per psion level
+    1d6 (or 4) + your Constitution modifier per psion level
     after 1st
 }
 
@@ -530,7 +664,7 @@ beyond your psionic threshold.
 \subsubsection{Manifesting Ability}
 Your psionic ability modifier is your Intelligence modifier.
 The save DC against your psionic powers and your
-psionic attack modifier respectively are therefore respectively:
+psionic attack modifier are therefore respectively:
 \small\begin{equation*}
     \begin{gathered}
         \text{\textbf{Psionics save DC}}
@@ -546,7 +680,7 @@ psionic attack modifier respectively are therefore respectively:
 Starting at 2nd level,
 as a bonus action on your turn,
 you may recover a number of psi dice equal to
-your Intelligence modifier multiplied by your psionc threshold.
+your Intelligence modifier multiplied by your psionic threshold.
 
 Once you use this feature,
 you must finish a long rest before you can use it again.
@@ -561,6 +695,447 @@ or you can increase two of your ability scores by 1.
 As normal,
 you can't increase an ability score above 20 using this feature.
 
-\newpage\section{Psi Knight}
+\subsection{Prescience Tenets}
+
+\subsubsection{Precognitive Step}
+% phb3(4e) 89
+% prescience
+Starting at 6th level,
+you can peer through the mists obscuring the future,
+learning how one event unfolds.
+At the start of every encounter, roll a d20.
+Once during the same encounter,
+you can at any time replace one of your attack rolls,
+saving throws or skill checks with that roll,
+adding modifiers on top of it as usual.
+You can also replace an enemy's attack roll against you.
+
+\subsubsection{Epitaph}
+Starting at 10th level,
+your hone your ability to see through time.
+Once during an encounter,
+if a hostile creature takes a turn immediately following yours,
+you may use a free action at the start of your turn
+to ask the DM what the creature will do on their turn,
+as conditioned by your explicit choices.
+For example,
+you may ask the DM what the creature will do
+if you move 30 feet in a given direction and manifest a power.
+If you deviate at all from your stated conditions,
+or if you leave any ambiguity or uncertainty as to those choices,
+the prediction may not necessarily come true.
+
+If multiple hostile creatures follow your turn,
+you may use this ability for each of those creatures
+until the turn order reaches a friendly creature
+or the round ends.
+
+\subsubsection{Other Memory}
+Starting at 14th level,
+your unlock the hereditary memories of your forebears,
+allowing you to use their knowledge in your time of need.
+Once per day, as an action you may call upon a particular ancestor
+with a certain background as shown in the table below.
+The nature of the benefit conferred to you depends on the background.
+The benefits conferred to you end when you finish a long rest.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Other Memory Benefit]{
+                     X X}
+        Background          & Benefit                                                                   \\
+        Warrior             & Gain proficiency in all armours, martial weapons and Strength (Athletics) \\
+        Battlemage          &  \\
+        Commander           &  \\
+        Thief               &  \\ 
+        Priest              &  \\
+        Musician            & 
+    \end{DndTable}
+\end{table}
+
+If you spend subsequent days relying on the same ancestor
+and their abilities,
+you run the risk of having your personality usurped by them.
+For each consecutive day you use the same ancestor,
+make a Wisdom saving throw with DC equal to 10 plus the number
+of consecutive days.
+If you fail the save,
+hand your character sheet to the DM.
+
+\subsection{Prana Bindu Tenets}
+\label{sub:prana_bindu_tenets}
+
+\subsubsection{Lightning Warfare}
+Starting at 6th level,
+your mastery of nerve and muscle
+allows you to move an incredible speeds.
+Your movement speed increases by 20 ft.
+In addition, your movement no longer provokes
+opportunity attacks.
+
+\subsubsection{Optimised Reflexes}
+Starting at 10th level,
+your reaction times become almost negligible.
+You gain an additional reaction on top of the one
+you already have, which can be used in the same way
+as the latter.
+
+\subsubsection{Alter Metabolism}
+Starting at 14th level,
+your mastery over body now extends to your metabolism,
+and you are able to by thought alone
+alter the chemical makeup of malign substances.
+You become immune to the effects of all poisons,
+poison damage, the poisoned condition, and any toxic venoms
+or secretions.
+You also gain resistance to acid damage,
+and you become immune to disease.
+
+Additionally, you become immune to the maluses of extreme heat,
+extreme cold and high altitude,
+unless the conditions are so severe
+that the DM decides otherwise.
+
+\subsection{Voice Tenets}
+
+\subsubsection{Inner Voice}
+Starting at 6th level,
+you gain telepathy up to 120 feet.
+Once per day,
+you may also send a message up to 10 words long
+to a creature you have seen before and that is
+presently within 10 miles of you.
+
+\subsubsection{Subtle Voice}
+Starting at 10th level,
+your mastery of the Voice allows you to manifest Voice
+powers without arousing suspicion.
+Any non-telepathic Voice power---which ordinarily alerts
+creatures that can hear you to your Voice---now is
+indistinguishable from normal speech.
+\emph{Exception:} Psions who have chosen the Voice discipline
+cannot be affected by Subtle Voice.
+
+\subsubsection{Enthrall Creature}
+Starting at 14th level,
+you gain the ability to dominate other creatures and have them
+carry out your bidding.
+Twice per day,
+you may manifest the \spell{geas} spell as a power,
+which counts as a 5th-level Voice power with no PD or MB cost.
+Subtle Voice also applies for this power.
+
+\subsection{Metacreativity Tenets}
+% proficiency with all weapons and armour shaped by
+    % Metacreativity powers
+% create golem
+% empower golem like the Heart of Ascension
+
+
+\subsection{Spacefolding Tenets}
+\subsubsection{Delete Space}
+ Starting at 6th level,
+you become capable of removing the space between you
+and another creature with your mind alone. 
+Choose a creature you can see within 60 feet and spend 5 psi die.
+That creature is pulled up to 30 feet in your direction as the space
+between you and them is eliminated.
+
+\subsubsection{Wormhole}
+% planar travel
+
+\subsubsection{Black Hole}
+
+
+\subsection{Psychokinesis Tenets}
+% sculpt psionics
+% signature damage
+% signature 1st/2nd level psionic
+
+\clearpage\section{Psi Knight}
+
+With a thought alone, the silver-armoured half-orc effortlessly
+shunts aside the first gnoll before plunging his longsword
+into the abdomen of the next.
+Then, with near-imperceptible speed, he appears behind the third gnoll,
+who scarcely processes the gruesome end he meets.
+
+In the silver-purple depths of the Astral Plane,
+the githyanki astral skiff careens into the illithid nautiloid.
+Before long, the erstwhile slaves of shattered Astromundi Nova
+engage the mind flayers,
+battling each other with thoughts alone.
+Then the githyanki vanguard charges,
+their silver swords slicing into the exposed flesh of their former
+masters.
+
+In the subterranean halls of a long-forgotten city,
+the elf uses her mind to propel herself across a seemingly
+bottomless crevasse.
+Then, landing on the other side,
+she shapes the very earth itself into a glowing handaxe,
+which she picks up and throws at the awakened undead
+bearing down upon her.
+
+\subsection{The Body and the Mind}
+Psi Knights supplement their martial abilities
+with the latent power of their mind to
+achieve victory over their enemies.
+Formidable opponents,
+psi knights are rare and highly accomplished warriors
+who achieve an almost unparalleled balance between mind
+and body.
+Adventuring parties often readily accept a noble psi knight
+by their side,
+and the psi knight's enemies on the battlefield tremble
+as they approach.
+
+Like psions, psi knights manifest powers with myriad effects.
+While they cannot manifest as many powers as psions,
+they have substantial martial capacity
+and have a greater ability to weather the tide of battle. 
+
+\subsubsection{Creating a Psi Knight}
+When creating a psi knight,
+ask yourself why your character has chosen the path of psionics.
+Perhaps they belonged to a small community of like-minded warriors
+who understood the untapped potential of psionic powers.
+Or perhaps they ventured down a solitary path,
+testing the powers they learnt piecemeal in the din of battle.
+
+Also ask yourself how they interact with the broader community.
+Do they see themselves as an ordinary person with a fortuitous
+talent?
+Or do they feel that they rise above the masses?
+
+\subsubsection{Quick Build}
+You can make a psi knight quickly by following these suggestions.
+First, Strength or Dexterity should be your highest ability score,
+followed by Wisdom then Constitution.
+Second, choose the soldier background.
+Third, pick the \power{x} power from the
+psi knight class power list.
+
+\label{sec:psi_knight}
+\begin{figure*}[t]
+    \begin{ornamentedtabular}{c c l c c c c}[title={The Psi Knight}]
+        \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
+        1st  & +2 & Powers, Fighting Style    & 0   & 1  & 1  & 1 \\
+        2nd  & +2 & Prana Bindu Efficiency    & 1   & 1  & 2  & 1 \\
+        3rd  & +2 & ---                       & 3   & 1  & 3  & 1 \\
+        4th  & +2 & Ability Score Improvement & 4   & 2  & 4  & 2 \\
+        5th  & +3 & Extra attack              & 6   & 2  & 5  & 2 \\
+        6th  & +3 & Prana Bindu Prodigy       & 9   & 2  & 6  & 2 \\
+        7th  & +3 & ---                       & 12  & 3  & 7  & 3 \\
+        8th  & +3 & Ability Score Improvement & 15  & 3  & 8  & 3 \\
+        9th  & +4 & Iron Will                 & 18  & 3  & 9  & 3 \\
+        10th & +4 & Calmness of Self          & 21  & 3  & 10 & 4 \\
+        11th & +4 &                           & 25  & 4  & 11 & 4 \\
+        12th & +4 & Ability Score Improvement & 29  & 4  & 12 & 4 \\
+        13th & +5 & ---                       & 33  & 4  & 13 & 5 \\
+        14th & +5 &                           & 37  & 4  & 14 & 5 \\
+        15h  & +5 & ---                       & 42  & 4  & 15 & 5 \\
+        16th & +5 & Ability Score Improvement & 47  & 5  & 16 & 6 \\
+        17th & +6 & ---                       & 52  & 5  & 17 & 6 \\
+        18th & +6 & ---                       & 58  & 5  & 18 & 6 \\
+        19th & +6 & Ability Score Improvement & 64  & 5  & 19 & 6 \\
+        20th & +6 & ---                       & 70  & 5  & 20 & 6 \\
+    \end{ornamentedtabular}
+\end{figure*}
+
+\subsection{Class Features}
+As a psi knight, you gain the following features.
+
+\subsubsection{Hit Points}
+
+\listparagraph[4pt]{Hit Dice}{
+    1d10 per psi knight level
+}
+\listparagraph{Hit Points at 1st Level}{
+    10 + your Constitution modifier
+}
+\listparagraph{Hit Points at Higher Levels}{
+    1d10 (or 6) + your Constitution modifier per psion level
+    after 1st
+}
+
+\subsubsection{Proficiencies}
+
+\listparagraph[4pt]{Armour}{
+    All armour, shields
+}
+\listparagraph{Weapons}{
+    Simple weapons, martial weapons
+}
+\listparagraph{Tools}{
+    None
+}
+\vspace{6pt}
+\listparagraph{Saving Throws}{
+    Constitution, Wisdom
+}
+\listparagraph{Skills}{
+    Choose two from Athletics, Acrobatics, Insight,
+    Perception, Animal Handling, Intimidation
+    and Survival
+}
+
+\subsubsection{Equipment}
+You start with the following equipment,
+in addition to the equipment granted by your background:
+\begin{itemize}
+    \item (a) chain mail or
+          (b) leather armour, longbow
+            and 20 arrows
+    \item a martial weapon and a shield or
+          (b) two martial weapons
+    \item (a) a light crossbow and 20 bolts or
+          (b) two handaxes
+    \item (a) a dungeoneer's pack or
+          (b) an explorer's pack
+\end{itemize}
+
+\subsection{Fighting Style}
+You adopt a particular fighting style as your specialty.
+Choose one of the following options.
+You can't take a Fighting Style option more than once,
+even if you later get to choose again.
+
+\subsubsection{Blind Fighting}
+You have blindsight with a range of 10 feet.
+Within that range, you can effectively see anything that
+isn't behind total cover,
+even if you're blinded or in darkness.
+Moreover, you can see an invisible creature within that range,
+unless the creature successfully hides from you.
+
+\subsubsection{Defence}
+While you are wearing armour, you gain a +1 bonus to AC.
+
+\subsubsection{Dueling}
+When you are wielding a melee weapon in one hand
+and no other weapons,
+you gain a +2 bonus to damage rolls with that weapon.
+
+\subsubsection{Great Weapon Fighting}
+When you roll a 1 or 2 on a damage die for an attack you make
+with a melee weapon that you are wielding with two hands,
+you can reroll the die and must use the new roll,
+even if the new roll is a 1 or a 2.
+The weapon must have the two-handed or versatile property
+for you to gain this benefit.
+
+\subsubsection{Interception}
+When a creature you can see hits a target,
+other than you,
+within 5 feet of you with an attack,
+you can use your reaction to reduce the damage the target takes
+by 1d10 + your proficiency bonus (to a minimum of 0 damage).
+You must be wielding a shield or a simple or martial weapon
+to use this reaction.
+
+\subsubsection{Protection}
+When a creature you can see attacks a target other than you
+that is within 5 feet of you,
+you can use your reaction to impose disadvantage on the attack roll.
+You must be wielding a shield.
+
+\subsection{Powers}
+\subsubsection{Psi Dice}
+The number of powers that you can manifest
+is limited by the number of psi dice that
+you have available.
+This is the principal limit on the output of a psion.
+For example, a 9-th level psi knight with 18 psi dice
+can manifest a power costing 1 psi dice 18 times.
+
+The number of available psi dice per level
+is shown in the psion class table.
+You regain all expended psi dice when you finish
+a long rest.
+
+\subsubsection{Mental Bandwidth}
+The powers you can manifest without straining yourself
+is reflected by your mental bandwidth.
+The total number of mental bandwidth slots you have
+is shown in the class table.
+
+\subsubsection{Powers Known}
+At 1st level,
+you choose one psion power of your choice
+from the psi knight class power list.
+
+\subparagraph{Psionic Threshold}
+You cannot learn nor manifest powers with a level
+greater than your psionic threshold,
+shown in the class table.
+As mentioned in \secref{sub:augmenting},
+you also cannot augment powers to a level
+beyond your psionic threshold.
+
+\subsubsection{Manifesting Ability}
+Your psionic ability modifier is your Wisdom modifier.
+The save DC against your psionic powers and your
+psionic attack modifier are therefore respectively:
+\small\begin{equation*}
+    \begin{gathered}
+        \text{\textbf{Psionics save DC}}
+            = 8 + \text{your proficiency bonus} + \\
+                  \text{your Wisdom modifier} \\
+        \text{\textbf{Psionics attack modifier}}
+            = \text{your proficiency bonus} + \\
+              \text{your Wisdom modifier}
+    \end{gathered}
+\end{equation*}\normalsize
+
+\subsection{Prana Bindu Efficiency}
+Starting at 2nd level,
+your mind-body training makes manifesting powers
+belonging to the Prana Bindu discipline
+vastly easier.
+Prana Bindu powers require one less mental bandwidth slot
+than mentioned in the power description.
+
+\subsection{Ability Score Improvement}
+When you reach 4th level,
+and again at 8th, 12th, 16th and 19th level,
+you can increase one ability score of your choice by 2,
+or you can increase two of your ability scores by 1.
+As normal,
+you can't increase an ability score above 20 using this feature.
+
+\subsection{Extra Attack}
+Beginning at 5th level, you can attack twice,
+instead of once,
+whenever you take the Attack action on your turn.
+
+\subsection{Prana Bindu Prodigy}
+Starting at 6th level,
+you can choose to learn any Prana Bindu tenet from
+the psion discipline at \secref{sub:prana_bindu_tenets}.
+The level requirement stated there does not apply to you.
+
+\subsection{Iron Will}
+Starting at 9th level,
+your mind is able to override your body at times
+when the untrained would falter.
+Whenever you are reduced to hit points,
+but not killed outright,
+you can spend 5 psi dice to immediately regain hit points
+equal to your Wisdom modifier plus the number of levels
+you have in the psi knight class.
+
+\subsection{Calmness of Self}
+Starting at 10th level,
+your unfettered desire to improve mind and body
+has granted you a sense of inner calm.
+You have resistance to psychic damage.
+Moreover, if you start your turn charmed or frightened,
+you can expend a 3 psi dice and end every effect on yourself
+subjecting you to those conditions.
+In addition, you have advantage on saving throws to resist
+effects from Voice psionic powers.
+
+\subsection{Psychokinetic Reliability}
 
 \end{document}
