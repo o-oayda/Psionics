@@ -538,7 +538,7 @@ Second, choose the following three 1st-level psion powers:.
         4th  & +2 & Ability Score Improvement & 13  & 3  & 9  & 2 \\
         5th  & +3 & ---                       & 23  & 4  & 11 & 3 \\
         6th  & +3 & Discipline Tenet          & 28  & 4  & 13 & 3 \\
-        7th  & +3 & ---                       & 35  & 4  & 15 & 4 \\
+        7th  & +3 & Mind Palace               & 35  & 4  & 15 & 4 \\
         8th  & +3 & Ability Score Improvement & 42  & 5  & 17 & 4 \\
         9th  & +4 & ---                       & 58  & 5  & 19 & 5 \\
         10th & +4 & Discipline Tenet          & 67  & 6  & 21 & 5 \\
@@ -551,7 +551,7 @@ Second, choose the following three 1st-level psion powers:.
         17th & +6 & ---                       & 123 & 8  & 31 & 9 \\
         18th & +6 & ---                       & 132 & 8  & 33 & 9 \\
         19th & +6 & Ability Score Improvement & 143 & 9  & 34 & 9 \\
-        20th & +6 & ---                       & 156 & 10 & 36 & 9 \\
+        20th & +6 & Ascendance                & 156 & 10 & 36 & 9 \\
     \end{ornamentedtabular}
 \end{figure*}
 
@@ -695,6 +695,30 @@ or you can increase two of your ability scores by 1.
 As normal,
 you can't increase an ability score above 20 using this feature.
 
+\subsection{Mind Palace}
+Starting at 7th level,
+your mind becomes your sanctuary---a palace constructed
+from pure thought.
+Whenever you are asleep,
+you return to this sanctuary,
+which exists in a perfect equilibrium between
+external and internal influences.
+You are fully alert to your surroundings
+while you are asleep.
+In addition, you can communicate telepathically to other
+creatures who are also sleeping within 30 feet of you,
+in which case you appear as a character in their dreams.
+
+\subsection{Ascendance}
+Starting at 20th level,
+your body becomes only a vessel for the vast potential
+of your mind.
+Your mind alters your biological makeup to better resist damage,
+granting you resistance to bludgeoning, piercing and slashing damage.
+In addition,
+you no longer age,
+but you can still be killed otherwise.
+
 \subsection{Prescience Tenets}
 
 \subsubsection{Precognitive Step}
@@ -768,7 +792,7 @@ hand your character sheet to the DM.
 \subsubsection{Lightning Warfare}
 Starting at 6th level,
 your mastery of nerve and muscle
-allows you to move an incredible speeds.
+allows you to move at incredible speeds.
 Your movement speed increases by 20 ft.
 In addition, your movement no longer provokes
 opportunity attacks.
@@ -826,31 +850,190 @@ which counts as a 5th-level Voice power with no PD or MB cost.
 Subtle Voice also applies for this power.
 
 \subsection{Metacreativity Tenets}
-% proficiency with all weapons and armour shaped by
-    % Metacreativity powers
-% create golem
-% empower golem like the Heart of Ascension
+\subsubsection{Create Golem}
+Starting at 6th level,
+you learn the \power{psionic golem} power,
+which allows you to manifest a psionic golem
+from any raw material.
+You are mentally linked to the psionic golem,
+and they answer to your bidding as described in the power.
+The statistics of the golem depends on the level
+at which \power{psionic golem} is cast.
+For example,
+casting the power at 3rd-level creates a 3rd-level psionic golem.
+The statblocks by golem level are given in \secref{sec:psionic_golem}.
 
+Each manifested golem has a certain number of
+\define{metacreative points} (MP).
+This is called the \define{MP potential} of the golem.
+Metacreative points allow you to augment the golem
+with particular abilities.
+At 6th level,
+you have access to the abilities given in Menu A (see the table below),
+all of which have an MP cost of 1.
+You cannot add abilities to the golem such that the total MP cost
+is above the MP potential of the golem.
+For example,
+a 4th-level golem with an MP potential of 2
+can have two Menu A abilities.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Psionic Golem Abilities (Menu A)]{
+                     X X}
+        Name                & Benefit   \\
+        Resilient           & The golem gains an extra 10 hit points \\
+        Sturdy              & The golem gains a +2 bonus to its AC \\
+        Vertical Propulsion & The golem gains a fly speed equal to 15 feet \\ 
+        Celerity            & The golem gains the mobile feat \\
+        Resistance          & The golem gains resistance to fire, lightning, cold
+                                or thunder damage \\
+        Seaworthy           & The golem gains a swim speed of 30 feet \\
+        Aggressive          & If the golem hits a creature with a melee attack,
+                                it can use its reaction to attempt to shove
+                                that creature prone
+    \end{DndTable}
+\end{table}
+
+\subsubsection{Improved Psionic Golem}
+Starting at 10th level,
+you gain access to psionic golem abilities on Menu B,
+as shown in the table below.
+The abilities on Menu B cost 2 MP.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Psionic Golem Abilities (Menu B)]{
+                     X X}
+        Name                & Benefit   \\
+        Energy Touch        & The golem deals an extra 1d4 points of
+                                fire, cold, electricity or thunder damage when it
+                                hits with a melee attack \\
+        Extra attack        & The golem take the \define{Multiattack} action,
+                                allowing it to make two slam attacks \\
+        Auto-reassembly     & The golem heals 5 hit points each round \\ 
+        Heavy Deflection    & The golem gains a +3 bonus to its AC  \\
+        Highly Resilient    & The golem gains an extra 15 hit points \\
+        Improved Critical   & The golem lands a critical hit on a roll of either
+                                19 or 20 \\
+        Muscular            & The golem gains a +4 bonus to its Strength score \\
+    \end{DndTable}
+\end{table}
+
+\subsubsection{Heart of Ascension}
+Starting at 14th level,
+any golem you manifest with \power{psionic golem}
+becomes Ascendant.
+You gain access to psionic golem abilities on Menu C,
+as shown in the table below.
+The abilities on Menu C cost 4 MP.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Psionic Golem Abilities (Menu C)]{
+                     X X}
+        Name                & Benefit   \\
+        WTF is Truesight!?  & The golem gains truesight out to 60 feet \\
+        Supreme Resilience  & The golem gains an extra 30 hit points \\
+        Metal Carapace      & All incoming damage from separate sources
+                                is reduced by 5 \\ 
+        Shield!             & The golem gains a +5 bonus to its AC \\
+        Active Camouflage   & The golem becomes naturally invisible \\
+        Energy Bolt         & The golem can manifest the \power{energy bolt} power
+                                as an action once per round; the energy type is
+                                chosen when the golem is initially manifested
+    \end{DndTable}
+\end{table}
 
 \subsection{Spacefolding Tenets}
 \subsubsection{Delete Space}
- Starting at 6th level,
+Starting at 6th level,
 you become capable of removing the space between you
 and another creature with your mind alone. 
-Choose a creature you can see within 60 feet and spend 5 psi die.
+Choose a creature you can see within 60 feet and spend 5 psi dice.
 That creature is pulled up to 30 feet in your direction as the space
 between you and them is eliminated.
 
 \subsubsection{Wormhole}
-% planar travel
+Starting at 10th level,
+you alter the fabric of space and time such that
+you can link two different locations together.
+Once per day as an action,
+you may create a wormhole mouth at a point you are standing on.
+The mouth is a 10-foot radius sphere and is presently closed.
+At a later point in time,
+you may create another mouth at a different location.
+The location need not be on the same plane of existence
+as the mouth.
+When you do so, the two mouths become adjacent to each other.
+Creatures on either side can see to the other side of the wormhole
+through the 10-foot sphere,
+and can step through using their movement.
 
-\subsubsection{Black Hole}
+You may choose to collapse the wormhole at any time.
+However, it is not stable.
+For every hour that has elapsed since you placed the second mouth,
+roll a d10.
+On a roll of 1--5,
+the wormhole collapses and the bridge between the two locations
+is lost.
+You must then create a new wormhole.
 
+\subsubsection{Master of Spacetime}
+Starting at 14th level,
+you can effortlessly warp space and time locally to
+move yourself across the battlefield.
+The \power{psionic step} power costs no psi dice and MB
+whenever you manifest it.
+The power still costs 4 psi dice to augment,
+however if you do so,
+you can manifest the power as a free action
+instead of a bonus action
+(limit of once per turn).
 
 \subsection{Psychokinesis Tenets}
-% sculpt psionics
-% signature damage
-% signature 1st/2nd level psionic
+\subsubsection{Sculpt Psioncs}
+Starting at 6th level,
+akin to the evocation wizard's ability to sculpt spells,
+you can alter the direction that hazardous effects
+created by your psychokinesis powers propagate.
+When you manifest a psychokinesis power that affects
+other creatures that you can see,
+you can choose a number of them equal to your
+psionic threshold.
+The chosen creatures automatically succeed on any saving
+throws they make to resist the power,
+taking no damage on a successful save if they would
+otherwise take half.
+If the power does not prompt a saving throw
+(e.g. if it automatically hits),
+the chosen creatures also take no damage.
+
+\subsubsection{Signature Damage}
+Starting at 10th level,
+you become highly proficient in dealing damage
+with a specific energy manifested by your psionic powers.
+Choose a damage type from fire, cold, lightning and thunder.
+Each die of damage you deal with the chosen type
+become \define{exploding die}.
+If you roll the maximum result on an exploding die,
+you can reroll that die again and add the result to the
+total damage.
+If the result is again the maximum,
+you may `explode' the die again.
+This continues indefinitely or until you have
+no longer rolled the maximum over all dice.
+
+\subsubsection{Signature Power}
+Starting at 14th level,
+one psychokinesis power become so familiar to you that you
+manifest it without straining yourself.
+Choose one 3rd-level psychokinesis power.
+The MB cost for that power is reduced to 0 whenever you manifest it.
+In addition, you can manifest this power without expending
+any psi die.
+Once you do so,
+you can't do so again until you finish a short or long rest.
 
 \clearpage\section{Psi Knight}
 
@@ -921,25 +1104,25 @@ psi knight class power list.
     \begin{ornamentedtabular}{c c l c c c c}[title={The Psi Knight}]
         \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
         1st  & +2 & Powers, Fighting Style    & 0   & 1  & 1  & 1 \\
-        2nd  & +2 & Prana Bindu Efficiency    & 1   & 1  & 2  & 1 \\
-        3rd  & +2 & ---                       & 3   & 1  & 3  & 1 \\
+        2nd  & +2 & Prana Bindu Initiate      & 1   & 1  & 2  & 1 \\
+        3rd  & +2 & Psionic Tradition         & 3   & 1  & 3  & 1 \\
         4th  & +2 & Ability Score Improvement & 4   & 2  & 4  & 2 \\
         5th  & +3 & Extra attack              & 6   & 2  & 5  & 2 \\
-        6th  & +3 & Prana Bindu Prodigy       & 9   & 2  & 6  & 2 \\
-        7th  & +3 & ---                       & 12  & 3  & 7  & 3 \\
+        6th  & +3 & Psionic Tradition feature & 9   & 2  & 6  & 2 \\
+        7th  & +3 & Iron Will                 & 12  & 3  & 7  & 3 \\
         8th  & +3 & Ability Score Improvement & 15  & 3  & 8  & 3 \\
-        9th  & +4 & Iron Will                 & 18  & 3  & 9  & 3 \\
-        10th & +4 & Calmness of Self          & 21  & 3  & 10 & 4 \\
-        11th & +4 &                           & 25  & 4  & 11 & 4 \\
+        9th  & +4 & ---                       & 18  & 3  & 9  & 3 \\
+        10th & +4 & Psionic Tradition feature & 21  & 3  & 10 & 4 \\
+        11th & +4 & Calmness of Self          & 25  & 4  & 11 & 4 \\
         12th & +4 & Ability Score Improvement & 29  & 4  & 12 & 4 \\
         13th & +5 & ---                       & 33  & 4  & 13 & 5 \\
-        14th & +5 &                           & 37  & 4  & 14 & 5 \\
-        15h  & +5 & ---                       & 42  & 4  & 15 & 5 \\
+        14th & +5 & ---                       & 37  & 4  & 14 & 5 \\
+        15th & +5 & Psionic Tradition feature & 42  & 4  & 15 & 5 \\
         16th & +5 & Ability Score Improvement & 47  & 5  & 16 & 6 \\
         17th & +6 & ---                       & 52  & 5  & 17 & 6 \\
-        18th & +6 & ---                       & 58  & 5  & 18 & 6 \\
+        18th & +6 & Psionic Tradition feature & 58  & 5  & 18 & 6 \\
         19th & +6 & Ability Score Improvement & 64  & 5  & 19 & 6 \\
-        20th & +6 & ---                       & 70  & 5  & 20 & 6 \\
+        20th & +6 & Psionic Reserve           & 70  & 5  & 20 & 6 \\
     \end{ornamentedtabular}
 \end{figure*}
 
@@ -1088,13 +1271,31 @@ psionic attack modifier are therefore respectively:
     \end{gathered}
 \end{equation*}\normalsize
 
-\subsection{Prana Bindu Efficiency}
+\subsection{Prana Bindu Initiate}
 Starting at 2nd level,
 your mind-body training makes manifesting powers
 belonging to the Prana Bindu discipline
 vastly easier.
 Prana Bindu powers require one less mental bandwidth slot
-than mentioned in the power description.
+than mentioned in their description.
+
+\subsection{Psionic Tradition}
+When you reach 3rd level,
+you embark on a journey down a particular
+psionic tradition.
+The tradition represents the aspects of
+your mind-body mastery that you have decided
+to focus on.
+At this stage, two traditions are offered:
+the Weirding Way, which focuses on your mastery
+of devastatingly precise and supremely fast
+Prana Bindu techniques,
+and the Commander,
+who couples their experience in battle
+with profound psionic powers to meticulously
+plan and execute combat stratagems.
+Your tradition grants you features at 3rd level,
+and again at 6th, 10th, 15th and 18th level.
 
 \subsection{Ability Score Improvement}
 When you reach 4th level,
@@ -1109,14 +1310,8 @@ Beginning at 5th level, you can attack twice,
 instead of once,
 whenever you take the Attack action on your turn.
 
-\subsection{Prana Bindu Prodigy}
-Starting at 6th level,
-you can choose to learn any Prana Bindu tenet from
-the psion discipline at \secref{sub:prana_bindu_tenets}.
-The level requirement stated there does not apply to you.
-
 \subsection{Iron Will}
-Starting at 9th level,
+Starting at 7th level,
 your mind is able to override your body at times
 when the untrained would falter.
 Whenever you are reduced to hit points,
@@ -1126,7 +1321,7 @@ equal to your Wisdom modifier plus the number of levels
 you have in the psi knight class.
 
 \subsection{Calmness of Self}
-Starting at 10th level,
+Starting at 11th level,
 your unfettered desire to improve mind and body
 has granted you a sense of inner calm.
 You have resistance to psychic damage.
@@ -1136,6 +1331,163 @@ subjecting you to those conditions.
 In addition, you have advantage on saving throws to resist
 effects from Voice psionic powers.
 
-\subsection{Psychokinetic Reliability}
+\subsection{Psionic Reserve}
+Starting at 20th level,
+when you roll for initiative and have no psi dice remaining,
+you regain 10 psi dice.
+
+\subsection{Weirding Way}
+The Weirding Way champions incredible control over one's nerves
+and reaction times---granted by Prana Bindu techniques---to
+manoeuvre and strike at opponents before they can retaliate.
+The name `Weirding Way' comes from the fact that,
+to untrained opponents, the movements of those versed in
+the Weirding Way appear unnatural and superhuman,
+almost as if they are teleporting across the battlefield.
+
+\subsubsection{Prana Bindu Prodigy}
+Starting at 3rd level,
+you can choose to learn any Prana Bindu tenet from
+the psion discipline at \secref{sub:prana_bindu_tenets}.
+The level requirement stated there does not apply to you.
+
+\subsubsection{Seize the Initiative}
+Starting at 6th level,
+whenever a fight breaks out,
+you can reliably act before your enemies.
+If you spend two psi dice,
+you can grant yourself advantage on an initiative roll.
+
+\subsubsection{CQC Dominance}
+Starting at 10th level,
+you make quick use of off-hand and blunt strikes to
+achieve dominance in CQC (`close quarters combat').
+You have advantage on all checks when taking the
+grapple, shove, shove aside, or overrun action.
+
+In addition,
+whenever a creature within 5 feet of you ends their turn,
+you can use your reaction and spend 2 psi die
+to make a single attack against that creature.
+The damage type is replaced with bludgeoning damage,
+since you use your off-hand,
+a kick, a punch or the blunt end of your weapon
+to make the attack.
+Whether or not the attack is made with a weapon
+or is an unarmed attack is your choice.
+
+\subsubsection{Slippery Movement}
+Starting at 15th level,
+your incredible agility makes its difficult for your
+enemies to pin you down.
+You have advantage on all saving throws against effects
+which would slow your movement or reduce it to 0.
+In addition,
+if you become restrained or grappled,
+you can use a bonus action on your turn
+to attempt to repeat the save
+or contest respectively which caused that condition.
+You do not have advantage from Slippery Movement
+on either of these rolls,
+but can have advantage from other sources as usual.
+
+\subsubsection{Lisan al Gaib}
+Starting at 18th level,
+your perfection of Prana Bindu methods becomes legendary,
+and in the eyes of many your are considered a
+sublime master of the body and mind.
+You may pick an additional Prana Bindu tenet from
+\secref{sub:prana_bindu_tenets}.
+
+\subsection{Commander}
+The Commander uses their experience and psionic abilities
+to control and manipulate the battlefield as they desire.
+Enemies fear a psi knight commander,
+for they know that they will struggle to ever
+gain tactical advantage over them and their allies.
+
+\subsubsection{Wise Strikes}
+Starting at 3rd level,
+your battlefield experience ensures that your attacks
+are as damaging as they can be for your enemy.
+You may add your Wisdom modifier to all damage
+rolls for melee attacks. 
+
+\subsubsection{Knowledge is Power}
+Starting at 6th level,
+once per day as an action,
+you choose a hostile creature you can see within
+30 feet of you.
+Your mind links with them,
+and you gain a deep understanding of their
+strengths, weaknesses and peculiarities.
+The DM then hands you the statblock of that creature.
+When the encounter ends,
+or after 1 in-game minute if an encounter is not occurring,
+you must return the statblock.
+
+\subsubsection{Order of Battle}
+Starting at 10th level,
+your mind's eye expands,
+and you begin to see the battlefield from a top-down perspective.
+Enemies and allies are pieces on a board, which you can manipulate
+with thought alone.
+Once per day,
+at the start of an encounter but before initiative is rolled,
+you may forego initiative rolls and instead
+declare the initiative order for all combatants.
+
+This ability does not apply when you are surprised.
+You also cannot alter the initiative order of creatures
+in the encounter that you have no knowledge of,
+those that join later in the fight (such as those
+that are summoned),
+and environmental effects or lair actions
+which act on a set initiative count.
+
+\subsubsection{Gambit}
+Starting at 15th level,
+your see fighters on a battlefield as pieces on a chessboard
+that can be effortlessly manipulated---you simply turn your
+mind to them, and they bend to your will.
+You have a pool of 120 feet of movement.
+On your turn,
+you may use your action to attempt to move any number of creatures
+cumulatively up to 120 feet in any direction,
+including vertically.
+Each creature you wish to move can resist this movement by
+succeeding a Wisdom saving throw with DC equal to your
+psionics save DC.
+
+Any unspent movement remaining in your pool persists
+and can be carried over to subsequent turns.
+Your pool of movement replenishes whenever you finish a long rest.
+
+\subsubsection{Only a Simulation}
+Sometimes the tide of battle can be unpredictable.
+Fortunately for you,
+starting at 18th level,
+your supreme mental abilities confer you the ability to
+run combat simulations viewed internally by your mind's eye.
+These simulations allow you to decide the best course of action.
+
+Once per day, on your turn,
+you can use an action to undo the previous round of combat,
+allowing you to `replay' that round.
+This ability reverses time to the point in the past
+just prior to your previous turn,
+undoing the effects of everyone else's actions in the meantime.
+Once you have used Only a Simulation,
+only you retain knowledge of what happened during the round
+that is being replayed; after all, it was just a simulation.
+However, you can communicate that knowledge verbally to your companions,
+if desired,
+and you can act on that privileged knowledge
+in any way you desire.
+
+\chapter{Miscellany}
+\section{Psionic Golem}
+
+\label{sec:psionic_golem}
 
 \end{document}
