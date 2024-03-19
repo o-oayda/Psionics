@@ -766,14 +766,30 @@ The benefits conferred to you end when you finish a long rest.
 \begin{table}[htbp]%
     \begin{DndTable}[width=\columnwidth,
                      header=Other Memory Benefit]{
-                     X X}
+                     l X}
         Background          & Benefit                                                                   \\
-        Warrior             & Gain proficiency in all armours, martial weapons and Strength (Athletics) \\
-        Battlemage          &  \\
-        Commander           &  \\
-        Thief               &  \\ 
-        Priest              &  \\
-        Musician            & 
+        Warrior             & Gain proficiency in all armours,
+                                martial weapons and Strength (Athletics) \\
+        Battlemage          & You learn three 3rd-level or lower
+                                evocation spells of your choice
+                                which can be cast without expending a spell slot;
+                                once you cast any of these spells,
+                                you can't cast the same spell again;
+                                the spellcasting ability for these
+                                spells is Intelligence \\
+        Commander           & You learn three Uberium faction abilities \\
+        Thief               & You gain an extra bonus action \\ 
+        Priest              & You learn three 3rd-level or lower
+                                spells from the cleric spell list
+                                of your choice;
+                                these can be cast without expending a spell slot;
+                                once you cast any of these spells,
+                                you can't cast the same spell again;
+                                the spellcasting ability for these
+                                spells is Intelligence \\\
+        Musician            & You gain proficiency in a musical instrument
+                                and Charisma (Performance), or expertise if
+                                you are already proficient in that skill
     \end{DndTable}
 \end{table}
 
@@ -850,7 +866,9 @@ which counts as a 5th-level Voice power with no PD or MB cost.
 Subtle Voice also applies for this power.
 
 \subsection{Metacreativity Tenets}
+\label{sub:metacreativity_tenets}
 \subsubsection{Create Golem}
+\label{subs:menu_a}
 Starting at 6th level,
 you learn the \power{psionic golem} power,
 which allows you to manifest a psionic golem
@@ -896,6 +914,7 @@ can have two Menu A abilities.
 \end{table}
 
 \subsubsection{Improved Psionic Golem}
+\label{subs:menu_b}
 Starting at 10th level,
 you gain access to psionic golem abilities on Menu B,
 as shown in the table below.
@@ -909,8 +928,8 @@ The abilities on Menu B cost 2 MP.
         Energy Touch        & The golem deals an extra 1d4 points of
                                 fire, cold, electricity or thunder damage when it
                                 hits with a melee attack \\
-        Extra attack        & The golem take the \define{Multiattack} action,
-                                allowing it to make two slam attacks \\
+        Extra attack        & Whenever the golem takes the \define{Multiattack} action,
+                                it can make one additional slam attack \\
         Auto-reassembly     & The golem heals 5 hit points each round \\ 
         Heavy Deflection    & The golem gains a +3 bonus to its AC  \\
         Highly Resilient    & The golem gains an extra 15 hit points \\
@@ -921,6 +940,7 @@ The abilities on Menu B cost 2 MP.
 \end{table}
 
 \subsubsection{Heart of Ascension}
+\label{subs:menu_c}
 Starting at 14th level,
 any golem you manifest with \power{psionic golem}
 becomes Ascendant.
@@ -1486,8 +1506,12 @@ and you can act on that privileged knowledge
 in any way you desire.
 
 \chapter{Miscellany}
-\section{Psionic Golem}
-
+\section{Psionic Golems}
 \label{sec:psionic_golem}
+The statblocks for the psionic golems described in
+\secref{sub:metacreativity_tenets}
+are given here, beginning on the following page.
+
+\clearpage\input{psionic_golems.tex}
 
 \end{document}
