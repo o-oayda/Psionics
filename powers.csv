@@ -9,8 +9,8 @@ Body Equilibrium,2,Prana Bindu,ppk,2,3,Walk on otherwise untraversable surfaces
 Bolt,1,Metacreativity,pk,1,1,Create ammunition
 Boots of the Demon King,1,Prana Bindu,pk,1,1,"Kick target with lightning, can knock prone or send target flying"
 Breath of Numinex,6,Prana Bindu,ppk,5,11,Powerful breath weapon dealing acid damage
-Burst,1,Prana Bindu,pk,1,1,Gain speed boost as free action
-Chameleon,1,Prana Bindu,pk,1,1,"Blend in with environment, bonus to stealth"
+Burst,1,Prana Bindu,pk-S,1,1,Gain speed boost as free action
+Chameleon,1,Prana Bindu,pk-PB,1,1,"Blend in with environment, bonus to stealth"
 Cloud Mind,2,Voice,p,2,3,Erase yourself from target's mind
 "Cloud Mind, Mass",6,Voice,p,6,11,Erase yourself from many targets' mind
 Concealing Membrane,2,Metacreativity,ppk,2,3,Become lightly obscured in membrane
@@ -30,7 +30,7 @@ Detect Psionics,1,Prescience,ppk,1,1,Detect hearby presence of psionic powers an
 Detect Prying Eyes,4,Prescience,p,3,7,Learn who is attempting to scry you
 Demoralise,1,Voice,p,1,1,Enemies suffer malus to attacks and saving throws
 Diamond Bullet,1,Metacreativity,p,1,1,Fire diamond bullet at target
-Dimension Swap,2,Spacefolding,pk,2,3,Swap positions between yourself and ally or two allies
+Dimension Swap,2,Spacefolding,pk-S,2,3,Swap positions between yourself and ally or two allies
 Dispel Psionics,3,Psychokinesis,p,3,5,Cancel psionic powers and effects
 Dissipating Touch,1,Spacefolding,ppk,1,1,Deal force damage to target on touch
 Dissolving Touch,2,Prana Bindu,pk,2,3,Deal acid damage to creature you hit with attack
@@ -74,8 +74,8 @@ Psi Vision,2,Prescience,ppk,2,3,Gain darkvision
 Psi Wall,4,Metacreativity,p,4,7,Create large protective barrier
 Psionic Step,2,Spacefolding,ppk,2,3,Teleport a short distance
 Psychic Crush,5,Voice,p,4,9,Deal large amount of psychic damage to creature
-Psychofeedback,5,Prana Bindu,pk,5,9,Alter ability scores temporarily
-Rapid Healing,1,Prana Bindu,ppk,2,5,Heal a small number of hit points
+Psychofeedback,5,Prana Bindu,pk-PB,5,9,Alter ability scores temporarily
+Rapid Healing,3,Prana Bindu,ppk,2,5,Heal a small number of hit points
 Recall,1,Prescience,p,1,1,Repeat check to recall details
 Remote Viewing Trap,6,Prescience,p,5,11,Deal damage to those who attempt to scry you
 Retrieve,6,Spacefolding,p,5,11,Teleport item into your hand
@@ -92,8 +92,8 @@ Stillness of Mind,1,Voice,ppk,2,1,Gain bonus to wisdom save as reaction
 Stunning Wave,2,Voice,p,2,3,Daze creatures surrounding you
 Suspend Life,6,Prana Bindu,pk,5,11,Slow metabolism and appear dead
 Swarm of Crystals,2,Metacreativity,p,2,3,Slice targets with cone of crystals which always hit
-Swiftsteed,2,Prana Bindu,pk,2,3,Double movement speed
-Thicken Skin,1,Prana Bindu,pk,1,1,Gain bonus to AC
+Swiftsteed,2,Prana Bindu,pk-PB,2,3,Double movement speed
+Thicken Skin,1,Prana Bindu,pk-PB,1,1,Gain bonus to AC
 Third Eye,5,Prescience,p,5,9,Gaiun truesight out to 120 feet
 Time Warp,3,Spacefolding,p,3,5,Move target briefly forward in time
 Touchsight,3,Prana Bindu,p,3,5,Perceive surroundings by touch
@@ -103,3 +103,22 @@ Unrelenting Voice,3,Voice,pk,3,5,"Wave of force slams targets, pushing them back
 Vigour,1,Prana Bindu,ppk,1,1,Gain temporary hit points
 Wall Walker,2,Spacefolding,pk,2,3,Walk on walls and ceilings
 Weapon of Energy,4,Psychokinesis,pk,4,7,Imbue weapon with energy damage
+Resuscitation,3,Voice,pk-V,3,5,Return creature that has just died to life
+Restore Extremity,5,Prana Bindu,p-PB,5,9,Restore lost extremity to creature you touch\
+Fusion,8,Prana Bindu,p-PB,8,15,Fuse yourself and another creature into one entity temporarily
+Control Air,2,Psychokinesis,p-PK,2,3,Alter the wind and potentially knock creatures prone
+Energy Missile,2,Psychokinesis,p-PK,2,3,Hurl missiles of energy at up to 5 distinct targets
+Control Body,4,Psychokinesis,p-PK,4,7,Rudimentarily take control a creature
+Tornado, 9, Psychokinesis, p-PK, 9, 17, Create an immense vortex of air dealing great damage and knocking enemies about
+"Banishment, Psionic", 4, Spacefolding, p-S, 4, 7, Return a creature to their native plane of existence or a demiplane
+Destiny Dissonance, 1, Prescience, p-P, 1, 1, Inflict psychic damage and the poisoned condition with your touch
+Distant Gaze, 2, Prescience, p-P, 2, 3, See distant locations known or proximate to you
+Object Reading, 2, Prescience, p-P, 2, 3, Learn details about an object's former owners
+Psychic Archaeology, 2, Prescience, p-P, 2, 3, Glean information from the psychic impressions left in a locale
+"Scrying, Psionic", 5, Prescience, p-P, 5, 9, Remotely perceive a target through an ethereal form of yourself
+Possible Futures, 5, Prescience, p-P, 5, 9, Gain the ability to reroll once per round
+Sublime Insight, 9, Prescience, p-P, 9, 17, Learn uncannily accurate details of a creature you have seen before
+Psionic Golem, 1, Metacreativity, p-M, 1, 1, Create a psionic golem that you control
+"Psionic Golem, Repair", 2, Metacreativity, p-M, 2, 3, Repair damage to a psionic golem
+Aversion, 2, Voice, p-V, 2, 3, Plant an object of aversion in the mind of a creature
+Crisis of Breath, 3, Voice, p-V, 4, 5, Disrupt a creature's breathing

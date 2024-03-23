@@ -18,11 +18,24 @@
 
 \chapter{Using Psionics}
 
-\DndDropCapLine{T}{his chapter explains} the nature of psionics,
-as well as the key rules behind
+\DndDropCapLine{T}{his chapter explains the nature of}
+psionics, as well as the key rules behind
 manifesting and maintaining psionic powers.
+In \secref{sec:what_are_psionics},
+a brief introduction to psionics is given
+and their role in their game.
+\secref{sec:manifesting_powers} explains how
+psionic abilities---called powers---are produced
+and the restrictions surrounding their use.
+Lastly,
+in \secref{sec:power_attributes},
+the terminology used in power descriptions is explained.
+The reader should familiarise themselves with each of these in turn
+before they diving into
+the list of powers in \secref{chap:list_of_powers}.
 
 \section{What are Psionics?}
+\label{sec:what_are_psionics}
 Psionics tap into the latent ability of the mind
 to master itself, its body and its environment.
 Whereas spellcasters manipulate the magical essence
@@ -46,31 +59,47 @@ magic and spellcraft were created by these
 beings when the reality was moulded to as it is today.
 To do this, they used psionics.
 
-\section{Types of Psionic Abilities}
-There are two types of psionic abilities.
-The main type are \textbf{powers},
-which are what most psionics users will be
-interacting with the most.
-The rules around powers are described in this chapter.
+\subsection{Types of Psionic Abilities}
+There are two types of psionic abilities:
+\define{powers} and \define{innate talents}.
 
-A second type is an \textbf{innate talent}.
+\subsubsection{Powers}
+Powers are what most psionics users will be
+interacting with.
+The rules around powers are described
+later in this chapter.
 
-\subsection{Interaction with Magic}
-Since psionics and magic are disparate entities,
-how do they interact together?
-A creature that manifests a psionic power is not
-casting a spell,
-and therefore any ability which negates the effects
-of magic cannot negate the power.
-For example, psionic powers cannot be affected by
-\spell{counterspell} or \spell{dispel magic}.
+\subsubsection{Innate Talents}
+A second type of psionic ability is an innate talent.
+Innate talents are generally possessed by NPCs or
+monsters which have some psionic ability.
+Innate talents are produced on a per day basis;
+that is, a creature can manifest a certain innate talent
+a number of times per day.
+Innate talents can be used as a convenience,
+representing an NPCs psionic ability but
+foregoing the need to keep track of mental bandwidth,
+psionic thresholds and psi dice.
 
-However, certain psionic powers are explicitly stated
-to interact with magic.
-In addition, this supplement adds spells to the existing
-grimoire which explicitly interact with psioics.
+\begin{DndSidebar}[float=htbp]{Interaction with Magic}
+    \tocside{Interaction with Magic}
+    Since psionics and magic are disparate entities,
+    how do they interact together?
+    A creature that manifests a psionic power is not
+    casting a spell,
+    and therefore any ability which negates the effects
+    of magic cannot negate the power.
+    For example, psionic powers cannot be affected by
+    \spell{counterspell} or \spell{dispel magic}.
+
+    However, certain psionic powers are explicitly stated
+    to interact with magic.
+    In addition, this supplement adds spells to the existing
+    grimoire which explicitly interact with psionics.
+\end{DndSidebar}
 
 \section{Manifesting Powers}
+\label{sec:manifesting_powers}
 In order to manifest a psionic power,
 the \define{power level} must be equal to or below
 the manifesting character's \define{psionic threshold}.
@@ -251,7 +280,8 @@ However, a manifester will automatically stop concentrating on a power
 if they become incapacitated or if they die.
 
 \section{Power Attributes}
-In \secref{sec:list_of_powers},
+\label{sec:power_attributes}
+In \secref{chap:list_of_powers},
 the available powers are given.
 In this section,
 the terminology and structure of the power descriptions are explained.
@@ -346,31 +376,30 @@ and the mental bandwidth slots are freed up.
 \subsection{Range}
 A power's \define{range} indicates the extent
 to which its effects can reach when manifested.
-The \define{target} of the power must be within range.
+The \define{target} (see below) of the power must be within range.
 
 There are three types of ranges: self, touch and a range
 specified in feet.
 Powers with a range of self will always target the manifester.
 
 \subsubsection{Targets}
-When selecting a target for a power,
-in addition to the range requirement mentioned above,
-the manifester must have \define{line of sight}
+All powers have a target or targets.
+A power's target is typically mentioned in the power description.
+The description will also specify whether or not the target
+of a power needs to be seen.
+Thus, not all powers require sight of the target.
+However, in addition to the range requirement mentioned above,
+the manifester \textit{must} have \define{line of effect}
 towards the target.
-The meaning line of sight has two prongs:
-\define{sight} and \define{uninterruption}.
-Respectively, these mean that the manifester must be able to
-(a) see the target
-and (b) draw a line to the target
-without that line passing through an obstacle,
+This means that the manifester needs to be be able to draw a line
+to the target without that line passing through an obstacle,
 even if the target can be seen through that obstacle.
+Thus, a target cannot be behind total cover.
+\emph{Exception:} some powers will explicitly state that
+the manifester need not have line of effect towards the target.
 
-Powers with a range of self (powers that target the manifester)
-are not bound by this requirement.
-In addition, a power may mention that the manifester does not need
-line of sight towards the target,
-or that the manifester does not need either of the
-two prongs of line of sight. 
+Powers with a range of self or touch
+are not bound by the line of effect requirement.
 
 \subsection{Cost}
 The \define{cost} specifies the mental bandwidth and psi die
@@ -442,33 +471,125 @@ they may spend 4 psi dice to augment a power from
 1st to 3rd level with an augment cost of 2,
 but may not go beyond 3rd level i.e. spend beyond 4 psi dice.
 
+\subsection{Components}
+Unlike spells,
+powers generally do not have any components.
+When a power is manifested,
+quite often there are scarcely any hints of its existence,
+save for the actual effect or effects it produces.
+However, there are two key exceptions to this rule.
+
+\subsubsection{Voice Powers}
+Powers belonging to the Voice discipline sometimes involve
+the manifester altering the frequencies, pitch and
+speed of their natural voice such that it compels
+creatures to act in certain ways.
+Whenever such a power makes reference to the manifester
+using their Voice,
+the power's manifestation is distinctly audible.
+It can be heard 2d6 times 10 feet away with normal
+levels of background noise,
+half as far away in loud conditions,
+and twice as far away in quiet conditions.
+
+\subsubsection{Metacreativity Powers}
+All powers of the Metacreativity discipline require
+\define{mundane matter}, which is moulded by the manifester
+as dependent on the power.
+Mundane matter refers to common substances on the
+Material Plane,
+like soil, plant matter, rock, metal,
+glass, and so on.
+The matter must be in the solid phase,
+and not the liquid, gas or plasma phase.
+It does not include matter imbued with magic
+or some other arcane effect,
+unless that matter is the raw essence of Limbo,
+which can be warped with one's mind.
+
+Thus,
+if the manifester does not have access to mundane matter
+when they manifest a Metacreativity power,
+the power fails (but no cost is incurred in the attempt).
+
 \chapter{List of Powers}
-\label{sec:list_of_powers}
+\label{chap:list_of_powers}
+\DndDropCapLine{I}{n this chapter, the list of available}
+powers are given.
+\secref{sec:class_lists} breaks down the powers into those
+available by class,
+and \secref{sub:discipline_sublists} gives the powers
+available to psions who have dedicated themselves to a
+particular discipline at 1st level.
+Lastly,
+\secref{sec:power_descriptions} sets out the powers in full.
+
 
 \section{Class Lists}
+\label{sec:class_lists}
+\DndSetThemeColor[DmgLavender]
 \subsection{Psion}
 \begin{dndlongtable}[
+    % X X X]
     >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}]
     \input{Tables/psion.tex}
 \end{dndlongtable}
 
-\columnbreak\subsection{Psi Knight}
+\subsection{Psion Discipline Sublists}
+\label{sub:discipline_sublists}
+\DndSetThemeColor[PhbLightCyan]
+\begin{DndTable}[header=Prescience Sublist, bold=false]{
+    >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}}
+    \include{Tables/prescience.tex}
+\end{DndTable}
+
+\DndSetThemeColor[PhbMauve]
+\begin{DndTable}[header=Prana Bindu Sublist, bold=false]{
+    >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}}
+    \include{Tables/prana_bindu.tex}
+\end{DndTable}
+
+\DndSetThemeColor[PhbTan]
+\begin{DndTable}[header=Voice Sublist, bold=false]{
+    >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}}
+    \include{Tables/voice.tex}
+\end{DndTable}
+
+\DndSetThemeColor[DmgSlateGrey]
+\begin{DndTable}[header=Metacreativity Sublist, bold=false]{
+    >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}}
+    \include{Tables/metacreativity.tex}
+\end{DndTable}
+
+\DndSetThemeColor[DmgLilac]
+\begin{DndTable}[header=Spacefolding Sublist, bold=false]{
+    >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}}
+    \include{Tables/spacefolding.tex}
+\end{DndTable}
+
+\DndSetThemeColor[PhbLightGreen]
+\begin{DndTable}[header=Psychokinesis Sublist, bold=false]{
+    >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}}
+    \include{Tables/psychokinesis.tex}
+\end{DndTable}
+
+\DndSetThemeColor[DmgCoral]
+\subsection{Psi Knight}
 \begin{dndlongtable}[
     >{\raggedright\arraybackslash}p{0.22\linewidth} c p{0.55\linewidth}]
     \input{Tables/psi_knight.tex}
 \end{dndlongtable}
 
-\section{Discipline Sublists}
-
-
-\clearpage\section{Power Descriptions}
+\DndSetThemeColor[PhbLightGreen]
+\section{Power Descriptions}
+\label{sec:power_descriptions}
 \input{powers.tex}
 
 \chapter{Classes}
 \label{chap:classes}
 
 \section{Psion}
-
+\DndSetThemeColor[DmgLavender]
 In the audience chamber of the Duke of Baradstone,
 a half-elf pries into the pathways of Duke's mind---their
 thoughts, feelings, desires revealed to her
@@ -543,17 +664,26 @@ experimenting with their mind through trial and error?
 You can make a psion quickly by following these suggestions.
 First, Intelligence should be your highest ability score,
 followed by Constitution.
-Second, choose the following three 1st-level psion powers:.
+Second, choose the following three 1st-level psion powers:
+\power{blow up object with mind},
+\power{mind thrust}
+and \power{precognition}.
+If you have access to a 1st level power on your discipline
+sublist (see \secref{subs:psion_discipline}),
+choose that over one of the powers given above.
 
-% \DndQuote%
-%   {`Sometimes, what you need and what you}
-%   {want turn out to be the same thing: An uplifting quote.'}
-%   {The Adventurer}
-
-  
+\begin{DndSidebar}[float=htbp]{Multiclassing with the Psion}
+    \tocside{Multiclassing with the Psion}
+    In order to multiclass into the psion class,
+    a character must have a minimum Intelligence score of 13
+    (in addition to the usual score requirement for their base class).
+    When you multiclass into the psion class,
+    you gain proficiency with
+    light armour, quarterstaffs and daggers.
+\end{DndSidebar}
 
 \begin{figure*}[t]
-    \begin{ornamentedtabular}{c c l c c c c}[title={The Psion}]
+    \begin{ornamentedtabular}{c c p{4.3cm} c c c c}[title={The Psion}]
         \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
         1st  & +2 & Powers, Discipline        & 2   & 2  & 3  & 1 \\
         2nd  & +2 & Microsleep (one use)      & 5   & 2  & 5  & 1 \\
@@ -663,6 +793,7 @@ The total number of mental bandwidth slots you have
 is shown in the class table.
 
 \subsubsection{Discipline}
+\label{subs:psion_discipline}
 At 1st level,
 you must decide upon a discipline.
 Your discipline grants you a specific sublist of powers
@@ -1083,7 +1214,8 @@ Once you do so,
 you can't do so again until you finish a short or long rest.
 
 \clearpage\section{Psi Knight}
-
+\label{sec:psi_knight}
+\DndSetThemeColor[DmgCoral]
 With a thought alone, the silver-armoured half-orc effortlessly
 shunts aside the first gnoll before plunging his longsword
 into the abdomen of the next.
@@ -1143,15 +1275,26 @@ You can make a psi knight quickly by following these suggestions.
 First, Strength or Dexterity should be your highest ability score,
 followed by Wisdom then Constitution.
 Second, choose the soldier background.
-Third, pick the \power{x} power from the
-psi knight class power list.
+Third, pick the \power{boots of the demon king} power
+from the psi knight class power list.
 
-\label{sec:psi_knight}
+\begin{DndSidebar}[float=htbp]{Multiclassing with the Psi Knight}
+    \tocside{Multiclassing with the Psi Knight}
+    In order to multiclass into the psi knight class,
+    a character must have a minimum Strength or Dexterity score of 13
+    and a minimum Wisdom score of 13
+    (in addition to the usual score requirement for their base class).
+    When you multiclass into the psi knight class,
+    you gain proficiency with
+    light armour, medium armour, shields, simple weapons
+    and martial weapons.
+\end{DndSidebar}
+
 \begin{figure*}[t]
-    \begin{ornamentedtabular}{c c l c c c c}[title={The Psi Knight}]
+    \begin{ornamentedtabular}{c c p{4.3cm} c c c c}[title={The Psi Knight}]
         \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
-        1st  & +2 & Powers, Fighting Style    & 0   & 1  & 1  & 1 \\
-        2nd  & +2 & Prana Bindu Initiate      & 1   & 1  & 2  & 1 \\
+        1st  & +2 & Powers, Fighting Style    & 1   & 1  & 1  & 1 \\
+        2nd  & +2 & Prana Bindu Initiate      & 2   & 1  & 2  & 1 \\
         3rd  & +2 & Psionic Tradition         & 3   & 1  & 3  & 1 \\
         4th  & +2 & Ability Score Improvement & 4   & 2  & 4  & 2 \\
         5th  & +3 & Extra attack              & 6   & 2  & 5  & 2 \\
@@ -1533,6 +1676,65 @@ and you can act on that privileged knowledge
 in any way you desire.
 
 \chapter{Miscellany}
+\section{Psion/Psi Knight Multiclassing}
+There is the possibility that a character chooses to multiclass
+into both the psion and psi knight classes.
+If this is the case,
+the following rules apply with respect to the Powers feature
+of each class.
+\subparagraph{Psi Dice}
+    Psi Dice add cumulatively between the two classes.
+    For example,
+    if a character has 3 levels in psion (10 psi dice)
+    and then multiclass into psi knight,
+    they would gain 0 psi dice,
+    since at first level the psi knight starts at 0 psi dice.
+    If they took a further level in psi knight,
+    they would gain 1 psi dice,
+    and so on.
+\subparagraph{Mental Bandwidth}
+    Your mental bandwidth is the highest mental bandwidth you
+    have across both classes.
+\subparagraph{Powers Known}
+    The same logic as for psi dice applies for
+    determining the number of powers you know.
+\subparagraph{Psionic Threshold}
+    The same logic as for mental bandwidth applies for
+    determining your psionic threshold.
+
+\section{Feats}
+This section adds the following feats on top of the already
+existing ones.
+
+\DndFeatHeader{Psionics Initiate}[
+    Prerequisite: Wisdom 13 (psi knight); Intelligence 13 (psion)]
+    Choose either the psi knight or psion class.
+    You learn two 1st-level powers from the powers list
+    of that class assuming you meet the prerequisites
+    for the nominated class given above.
+    Each power counts as a (1/day) innate talent for you.
+
+    Your psionics ability for these powers depends on the class
+    you choose:
+    Wisdom for psi knight; Intelligence for psion.
+
+\DndFeatHeader{Voice Resistance}[
+    Prerequisite: None]
+    You have trained extensively and rigorously in the ways
+    of resisting the dominating effects of the Voice.
+    You gain advantage on all saving throws against
+    Voice powers.
+    You also know whenever a Voice power is manifested,
+    even if the manifester has the \emph{Subtle Voice} ability.
+
+\DndFeatHeader{Psionic Litany}[
+    Prerequisite: The ability to manifest at least one power
+]
+You have committed a psionic litany to memory, granting you respite
+and focus in fear-inducing and hostile conditions.
+You gain advantage on Constitution saving throws that you make
+to maintain concentration on a power when you take damage.
+
 \section{Psionic Golems}
 \label{sec:psionic_golem}
 The statblocks for the psionic golems described in
