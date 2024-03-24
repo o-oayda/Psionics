@@ -122,3 +122,5 @@ Psionic Golem, 1, Metacreativity, p-M, 1, 1, Create a psionic golem that you con
 "Psionic Golem, Repair", 2, Metacreativity, p-M, 2, 3, Repair damage to a psionic golem
 Aversion, 2, Voice, p-V, 2, 3, Plant an object of aversion in the mind of a creature
 Crisis of Breath, 3, Voice, p-V, 4, 5, Disrupt a creature's breathing
+Leap, 2, Prana Bindu, pk, 2, 3, Gain fly speed on your turn
+"Detect Thoughts, Psionic", 2, Voice, p-V, 2, 3, Read creature's surface level thoughts or probe deeper into their psyche
