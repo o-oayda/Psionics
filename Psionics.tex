@@ -50,8 +50,8 @@ It holds that each individual has a latent psionic talent,
 which, for many,
 is never awakened.
 But those who do awaken that which lies dormant
-are granted incredible new vistas of awareness---and
-the promise of great power.
+are granted incredible new, potentially terrifying vistas of awareness,
+---and the promise of great power.
 
 This supplement expounds the rules around psionics:
 a broad term referring to the ability of the mind to manifest
@@ -99,9 +99,12 @@ must be resolved by the DM,
 given that this is a new, stand-alone system.
 Questions of interpretation surrounding the interaction
 between the base game and psionics are similarly resolved.
+Although it was stated that this supplement does not
+overwrite the base game,
+some degree of conflict is inevitable.
 Priority is given to what is written in this supplement
 as opposed to what is written in the base game
-where conflict arises.
+where this occurs.
 Questions of interpretation related to the base game
 are resolved as normal.
 
@@ -109,7 +112,7 @@ are resolved as normal.
 \label{chap:using_psionics}
 \DndDropCapLine{T}{his chapter explains the nature of}
 psionics, as well as the key rules behind
-manifesting and maintaining psionic powers.
+producing and maintaining psionic powers.
 In \secref{sec:what_are_psionics},
 a brief introduction to psionics is given
 and their role in their game.
@@ -120,7 +123,7 @@ Lastly,
 in \secref{sec:power_attributes},
 the terminology used in power descriptions is explained.
 The reader should familiarise themselves with each of these in turn
-before they diving into
+before diving into
 the list of powers in \secref{chap:list_of_powers}.
 
 \section{What are Psionics?}
@@ -131,7 +134,7 @@ Whereas spellcasters manipulate the magical essence
 innate to the cosmological order,
 users of psionics rely on their mind's power alone.
 For many creatures,
-manifesting any psionic power,
+using any psionic power,
 let alone mastering a psionic discipline,
 takes years, even decades of rigorous mental training.
 That being said,
@@ -162,9 +165,12 @@ later in this chapter.
 A second type of psionic ability is an innate talent.
 Innate talents are generally possessed by NPCs or
 monsters which have some psionic ability.
+They are also accessible if a character's race
+has some degree of psionic heritage.
 Innate talents are produced on a per day basis;
-that is, a creature can manifest a certain innate talent
+that is, a creature can use a certain innate talent
 a number of times per day.
+These are written as `\textit{x}/day innate talent'.
 Innate talents can be used as a convenience,
 representing an NPCs psionic ability but
 foregoing the need to keep track of mental bandwidth,
@@ -174,7 +180,7 @@ psionic thresholds and psi dice.
     \tocside{Interaction with Magic}
     Since psionics and magic are disparate entities,
     how do they interact together?
-    A creature that manifests a psionic power is not
+    A creature that uses a psionic power is not
     casting a spell,
     and therefore any ability which negates the effects
     of magic cannot negate the power.
@@ -189,11 +195,15 @@ psionic thresholds and psi dice.
 
 \section{Manifesting Powers}
 \label{sec:manifesting_powers}
+When a creature wills the effects of a psionic power
+to come into existence,
+they are said to be \define{manifesting} that power.
+In this context,
+they are referred to as the \define{manifester}.
 In order to manifest a psionic power,
 the \define{power level} must be equal to or below
 the manifesting character's \define{psionic threshold}.
-The psionic threshold is determined by the number of levels
-a character has in classes with psionics.
+The psionic threshold is determined by the character's class.
 If the power satisfies this test,
 it can be manifested if they have sufficient \define{psi dice}
 to expend.
@@ -205,6 +215,8 @@ Each of these concepts are explained below.
 \subsection{Psionic Threshold}
 The psionic threshold represents the strongest powers
 that a psionics user can learn and manifest.
+Powers have levels from 1 to 9 in the same way that spells do;
+the higher the level, the more powerful the effects.
 The psionic threshold is determined by a character's class
 and level,
 as shown in the class tables of \secref{chap:classes}.
@@ -227,7 +239,7 @@ a character can endure while using psionics,
 and is determined by the character's psionic class and level,
 see \secref{chap:classes}.
 Mental bandwidth is divided into slots,
-and each power takes up a different number of slots.
+and all powers take up a different number of slots.
 
 When a character manifests a power,
 they note their total mental bandwidth
@@ -244,6 +256,9 @@ greater than the effective mental bandwidth,
 the character must make a Constitution saving throw with
 DC equal to 10 plus twice the number of slots
 in excess of their effective bandwidth.
+Note that it does not matter if the power to be manifested
+does not require concentration---the power's mental bandwidth cost
+still needs to be considered.
 
 For example,
 suppose Kadoth is a 10th level psion
@@ -251,14 +266,15 @@ and therefore has a maximum mental bandwidth of 6.
 They are already concentrating on \power{adapt body},
 which takes up 4 mental bandwidth slots,
 so their effective mental bandwidth is 2.
-They then attempt to manifest the mind slam power,
+They then attempt to manifest the \power{time warp} power,
 which takes up 3 slots.
 Since this puts them in excess of their effective bandwidth by 1,
 they make a DC 12 Constitution saving throw ($10 + 2 \times 1)$.
 
 \subsubsection{Becoming Strained}
 If a character fails this Constitution saving throw,
-the power fails to manifest.
+the power fails to manifest
+and the psi dice cost is still incurred.
 In addition, the manifester gains the \textbf{strained} condition.
 The severity of the condition depends on the number of slots
 that were in excess of the available bandwidth when the attempt
@@ -281,7 +297,7 @@ as well as the malus for being in excess by 2.
         Slots in Excess & Cumulative Maluses \\
         1  & AC bonus from Dexterity reduced to 0 \\
         2  & Gain level of exhaustion \\
-        3  & MB reduced by 1 \\
+        3  & Can no longer take reactions or bonus actions \\
         4  & MB reduced by 1 \\
         5+ & Gain level of exhaustion
     \end{DndTable}
@@ -307,6 +323,8 @@ another to remove the malus from the second row,
 and a final one to remove the malus from the first row.
 In this latter case, the strained condition
 is removed altogether. 
+The character cannot remove one malus
+and roll to gain hit points with the same hit die.
 
 \subsection{Psi Dice}
 \label{sub:psi_dice}
@@ -321,14 +339,15 @@ of the power, the power fails (but no dice are expended).
 The total base psi dice cost of a power is determined by the its level.
 The cost is equal to one less than double the power's level.
 This is shown in the table below.
-For example, a 1st level power incurs a cost of 1 psi die,
-whereas a 5-th level power incurs a cost of 9 psi dice.
+For example, a 1st level power incurs a cost of {\lvlone} psi die,
+whereas a 5-th level power incurs a cost of {\lvlfive} psi dice.
 \begin{table*}[htbp]%
     \begin{DndTable}[width=\textwidth,
                      header=Psi Dice Cost by Level]{
                      X X X X X X X X X X}
          Level         & 1 & 2 & 3 & 4 & 5 & 6  & 7  & 8  & 9 \\
-        \textbf{Cost}  & 1 & 3 & 5 & 7 & 9 & 11 & 13 & 15 & 17
+        \textbf{Cost}  & \lvlone & \lvltwo & \lvlthree & \lvlfour & \lvlfive
+                       & \lvlsix & \lvlseven & \lvleight & \lvlnine
     \end{DndTable}
 \end{table*}
 
@@ -368,6 +387,21 @@ stop concentrating on any power.
 However, a manifester will automatically stop concentrating on a power
 if they become incapacitated or if they die.
 
+\begin{DndSidebar}[float=htbp]{Concentrating on Powers/Spells}
+    \tocside{Concentrating on Powers/Spells}If a character
+    can both cast spells and manifest powers,
+    they may not simultaneously concentrate on a spell
+    and any number of powers.
+    Additionally, some spells, such as \spell{sleet storm},
+    can specifically disrupt a spellcaster's concentration.
+    A spell or effect which calls for a Constitution saving throw
+    if a creature is concentrating on a spell
+    also applies if a creature is concentrating on a power.
+    The save DC is identical in either case,
+    and the effects for losing concentration on powers
+    are described above.
+\end{DndSidebar}
+
 \section{Power Attributes}
 \label{sec:power_attributes}
 In \secref{chap:list_of_powers},
@@ -390,8 +424,8 @@ an undulating cloth blowing in a swift breeze,
 with the hills and valleys of its surface representing
 future possibilities. 
 
-However, in more recent times,
-the discipline of prescience has incorporated additional tenets,
+However,
+the discipline of prescience incorporates additional tenets,
 and its adherents are also characterised by an uncanny ability to
 understand the past and know things not normally known to
 the untrained mind.
@@ -406,16 +440,17 @@ The discipline also allows one to alter their internal equilibrium
 and metabolism at will,
 granting the body the ability to heal and adapt to hostile environments.
 
-The discipline of Prana Bindu is especially favoured by Psi Knights,
+The discipline of Prana Bindu is especially favoured by psi knights,
 powerful warriors who fuse martial and mental prowess.
-See \secref{sec:psi_knight} for details on the Psi Knight class.
+See \secref{sec:psi_knight} for details on the psi knight class.
 
 \subsubsection{Voice}
 The Voice is a dangerous but supremely powerful tool
 used to dominate the minds and wills of others.
 Adherents hone their speech in such a way that,
 only by subtle changes in pitch, volume and speed,
-their Voice can control the behaviour of others.
+their Voice can control the behaviour of others,
+compelling them to act against their own will.
 
 In addition, adherents to the discipline can manifest their Voice
 in the minds of others, allowing them to telepathically
@@ -471,6 +506,16 @@ There are three types of ranges: self, touch and a range
 specified in feet.
 Powers with a range of self will always target the manifester.
 
+Much like spells,
+once a power is manifested,
+its effects are't limited by range.
+For example,
+if a manifester is concentrating on a power,
+and the target moves out of line of effect or out of
+the range of the original power,
+the power does not end and concentration is maintained.
+\textit{Exception:} some powers explicitly state otherwise.
+
 \subsubsection{Targets}
 All powers have a target or targets.
 A power's target is typically mentioned in the power description.
@@ -492,7 +537,7 @@ are not bound by the line of effect requirement.
 
 \subsection{Cost}
 The \define{cost} specifies the mental bandwidth and psi die
-that must be expended to manifest the power.
+that must be allocated and expended respectively to manifest the power.
 For example,
 `MB 1, PD 1'
 means that the power takes up 1 slot of mental bandwidth
@@ -545,7 +590,7 @@ incurred from the level of the power itself
 The cost required to augment a power will be specified
 in the power's description.
 For example, the description might mention
-`For every two additional psi psi dice you spend\dots'
+`For every two additional psi dice you spend\dots'
 In this case, the cost to augment the power is 2 psi dice.
 Each time the power is augmented,
 its level increases by 1.
@@ -576,8 +621,8 @@ creatures to act in certain ways.
 Whenever such a power makes reference to the manifester
 using their Voice,
 the power's manifestation is distinctly audible.
-It can be heard 2d6 times 10 feet away with normal
-levels of background noise,
+It can be heard 2d6 times 10 feet (roll when the power is manifested)
+away with normal levels of background noise,
 half as far away in loud conditions,
 and twice as far away in quiet conditions.
 
@@ -612,7 +657,6 @@ available to psions who have dedicated themselves to a
 particular discipline at 1st level.
 Lastly,
 \secref{sec:power_descriptions} sets out the powers in full.
-
 
 \section{Class Lists}
 \label{sec:class_lists}
@@ -789,26 +833,26 @@ choose that over one of the powers given above.
 \begin{figure*}[t]
     \begin{ornamentedtabular}{c c p{4.3cm} c c c c}[title={The Psion}]
         \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
-        1st  & +2 & Powers, Discipline        & 2   & 2  & 3  & 1 \\
-        2nd  & +2 & Microsleep (one use)      & 5   & 2  & 5  & 1 \\
-        3rd  & +2 & ---                       & 10  & 3  & 7  & 2 \\
-        4th  & +2 & Ability Score Improvement & 13  & 3  & 9  & 2 \\
-        5th  & +3 & ---                       & 23  & 4  & 11 & 3 \\
-        6th  & +3 & Discipline Tenet          & 28  & 4  & 13 & 3 \\
-        7th  & +3 & Mind Palace               & 35  & 4  & 15 & 4 \\
-        8th  & +3 & Ability Score Improvement & 42  & 5  & 17 & 4 \\
-        9th  & +4 & ---                       & 58  & 5  & 19 & 5 \\
-        10th & +4 & Discipline Tenet          & 67  & 6  & 21 & 5 \\
-        11th & +4 & Microsleep (two uses)     & 78  & 6  & 22 & 6 \\
-        12th & +4 & Ability Score Improvement & 78  & 6  & 24 & 6 \\
-        13th & +5 & ---                       & 91  & 7  & 25 & 7 \\
-        14th & +5 & Discipline Tenet          & 91  & 7  & 27 & 7 \\
-        15h  & +5 & ---                       & 106 & 7  & 28 & 8 \\
-        16th & +5 & Ability Score Improvement & 106 & 8  & 30 & 9 \\
-        17th & +6 & ---                       & 123 & 8  & 31 & 9 \\
-        18th & +6 & ---                       & 132 & 8  & 33 & 9 \\
-        19th & +6 & Ability Score Improvement & 143 & 9  & 34 & 9 \\
-        20th & +6 & Ascendance                & 156 & 10 & 36 & 9 \\
+        1st  & +2 & Powers, Discipline        & 1   & 2  & 3  & 1 \\
+        2nd  & +2 & Microsleep (one use)      & 2   & 2  & 5  & 1 \\
+        3rd  & +2 & ---                       & 4  & 3  & 7  & 2 \\
+        4th  & +2 & Ability Score Improvement & 6  & 3  & 9  & 2 \\
+        5th  & +3 & ---                       & 9  & 4  & 11 & 3 \\
+        6th  & +3 & Discipline Tenet          & 12  & 4  & 13 & 3 \\
+        7th  & +3 & Mind Palace               & 15  & 4  & 15 & 4 \\
+        8th  & +3 & Ability Score Improvement & 18  & 5  & 17 & 4 \\
+        9th  & +4 & ---                       & 21  & 5  & 19 & 5 \\
+        10th & +4 & Discipline Tenet          & 25  & 6  & 21 & 5 \\
+        11th & +4 & Microsleep (two uses)     & 28  & 6  & 22 & 6 \\
+        12th & +4 & Ability Score Improvement & 32  & 6  & 24 & 6 \\
+        13th & +5 & ---                       & 36  & 7  & 25 & 7 \\
+        14th & +5 & Discipline Tenet          & 40  & 7  & 27 & 7 \\
+        15h  & +5 & ---                       & 44 & 7  & 28 & 8 \\
+        16th & +5 & Ability Score Improvement & 48 & 8  & 30 & 9 \\
+        17th & +6 & ---                       & 52 & 8  & 31 & 9 \\
+        18th & +6 & ---                       & 57 & 8  & 33 & 9 \\
+        19th & +6 & Ability Score Improvement & 61 & 9  & 34 & 9 \\
+        20th & +6 & Ascendance                & 66 & 10 & 36 & 9 \\
     \end{ornamentedtabular}
 \end{figure*}
 
@@ -1403,22 +1447,22 @@ from the psi knight class power list.
         2nd  & +2 & Prana Bindu Initiate      & 2   & 1  & 2  & 1 \\
         3rd  & +2 & Psionic Tradition         & 3   & 1  & 3  & 1 \\
         4th  & +2 & Ability Score Improvement & 4   & 2  & 4  & 2 \\
-        5th  & +3 & Extra attack              & 6   & 2  & 5  & 2 \\
-        6th  & +3 & Psionic Tradition feature & 9   & 2  & 6  & 2 \\
-        7th  & +3 & Iron Will                 & 12  & 3  & 7  & 3 \\
-        8th  & +3 & Ability Score Improvement & 15  & 3  & 8  & 3 \\
-        9th  & +4 & ---                       & 18  & 3  & 9  & 3 \\
-        10th & +4 & Psionic Tradition feature & 21  & 3  & 10 & 4 \\
-        11th & +4 & Calmness of Self          & 25  & 4  & 11 & 4 \\
-        12th & +4 & Ability Score Improvement & 29  & 4  & 12 & 4 \\
-        13th & +5 & ---                       & 33  & 4  & 13 & 5 \\
-        14th & +5 & ---                       & 37  & 4  & 14 & 5 \\
-        15th & +5 & Psionic Tradition feature & 42  & 4  & 15 & 5 \\
-        16th & +5 & Ability Score Improvement & 47  & 5  & 16 & 6 \\
-        17th & +6 & ---                       & 52  & 5  & 17 & 6 \\
-        18th & +6 & Psionic Tradition feature & 58  & 5  & 18 & 6 \\
-        19th & +6 & Ability Score Improvement & 64  & 5  & 19 & 6 \\
-        20th & +6 & Psionic Reserve           & 70  & 5  & 20 & 6 \\
+        5th  & +3 & Extra attack              & 5   & 2  & 5  & 2 \\
+        6th  & +3 & Psionic Tradition feature & 7   & 2  & 6  & 2 \\
+        7th  & +3 & Iron Will                 & 8  & 3  & 7  & 3 \\
+        8th  & +3 & Ability Score Improvement & 9  & 3  & 8  & 3 \\
+        9th  & +4 & ---                       & 11  & 3  & 9  & 3 \\
+        10th & +4 & Psionic Tradition feature & 12  & 3  & 10 & 4 \\
+        11th & +4 & Calmness of Self          & 13  & 4  & 11 & 4 \\
+        12th & +4 & Ability Score Improvement & 15  & 4  & 12 & 4 \\
+        13th & +5 & ---                       & 16  & 4  & 13 & 5 \\
+        14th & +5 & ---                       & 18  & 4  & 14 & 5 \\
+        15th & +5 & Psionic Tradition feature & 19  & 4  & 15 & 5 \\
+        16th & +5 & Ability Score Improvement & 21  & 5  & 16 & 6 \\
+        17th & +6 & ---                       & 22  & 5  & 17 & 6 \\
+        18th & +6 & Psionic Tradition feature & 24  & 5  & 18 & 6 \\
+        19th & +6 & Ability Score Improvement & 25  & 5  & 19 & 6 \\
+        20th & +6 & Psionic Reserve           & 27  & 5  & 20 & 6 \\
     \end{ornamentedtabular}
 \end{figure*}
 
@@ -1525,8 +1569,8 @@ The number of powers that you can manifest
 is limited by the number of psi dice that
 you have available.
 This is the principal limit on the output of a psion.
-For example, a 9-th level psi knight with 18 psi dice
-can manifest a power costing 1 psi dice 18 times.
+For example, a 9-th level psi knight with {\pklvlnine} psi dice
+can manifest a power costing 1 psi dice {\pklvlnine} times.
 
 The number of available psi dice per level
 is shown in the psion class table.
