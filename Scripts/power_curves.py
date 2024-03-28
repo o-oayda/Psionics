@@ -18,7 +18,7 @@ for key, val in pd_dict.items():
                         # linestyle='dashed') for i in val]
 
 alpha_pk = 1.1
-alpha_p = 1.4
+alpha_p = 1.55
 pk_new = [int(i) for i in levels ** alpha_pk]
 p_new = [int(i) for i in levels ** alpha_p]
 plt.plot(levels, pk_new, label='psi_knight_new')
