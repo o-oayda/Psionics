@@ -9,14 +9,6 @@
 \mainmatter%
 
 \chapter{Introduction}
-% TODO
-% - finish powers
-% - add spells interacting with psionics
-% - add psionics interacting with spells
-% - psionic feats
-% - innate talents for certain races e.g. Gith
-
-
 \epigraph{\itshape
   Abruptly, as though he had found a necessary key,
   Paul's mind climbed another notch in awareness.
@@ -276,54 +268,79 @@ If a character fails this Constitution saving throw,
 the power fails to manifest
 and the psi dice cost is still incurred.
 In addition, the manifester gains the \textbf{strained} condition.
-The severity of the condition depends on the number of slots
-that were in excess of the available bandwidth when the attempt
+
+The severity and nature of the strained condition depends on the number of slots
+that were in excess of the effective bandwidth when the attempt
 to manifest the power was made.
-This is shown in the table below.
+Each slot that was in excess counts as one level of strain.
+The manifester then assigns each level of accrued strain
+to \define{mind strain} or \define{body strain},
+which are shown in the tables below.
+The effects are cumulative,
+such that a manifester with a body strain level of 3
+incurs the effect from the 1st, 2nd and 3rd rows of the
+body strain table.
+Body strain and mind strain are also simultaneous;
+if a manifester has any levels of mind strain and body strain,
+they incur the penalties of each.
+Lastly,
+if a manifester already has any level of mind or body strain
+after failing the Constitution saving throw,
+the newly-acquired levels of strain are added to the current levels.
+
 In Kadoth's example,
-they were only in excess by 1,
-and therefore would only incur the malus shown in the
-first row of the table.
-Note that the maluses are cumulative.
-For example,
-with two slots in excess,
-a character incurs the malus from being in excess by 1
-as well as the malus for being in excess by 2.
+they were only in excess by 1.
+They therefore assign themselves one level of strain,
+and may choose either mind strain or body strain.
+If they choose body strain and already have 1 level of body strain,
+they would reach level 2 of body strain.
+
 
 \begin{table}[htbp]%
     \begin{DndTable}[width=\columnwidth,
-                     header=Strained Condition]{
-                     X X}
-        Slots in Excess & Cumulative Maluses \\
+                     header=Body Strain]{
+                     c X}
+        Level & Effect \\
         1  & AC bonus from Dexterity reduced to 0 \\
-        2  & Gain level of exhaustion \\
-        3  & Can no longer take reactions or bonus actions \\
-        4  & MB reduced by 1 \\
-        5+ & Gain level of exhaustion
+        2  & Speed halved \\
+        3  & Disadvantage on physical checks and saving throws \\
+        4  & Hit point maximum halved \\
+        5 & Death
+    \end{DndTable}
+\end{table}
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Mind Strain]{
+                     c X}
+        Level & Effect \\
+        1  & Can no longer take reactions \\
+        2  & Can no longer take bonus actions \\
+        3  & Disadvantage on mental checks and saving throws \\
+        4  & MB halved (round down) \\
+        5  & Death
     \end{DndTable}
 \end{table}
 
 \subsubsection{Recovering from Strain}
 A character loses the strained condition,
-including all of the accumulated maluses,
+including all of the accumulated levels of mind or body strain,
 when they finish a long rest.
 
 In addition, during a short rest,
 a character may spend hit dice to remove
-cumulative levels of strain on a 1 to 1 basis.
+cumulative levels of mind or body strain on a 1 to 1 basis.
 For example,
 if a character was three slots in excess of their
 effective mental bandwidth when they attempted
 to manifest a power,
-and as a result they have accrued the first three
-rows of maluses in the table above,
-they can spend one hit die to remove the malus
-from the third row,
-another to remove the malus from the second row,
-and a final one to remove the malus from the first row.
-In this latter case, the strained condition
-is removed altogether. 
-The character cannot remove one malus
+and as a result they have accrued three levels of body strain,
+they can spend one hit die to remove the third level,
+another to remove the second level,
+and a final one to remove the first level.
+If the manifester no longer has any levels of mind or body strain
+after this, the strained condition is removed altogether. 
+A character cannot remove one level of strain
 and roll to gain hit points with the same hit die.
 
 \subsection{Psi Dice}
@@ -978,6 +995,21 @@ from either the psion class power list
 or your chosen discipline sublist.
 You cannot choose powers from discipline sublists
 other than that of the discipline you have nominated.
+When you gain a psion level,
+you can, subject to the same restrictions,
+learn additional powers on top of the ones you already know.
+The total numbers of powers you know cannot
+exceed your powers known value,
+as shown in the class table.
+
+The powers you have selected in this fashion have been committed
+to memory, and you need not prepare a selection of them each long rest.
+Also,
+whenever you take a long rest,
+you may substitute any number of powers you already know
+for ones you do not know
+on the psion class list or your discipline sublist.
+The power that has been replaced counts as no longer being known.
 
 \subparagraph{Psionic Threshold}
 You cannot learn nor manifest powers with a level
@@ -1215,7 +1247,7 @@ The statblocks by golem level are given in \secref{sec:psionic_golem}.
 \begin{table}[htbp]%
     \begin{DndTable}[width=\columnwidth,
                      header=Psionic Golem Abilities (Menu A)]{
-                     X X}
+                     l X}
         Name                & Benefit   \\
         Resilient           & The golem gains an extra 10 hit points \\
         Sturdy              & The golem gains a +2 bonus to its AC \\
@@ -1255,7 +1287,7 @@ The abilities on Menu B cost 2 MP.
 \begin{table}[htbp]%
     \begin{DndTable}[width=\columnwidth,
                      header=Psionic Golem Abilities (Menu B)]{
-                     X X}
+                     l X}
         Name                & Benefit   \\
         Energy Touch        & The golem deals an extra 1d4 points of
                                 fire, cold, electricity or thunder damage when it
@@ -1283,7 +1315,7 @@ The abilities on Menu C cost 4 MP.
 \begin{table}[htbp]%
     \begin{DndTable}[width=\columnwidth,
                      header=Psionic Golem Abilities (Menu C)]{
-                     X X}
+                     l X}
         Name                & Benefit   \\
         WTF is Truesight!?  & The golem gains truesight out to 60 feet \\
         Supreme Resilience  & The golem gains an extra 30 hit points \\
@@ -1624,6 +1656,20 @@ is shown in the class table.
 At 1st level,
 you choose one psion power of your choice
 from the psi knight class power list.
+When you gain a psi knight level,
+you can learn additional powers from the class list
+on top of the ones you already know.
+The total numbers of powers you know cannot
+exceed your powers known value,
+as shown in the class table.
+
+The powers you have selected in this fashion have been committed
+to memory, and you need not prepare a selection of them each long rest.
+Also,
+whenever you take a long rest,
+you may substitute any number of powers you already know
+for ones you do not know on the psi knight class list.
+The power that has been replaced counts as no longer being known.
 
 \subparagraph{Psionic Threshold}
 You cannot learn nor manifest powers with a level

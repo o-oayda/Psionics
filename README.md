@@ -3,6 +3,8 @@ This repository houses the psionics system, in which two classes are offered: th
 
 ## Roadmap
 - [x] Initial release
+- [ ] Additional PD based on Wisdom modifier
+- [ ] Add spells interacting with psionics
 - [ ] Hyperlinks/index for navigating powers
 - [ ] Fix formatting in psion discipline sublists
 - [ ] Additional high level powers
