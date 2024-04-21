@@ -255,10 +255,10 @@ still needs to be considered.
 For example,
 suppose Kadoth is a 10th level psion
 and therefore has a maximum mental bandwidth of 6.
-They are already concentrating on \power{adapt body},
+They are already concentrating on \nameref{pwr:adapt_body},
 which takes up 4 mental bandwidth slots,
 so their effective mental bandwidth is 2.
-They then attempt to manifest the \power{time warp} power,
+They then attempt to manifest the \nameref{pwr:time_warp} power,
 which takes up 3 slots.
 Since this puts them in excess of their effective bandwidth by 1,
 they make a DC 12 Constitution saving throw ($10 + 2 \times 1)$.
@@ -350,6 +350,8 @@ a character must expend a number of psi dice
 equal to the number stated in the power's description.
 The number of psi dice a character has is determined
 by their class and level, see \secref{chap:classes}.
+A character also gains additional psi dice per level
+based on their psionics ability modifier (see below).
 If a character has less psi dice than the total psi dice cost
 of the power, the power fails (but no dice are expended).
 
@@ -751,7 +753,7 @@ Lastly,
 \DndSetThemeColor[PhbLightGreen]
 \section{Power Descriptions}
 \label{sec:power_descriptions}
-\input{powers.tex}
+\input{powers_final.tex}
 
 \chapter{Classes}
 \label{chap:classes}
@@ -848,9 +850,9 @@ You can make a psion quickly by following these suggestions.
 First, Intelligence should be your highest ability score,
 followed by Constitution.
 Second, choose the following three 1st-level psion powers:
-\power{blow up object with mind},
-\power{mind thrust}
-and \power{precognition}.
+\nameref{pwr:blow_up_object_with_mind},
+\nameref{pwr:mind_thrust}
+and \nameref{pwr:precognition}.
 If you have access to a 1st level power on your discipline
 sublist (see \secref{subs:psion_discipline}),
 choose that over one of the powers given above.
@@ -1233,13 +1235,13 @@ Subtle Voice also applies for this power.
 \subsubsection{Create Golem}
 \label{subs:menu_a}
 Starting at 6th level,
-you learn the \power{psionic golem} power,
+you learn the \nameref{pwr:psionic_golem} power,
 which allows you to manifest a psionic golem
 from any raw material.
 You are mentally linked to the psionic golem,
 and they answer to your bidding as described in the power.
 The statistics of the golem depends on the level
-at which \power{psionic golem} is cast.
+at which \nameref{pwr:psionic_golem} is cast.
 For example,
 casting the power at 3rd-level creates a 3rd-level psionic golem.
 The statblocks by golem level are given in \secref{sec:psionic_golem}.
@@ -1306,7 +1308,7 @@ The abilities on Menu B cost 2 MP.
 \subsubsection{Heart of Ascension}
 \label{subs:menu_c}
 Starting at 14th level,
-any golem you manifest with \power{psionic golem}
+any golem you manifest with \nameref{pwr:psionic_golem}
 becomes Ascendant.
 You gain access to psionic golem abilities on Menu C,
 as shown in the table below.
@@ -1323,7 +1325,7 @@ The abilities on Menu C cost 4 MP.
                                 is reduced by 5 \\ 
         Shield!             & The golem gains a +5 bonus to its AC \\
         Active Camouflage   & The golem becomes naturally invisible \\
-        Energy Bolt         & The golem can manifest the \power{energy bolt} power
+        Energy Bolt         & The golem can manifest the \nameref{pwr:energy_bolt} power
                                 as an action once per round; the energy type is
                                 chosen when the golem is initially manifested
     \end{DndTable}
@@ -1367,7 +1369,7 @@ You must then create a new wormhole.
 Starting at 14th level,
 you can effortlessly warp space and time locally to
 move yourself across the battlefield.
-The \power{psionic step} power costs no psi dice
+The \nameref{pwr:psionic_step} power costs no psi dice
 and occupies no mental bandwidth slots
 whenever you manifest it.
 The power still costs 4 psi dice to augment,
@@ -1494,7 +1496,7 @@ You can make a psi knight quickly by following these suggestions.
 First, Strength or Dexterity should be your highest ability score,
 followed by Wisdom then Constitution.
 Second, choose the soldier background.
-Third, pick the \power{boots of the demon king} power
+Third, pick the \nameref{pwr:boots_of_the_demon_king} power
 from the psi knight class power list.
 
 \begin{DndSidebar}[float=htbp]{Multiclassing with the Psi Knight}
@@ -2016,11 +2018,11 @@ of creatures in the base game.
 \subparagraph{Githyanki Psionics}
     Your psionic heritage grants you a limited selection of
     psionic powers as innate talents.    
-    You know the \power{psi hand} power (3/day innate talent).
+    You know the \nameref{pwr:psi_hand} power (3/day innate talent).
     Starting at 3rd level,
-    you can manifest the \power{leap} power (1/day innate talent).
+    you can manifest the \nameref{pwr:leap} power (1/day innate talent).
     Starting at 5th level,
-    you can manifest the \power{psionic step} power (1/day innate talent).
+    you can manifest the \nameref{pwr:psionic_step} power (1/day innate talent).
     Intelligence or Wisdom is your psionics ability for these powers
     (choose when you select this race).
     If you select the psion or psi knight class,
@@ -2036,13 +2038,13 @@ of creatures in the base game.
 \subparagraph{Githzerai Psionics}
     Your psionic heritage grants you a limited selection of
     psionic powers as innate talents.    
-    You know the \power{psi hand} power (3/day innate talent).
+    You know the \nameref{pwr:psi_hand} power (3/day innate talent).
     Starting at 3rd level,
-    you know the \power{sacrificial shell} power or the
-    \power{psionic detect thoughts} power.
+    you know the \nameref{pwr:sacrificial_shell} power or the
+    \nameref{pwr:detect_thoughts_psionic} power.
     Each count as a 1/day innate talent.
     Starting at 5th level,
-    you know the \power{leap} power (1/day innate talent).
+    you know the \nameref{pwr:leap} power (1/day innate talent).
 
     Intelligence or Wisdom is your psionics ability for these powers
     (choose when you select this race).

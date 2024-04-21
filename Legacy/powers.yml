@@ -1,0 +1,965 @@
+- Class: ppk
+  Discipline: Prana Bindu
+  Level: '5'
+  MB: '4'
+  PD: '9'
+  Short Description: Adapt your body to dangerous environments
+  Name: Adapt Body
+  Range: Self
+  Manifesting Time: 1 action
+  Duration: Concentration, up to 1 hour
+  Long Description: Your body automatically adapts to hostile environments.
+    You can adapt to underwater, extremely hot, extremely cold,
+    or airless environments, allowing you to survive
+    as if you were a creature native to that environment.
+    You can breathe and move (though penalties to movement and attacks,
+    if any for a particular environment, remain),
+    and you take no damage simply from being in that environment.
+    You need not specify what environment you are adapting to
+    when you manifest this power;
+    simply activate it,
+    and your body will instantly adapt to any hostile environment
+    as needed throughout the duration.
+
+    You can somewhat adapt to extreme environmental features such as acid,
+    lava, fire, and lightning.
+    Any environmental feature that normally directly deals
+    1 or more dice of damage per round
+    deals you only half the usual amount of damage.
+
+    In any case,
+    you have advantage on Constitution saving throws to maintain
+    concentration on powers if damage or an otherwise
+    hazardous effect from the environment you are adapting to
+    prompted the save.
+  Augment: None
+- Class: p
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Incept an item of attraction in a creature
+  Name: Attraction
+  Range: 30 feet
+  Manifesting Time: 1 action
+  Duration: Concentration, up to 1 hour
+  Long Description: Your Voice plants a compelling attraction
+    in the mind of a creature
+    that you can see and you.
+    The attraction can be toward a particular person or an object.
+
+    The target makes a Wisdom saving throw.
+    If the target fails, they will take reasonable steps to meet,
+    get close to, attend, or find the object of its implanted attraction.
+    Otherwise, the power has no effect.
+
+    For the purpose of this power, `reasonable' means that, while attracted,
+    the target doesn't suffer from blind obsession.
+    They will act on this attraction only when not engaged in combat.
+    The target won't perform obviously suicidal actions.
+    They can still recognize danger but will not flee
+    unless the threat is immediate.
+
+    If you make the target feel an attraction to yourself,
+    you can't command them indiscriminately,
+    although they will be willing to listen to you (even if they disagree).
+    Accordingly, this power grants you advantage on any social skill checks
+    you make involving the target.
+  Augment: For every 2 additional psi dice you spend,
+    this power's save DC increases by 1
+    and the bonus on social skill checks increases by 1.
+- Class: p
+  Discipline: Voice
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Grant a creature psi dice
+  Name: Bestow Power
+- Class: ppk
+  Discipline: Prana Bindu
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Reduce incoming damage
+  Name: Biofeedback
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Gain bite attack
+  Name: Bite of the Wolf
+- Class: ppk
+  Discipline: Psychokinesis
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Blow up object, damaging those nearby
+  Name: Blow Up Object With Mind
+- Class: ppk
+  Discipline: Prana Bindu
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Walk on otherwise untraversable surfaces
+  Name: Body Equilibrium
+- Class: pk
+  Discipline: Metacreativity
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Create ammunition
+  Name: Bolt
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Kick target with lightning, can knock prone or send target flying
+  Name: Boots of the Demon King
+- Class: ppk
+  Discipline: Prana Bindu
+  Level: '6'
+  MB: '5'
+  PD: '11'
+  Short Description: Powerful breath weapon dealing acid damage
+  Name: Breath of Numinex
+- Class: pk-S
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Gain speed boost as free action
+  Name: Burst
+- Class: pk-PB
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Blend in with environment, bonus to stealth
+  Name: Chameleon
+- Class: p
+  Discipline: Voice
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Erase yourself from target's mind
+  Name: Cloud Mind
+- Class: p
+  Discipline: Voice
+  Level: '6'
+  MB: '6'
+  PD: '11'
+  Short Description: Erase yourself from many targets' mind
+  Name: Cloud Mind, Mass
+- Class: ppk
+  Discipline: Metacreativity
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Become lightly obscured in membrane
+  Name: Concealing Membrane
+- Class: ppk
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Conceal motives of target
+  Name: Conceal Thoughts
+- Class: p
+  Discipline: Voice
+  Level: '4'
+  MB: '3'
+  PD: '7'
+  Short Description: Target behaves uncontrollaby
+  Name: Confusion, Psionic
+- Class: p
+  Discipline: Psychokinesis
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Mould existing sound as you desire
+  Name: Control Sound
+- Class: p
+  Discipline: Voice
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Communicate with create that is anywhere
+  Name: Correspond
+- Class: p
+  Discipline: Metacreativity
+  Level: '5'
+  MB: '4'
+  PD: '9'
+  Short Description: Create object up to certain size
+  Name: Create Object With Mind
+- Class: p
+  Discipline: Metacreativity
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Create unique sound
+  Name: Create Sound
+- Class: pk
+  Discipline: Metacreativity
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Create any weapon from mundane matter
+  Name: Create Weapon With Mind
+- Class: ppk
+  Discipline: Spacefolding
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Reduce fall damage
+  Name: Cushion Fall
+- Class: ppk
+  Discipline: Prescience
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Reduce susceptibility to traps
+  Name: Danger Sense
+- Class: p
+  Discipline: Spacefolding
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Reduce target's speed
+  Name: Deceleration
+- Class: p
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Make target repeat previous actions
+  Name: Déjà Vu
+- Class: ppk
+  Discipline: Voice
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Detect any nearby creatures that are hostile to you
+  Name: Detect Hostile Intent
+- Class: ppk
+  Discipline: Prescience
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Detect hearby presence of psionic powers and effects
+  Name: Detect Psionics
+- Class: p
+  Discipline: Prescience
+  Level: '4'
+  MB: '3'
+  PD: '7'
+  Short Description: Learn who is attempting to scry you
+  Name: Detect Prying Eyes
+- Class: p
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Enemies suffer malus to attacks and saving throws
+  Name: Demoralise
+- Class: p
+  Discipline: Metacreativity
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Fire diamond bullet at target
+  Name: Diamond Bullet
+- Class: pk-S
+  Discipline: Spacefolding
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Swap positions between yourself and ally or two allies
+  Name: Dimension Swap
+- Class: p
+  Discipline: Psychokinesis
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Cancel psionic powers and effects
+  Name: Dispel Psionics
+- Class: ppk
+  Discipline: Spacefolding
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Deal force damage to target on touch
+  Name: Dissipating Touch
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Deal acid damage to creature you hit with attack
+  Name: Dissolving Touch
+- Class: ppk
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Give target disadvantage to perception and insight
+  Name: Distract
+- Class: p
+  Discipline: Spacefolding
+  Level: '7'
+  MB: '6'
+  PD: '13'
+  Short Description: Change destination of target's teleportation
+  Name: Divert Teleport
+- Class: p
+  Discipline: Voice
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Drain targets psi dice
+  Name: Drain Power
+- Class: p
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Detect target's emotions to gain bonus to social checks
+  Name: Empath's Understanding
+- Class: ppk
+  Discipline: Voice
+  Level: '4'
+  MB: '3'
+  PD: '7'
+  Short Description: Target takes damage when they hit you
+  Name: Empathic Feedback
+- Class: p
+  Discipline: Psychokinesis
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Strike targets with line of energy of chosen type
+  Name: Energy Bolt
+- Class: p
+  Discipline: Psychokinesis
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Push target back with wave of energy of chosen type
+  Name: Energy Push
+- Class: p
+  Discipline: Psychokinesis
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Produce burst of energy of chosen type centred on yourself
+  Name: Energy Burst
+- Class: p
+  Discipline: Psychokinesis
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Strike target with ray of energy of chosen type
+  Name: Energy Ray
+- Class: p
+  Discipline: Prana Bindu
+  Level: '7'
+  MB: '5'
+  PD: '13'
+  Short Description: Convert energy damage into jets of plasma
+  Name: Energy Transformation
+- Class: p
+  Discipline: Psychokinesis
+  Level: '7'
+  MB: '6'
+  PD: '13'
+  Short Description: Destructive cone of chosen energy type
+  Name: Energy Wave
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Weapon is coated with corrosive bile
+  Name: Envenom
+- Class: ppk
+  Discipline: Spacefolding
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Float in water and gain swim speed
+  Name: Float
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Critical on 19 and 20 with unarmed attacks
+  Name: Fist of Fury
+- Class: ppk
+  Discipline: Psychokinesis
+  Level: '1'
+  MB: '2'
+  PD: '1'
+  Short Description: Gain bonus to AC
+  Name: Force Screen
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Gain bonus to grapple checks
+  Name: Grip of Iron
+- Class: ppk
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Deal 1d8 with unarmed strikes
+  Name: Hammer
+- Class: p
+  Discipline: Prescience
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Identify psionic powers and items
+  Name: Identify Psionics
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Make yourself harder to move involuntarily
+  Name: Immovability
+- Class: ppk
+  Discipline: Psychokinesis
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Gain bonus to AC
+  Name: Inertial Armour
+- Class: pk
+  Discipline: Psychokinesis
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Become immune to bludgeoning damage
+  Name: Inertial Dampener
+- Class: p
+  Discipline: Voice
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Target has disadvantage on attack rolls and skill checks
+  Name: Inflict Pain
+- Class: ppk
+  Discipline: Spacefolding
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Levitate yourself
+  Name: Levitate
+- Class: p
+  Discipline: Psychokinesis
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Heat matter
+  Name: Matter Agitation
+- Class: ppk
+  Discipline: Psychokinesis
+  Level: '4'
+  MB: '3'
+  PD: '7'
+  Short Description: Shove, disarm or grapple creature telekinetically
+  Name: Manipulate Creature With Mind
+- Class: p
+  Discipline: Psychokinesis
+  Level: '3'
+  MB: '2'
+  PD: '5'
+  Short Description: Move object telekinetically
+  Name: Manipulate Object With Mind
+- Class: ppk
+  Discipline: Voice
+  Level: '6'
+  MB: '6'
+  PD: '11'
+  Short Description: Conceal targets mind from external forces
+  Name: Mind Blank, Psionic
+- Class: p
+  Discipline: Psychokinesis
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Shelter allies from psionic powers
+  Name: Mind Palace, Power
+- Class: p
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Deal psychic damage to target
+  Name: Mind Thrust
+- Class: p
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Send telepathic message to creature
+  Name: Missive
+- Class: p
+  Discipline: Prescience
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Learn where you are
+  Name: Orient Self
+- Class: p
+  Discipline: Spacefolding
+  Level: '5'
+  MB: '4'
+  PD: '9'
+  Short Description: Move targets across the planes
+  Name: Plane Shift, Psionic
+- Class: p
+  Discipline: Voice
+  Level: '6'
+  MB: '5'
+  PD: '11'
+  Short Description: Take control of another manifester's active power
+  Name: Power Pirate
+- Class: ppk
+  Discipline: Prescience
+  Level: '1'
+  MB: '2'
+  PD: '1'
+  Short Description: Gain slight bonus to defence or offence
+  Name: Precognition
+- Class: ppk
+  Discipline: Spacefolding
+  Level: '4'
+  MB: '3'
+  PD: '7'
+  Short Description: Teleport over a moderate distance
+  Name: Psi Door
+- Class: p
+  Discipline: Psychokinesis
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Move small objects at short distance
+  Name: Psi Hand
+- Class: ppk
+  Discipline: Prescience
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Gain darkvision
+  Name: Psi Vision
+- Class: p
+  Discipline: Metacreativity
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Create large protective barrier
+  Name: Psi Wall
+- Class: ppk
+  Discipline: Spacefolding
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Teleport a short distance
+  Name: Psionic Step
+- Class: p
+  Discipline: Voice
+  Level: '5'
+  MB: '4'
+  PD: '9'
+  Short Description: Deal large amount of psychic damage to creature
+  Name: Psychic Crush
+- Class: pk-PB
+  Discipline: Prana Bindu
+  Level: '5'
+  MB: '5'
+  PD: '9'
+  Short Description: Alter ability scores temporarily
+  Name: Psychofeedback
+- Class: ppk
+  Discipline: Prana Bindu
+  Level: '3'
+  MB: '2'
+  PD: '5'
+  Short Description: Heal a small number of hit points
+  Name: Rapid Healing
+- Class: p
+  Discipline: Prescience
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Repeat check to recall details
+  Name: Recall
+- Class: p
+  Discipline: Prescience
+  Level: '6'
+  MB: '5'
+  PD: '11'
+  Short Description: Deal damage to those who attempt to scry you
+  Name: Remote Viewing Trap
+- Class: p
+  Discipline: Spacefolding
+  Level: '6'
+  MB: '5'
+  PD: '11'
+  Short Description: Teleport item into your hand
+  Name: Retrieve
+- Class: p
+  Discipline: Prescience
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Deal psychic damage to target
+  Name: Reveal Agony
+- Class: ppk
+  Discipline: Metacreativity
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Gain immediate protection from energy
+  Name: Sacrificial Shell
+- Class: p
+  Discipline: Voice
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Perceive through one of the target's senses
+  Name: Sense Link
+- Class: p
+  Discipline: Voice
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Forcibly perceive through one of the target's senses
+  Name: Sense Link, Forced
+- Class: p
+  Discipline: Voice
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Half of the damage you suffer is carried to the target
+  Name: Share Pain
+- Class: p
+  Discipline: Voice
+  Level: '5'
+  MB: '5'
+  PD: '9'
+  Short Description: Cancels the effects of mind blank
+  Name: Shatter Mind Blank
+- Class: ppk
+  Discipline: Psychokinesis
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Pummel target behind cover with force damage
+  Name: Shockwave
+- Class: ppk
+  Discipline: Spacefolding
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Skate along ground and move faster
+  Name: Skate
+- Class: pk
+  Discipline: Prescience
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: See through visual deceptions
+  Name: Steadfast Perception
+- Class: ppk
+  Discipline: Voice
+  Level: '1'
+  MB: '2'
+  PD: '1'
+  Short Description: Gain bonus to wisdom save as reaction
+  Name: Stillness of Mind
+- Class: p
+  Discipline: Voice
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Daze creatures surrounding you
+  Name: Stunning Wave
+- Class: pk
+  Discipline: Prana Bindu
+  Level: '6'
+  MB: '5'
+  PD: '11'
+  Short Description: Slow metabolism and appear dead
+  Name: Suspend Life
+- Class: p
+  Discipline: Metacreativity
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Slice targets with cone of crystals which always hit
+  Name: Swarm of Crystals
+- Class: pk-PB
+  Discipline: Prana Bindu
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Double movement speed
+  Name: Swiftsteed
+- Class: pk-PB
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Gain bonus to AC
+  Name: Thicken Skin
+- Class: p
+  Discipline: Prescience
+  Level: '5'
+  MB: '5'
+  PD: '9'
+  Short Description: Gain truesight out to 120 feet
+  Name: Third Eye
+- Class: p
+  Discipline: Spacefolding
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Move target briefly forward in time
+  Name: Time Warp
+- Class: p
+  Discipline: Prana Bindu
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Perceive surroundings by touch
+  Name: Touchsight
+- Class: p
+  Discipline: Voice
+  Level: '5'
+  MB: '4'
+  PD: '9'
+  Short Description: Grant you and allies significant resistance to Voice powers
+  Name: Tower of Power
+- Class: p
+  Discipline: Prescience
+  Level: '4'
+  MB: '3'
+  PD: '7'
+  Short Description: Learn location targets teleported to
+  Name: Trace Teleport
+- Class: pk
+  Discipline: Voice
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Wave of force slams targets, pushing them back and knocking them
+    over
+  Name: Unrelenting Voice
+- Class: ppk
+  Discipline: Prana Bindu
+  Level: '1'
+  MB: '1'
+  PD: '1'
+  Short Description: Gain temporary hit points
+  Name: Vigour
+- Class: pk
+  Discipline: Spacefolding
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Walk on walls and ceilings
+  Name: Wall Walker
+- Class: pk
+  Discipline: Psychokinesis
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Imbue weapon with energy damage
+  Name: Weapon of Energy
+- Class: pk-V
+  Discipline: Voice
+  Level: '3'
+  MB: '3'
+  PD: '5'
+  Short Description: Return creature that has just died to life
+  Name: Resuscitation
+- Class: p-PB
+  Discipline: Prana Bindu
+  Level: '5'
+  MB: '5'
+  PD: '9'
+  Short Description: Restore lost extremity to creature you touch\
+  Name: Restore Extremity
+- Class: p-PB
+  Discipline: Prana Bindu
+  Level: '8'
+  MB: '8'
+  PD: '15'
+  Short Description: Fuse yourself and another creature into one entity temporarily
+  Name: Fusion
+- Class: p-PK
+  Discipline: Psychokinesis
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Alter the wind and potentially knock creatures prone
+  Name: Control Air
+- Class: p-PK
+  Discipline: Psychokinesis
+  Level: '2'
+  MB: '2'
+  PD: '3'
+  Short Description: Hurl missiles of energy at up to 5 distinct targets
+  Name: Energy Missile
+- Class: p-PK
+  Discipline: Psychokinesis
+  Level: '4'
+  MB: '4'
+  PD: '7'
+  Short Description: Rudimentarily take control a creature
+  Name: Control Body
+- Class: ' p-PK'
+  Discipline: ' Psychokinesis'
+  Level: ' 9'
+  MB: ' 9'
+  PD: ' 17'
+  Short Description: ' Create an immense vortex of air dealing great damage and knocking
+    enemies about'
+  Name: Tornado
+- Class: ' p-S'
+  Discipline: ' Spacefolding'
+  Level: ' 4'
+  MB: ' 4'
+  PD: ' 7'
+  Short Description: ' Return a creature to their native plane of existence or a demiplane'
+  Name: Banishment, Psionic
+- Class: ' p-P'
+  Discipline: ' Prescience'
+  Level: ' 1'
+  MB: ' 1'
+  PD: ' 1'
+  Short Description: ' Inflict psychic damage and the poisoned condition with your
+    touch'
+  Name: Destiny Dissonance
+- Class: ' p-P'
+  Discipline: ' Prescience'
+  Level: ' 2'
+  MB: ' 2'
+  PD: ' 3'
+  Short Description: ' See distant locations known or proximate to you'
+  Name: Distant Gaze
+- Class: ' p-P'
+  Discipline: ' Prescience'
+  Level: ' 2'
+  MB: ' 2'
+  PD: ' 3'
+  Short Description: ' Learn details about an object''s former owners'
+  Name: Object Reading
+- Class: ' p-P'
+  Discipline: ' Prescience'
+  Level: ' 2'
+  MB: ' 2'
+  PD: ' 3'
+  Short Description: ' Glean information from the psychic impressions left in a locale'
+  Name: Psychic Archaeology
+- Class: ' p-P'
+  Discipline: ' Prescience'
+  Level: ' 5'
+  MB: ' 5'
+  PD: ' 9'
+  Short Description: ' Remotely perceive a target through an ethereal form of yourself'
+  Name: Scrying, Psionic
+- Class: ' p-P'
+  Discipline: ' Prescience'
+  Level: ' 5'
+  MB: ' 5'
+  PD: ' 9'
+  Short Description: ' Gain the ability to reroll once per round'
+  Name: Possible Futures
+- Class: ' p-P'
+  Discipline: ' Prescience'
+  Level: ' 9'
+  MB: ' 9'
+  PD: ' 17'
+  Short Description: ' Learn uncannily accurate details of a creature you have seen
+    before'
+  Name: Sublime Insight
+- Class: ' p-M'
+  Discipline: ' Metacreativity'
+  Level: ' 1'
+  MB: ' 1'
+  PD: ' 1'
+  Short Description: ' Create a psionic golem that you control'
+  Name: Psionic Golem
+- Class: ' p-M'
+  Discipline: ' Metacreativity'
+  Level: ' 2'
+  MB: ' 2'
+  PD: ' 3'
+  Short Description: ' Repair damage to a psionic golem'
+  Name: Psionic Golem, Repair
+- Class: ' p-V'
+  Discipline: ' Voice'
+  Level: ' 2'
+  MB: ' 2'
+  PD: ' 3'
+  Short Description: ' Plant an object of aversion in the mind of a creature'
+  Name: Aversion
+- Class: ' p-V'
+  Discipline: ' Voice'
+  Level: ' 3'
+  MB: ' 4'
+  PD: ' 5'
+  Short Description: ' Disrupt a creature''s breathing'
+  Name: Crisis of Breath
+- Class: ' pk'
+  Discipline: ' Prana Bindu'
+  Level: ' 2'
+  MB: ' 2'
+  PD: ' 3'
+  Short Description: ' Gain fly speed on your turn'
+  Name: Leap
+- Class: ' p-V'
+  Discipline: ' Voice'
+  Level: ' 2'
+  MB: ' 2'
+  PD: ' 3'
+  Short Description: ' Read creature''s surface level thoughts or probe deeper into
+    their psyche'
+  Name: Detect Thoughts, Psionic
+- Class: ' p-V'
+  Discipline: ' Voice'
+  Level: ' 4'
+  MB: ' 4'
+  PD: ' 7'
+  Short Description: ' Compel a creature to pursue a course of action'
+  Name: Compel
+- Class: ' pk'
+  Discipline: ' Prana Bindu'
+  Level: ' 1'
+  MB: ' 1'
+  PD: ' 1'
+  Short Description: ' Grapple a creature and deal fire damage over time'
+  Name: Flame Choke
+- Class: ' p-S'
+  Discipline: ' Spacefolding'
+  Level: ' 7'
+  MB: ' 7'
+  PD: ' 13'
+  Short Description: ' Teleport to a destination on the same plane of existence as
+    you'
+  Name: Teleport, Psionic
+- Class: ' p'
+  Discipline: ' Spacefolding'
+  Level: ' 9'
+  MB: ' 9'
+  PD: ' 17'
+  Short Description: ' Become impervious to all effects'
+  Name: Timeless Body

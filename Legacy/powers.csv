@@ -24,7 +24,7 @@ Create Weapon With Mind,1,Metacreativity,pk,1,1,Create any weapon from mundane m
 Cushion Fall,1,Spacefolding,ppk,1,1,Reduce fall damage
 Danger Sense,3,Prescience,ppk,3,5,Reduce susceptibility to traps
 Deceleration,1,Spacefolding,p,1,1,Reduce target's speed
-Déjà vu,1,Voice,p,1,1,Make target repeat previous actions
+Déjà Vu,1,Voice,p,1,1,Make target repeat previous actions
 Detect Hostile Intent,2,Voice,ppk,2,3,Detect any nearby creatures that are hostile to you
 Detect Psionics,1,Prescience,ppk,1,1,Detect hearby presence of psionic powers and effects
 Detect Prying Eyes,4,Prescience,p,3,7,Learn who is attempting to scry you
@@ -94,7 +94,7 @@ Suspend Life,6,Prana Bindu,pk,5,11,Slow metabolism and appear dead
 Swarm of Crystals,2,Metacreativity,p,2,3,Slice targets with cone of crystals which always hit
 Swiftsteed,2,Prana Bindu,pk-PB,2,3,Double movement speed
 Thicken Skin,1,Prana Bindu,pk-PB,1,1,Gain bonus to AC
-Third Eye,5,Prescience,p,5,9,Gaiun truesight out to 120 feet
+Third Eye,5,Prescience,p,5,9,Gain truesight out to 120 feet
 Time Warp,3,Spacefolding,p,3,5,Move target briefly forward in time
 Touchsight,3,Prana Bindu,p,3,5,Perceive surroundings by touch
 Tower of Power,5,Voice,p,4,9,Grant you and allies significant resistance to Voice powers
@@ -124,3 +124,7 @@ Aversion, 2, Voice, p-V, 2, 3, Plant an object of aversion in the mind of a crea
 Crisis of Breath, 3, Voice, p-V, 4, 5, Disrupt a creature's breathing
 Leap, 2, Prana Bindu, pk, 2, 3, Gain fly speed on your turn
 "Detect Thoughts, Psionic", 2, Voice, p-V, 2, 3, Read creature's surface level thoughts or probe deeper into their psyche
+Compel, 4, Voice, p-V, 4, 7, Compel a creature to pursue a course of action
+Flame Choke, 1, Prana Bindu, pk, 1, 1, Grapple a creature and deal fire damage over time
+"Teleport, Psionic", 7, Spacefolding, p-S, 7, 13, Teleport to a destination on the same plane of existence as you
+Timeless Body, 9, Spacefolding, p, 9, 17, Become impervious to all effects
