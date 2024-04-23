@@ -12,6 +12,7 @@ yml_powers = dict(sorted(yml_powers.items()))
 strings = []
 print('Reading {} powers.'.format(len(yml_powers)))
 for key, val in yml_powers.items():
+    print(val)
     ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n//10%10!=1)*(n%10<4)*n%10::4])
     hdr = ordinal(int(val['Level'])) + '-level ' + val['Discipline']
     cost = 'MB {}, PD {}'.format(val['MB'], val['PD'])
@@ -29,6 +30,7 @@ for key, val in yml_powers.items():
     {{{val['Range']}}}
     {{{cost}}}
     {{{val['Duration']}}}
+    {{{val['Requirements']}}}
 {val['Long Description'][:-1]}
 {augment}'''
     strings.append(long_power_string)

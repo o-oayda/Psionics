@@ -560,6 +560,7 @@ the power does not end and concentration is maintained.
 \textit{Exception:} some powers explicitly state otherwise.
 
 \subsubsection{Targets}
+\label{subs:targets}
 All powers have a target or targets.
 A power's target is typically mentioned in the power description.
 The description will also specify whether or not the target
@@ -656,48 +657,89 @@ Every time you pay the augment cost,
 the power's level is increased by one
 irregardless of the type of augment you choose.
 
-\subsection{Components}
-Unlike spells,
+\subsection{Requirements}
+The power's description will indicate additional \define{requirements}
+that must be satisfied before the power can be manifested,
+somewhat akin to the components in a spell's description.
+However, unlike spells,
 powers generally do not have any components.
 When a power is manifested,
 quite often there are scarcely any hints of its existence,
 save for the actual effect or effects it produces.
-However, there are two key exceptions to this rule.
-These are both described below.
+These powers will state
+`\textbf{Requirements:} None' in their descriptions.
+Otherwise, the requirement(s) will be listed.
+These include the requirement that the manifester can
+see the target (\define{Sight}),
+and that the target has line of effect towards the target
+(\define{Line of Effect}).
+Other requirements are described below,
+and all possible requirements are summarised in the
+table below.
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Power Requirements]{
+                     l X}
+        Requirement & Description \\
+        Sight & The manifester must be able to see the target(s) \\
+        Line of Effect & The manifester must have line of effect
+                            towards the target(s) \\
+        Mundane Matter & The manifester must be touching mundane matter \\
+        Speech & The manifester must be able to speak,
+                    and the target(s) must be able to hear
+                    and understand the manifester
+                    unless otherwise stated \\
+        None & No additional requirements apply for the power
+    \end{DndTable}
+\end{table}
 
 \subsubsection{Voice Powers}
 \label{subs:voice_powers}
 Powers belonging to the Voice discipline sometimes involve
 the manifester altering the frequencies, pitch and
-speed of their natural voice such that it compels
+speed of their natural voice, as well as their choice
+of language, such that it compels
 creatures to act in certain ways.
 Whenever such a power makes reference to the manifester
 using their Voice (e.g. `Your Voice does \textit{x}'),
-the manifester must be able to speak to manifest the power.
-In addition, the power's manifestation is distinctly audible.
-It can be heard 2d6 times 10 feet away
-(roll when the power is manifested)
-with normal levels of background noise,
-half as far away in loud conditions,
-and twice as far away in quiet conditions.
-If the target cannot hear you when you manifest an
-audible Voice power,
-the power fails and the psi dice cost is expended.
+the power is listed with the requirement \define{Speech}.
+This means that
+\begin{itemize}
+    \item The manifester must be able to speak;
+    \item The target(s) must be able to hear the manifester; and,
+    \item The target(s) must be able to understand the manifester
+\end{itemize}
+in order for the power to have any effect.
+If any of the latter two conditions are not met,
+the power simply does not manifest as a valid target
+cannot be specified.
+If the speaking condition is not met,
+the power fails but no psi dice cost is expended.
+\textit{Exception:} some powers with the Speech requirement
+will specify that any of the peripheral conditions listed above
+do not apply.
+
+The manifester's Voice is distinctly audible
+up to the maximum range of the Voice power,
+plus an additional 2d6 times 10 feet
+(roll when the power is manifested).
 
 If the power does not make reference to the manifester
 using their Voice,
 this means that the manifester relies on their
 \define{inner Voice}: the silent projection of their will
 into the mind of another.
-Thus,
-powers reliant on one's inner Voice do not require speech,
-nor do they produce a physical sound.
+No Speech requirement will be listed in the power's description;
+the manifester need not be able to be speak,
+nor need the target(s) to hear and understand them.
+The manifestation of the power also
+does not produce a physical sound.
 
 \subsubsection{Metacreativity Powers}
-All powers of the Metacreativity discipline require
-\define{mundane matter}, which is moulded by the manifester
-as dependent on the power.
-Mundane matter refers to common substances on the
+All powers of the Metacreativity discipline have the
+\define{Mundane Matter} requirement.
+Mundane matter, which is moulded by the manifester,
+refers to common substances on the
 Material Plane,
 like soil, plant matter, rock, metal,
 glass, and so on.
@@ -965,7 +1007,7 @@ they acquire an additional skill proficiency.
 This is shown in the table below.
 \begin{table}[htbp]%
     \begin{DndTable}[width=\columnwidth,
-                     header=Additional Profciency]{
+                     header=Additional Proficiency]{
                      X X}
         Discipline & Proficiency \\
         Prescience & Investigation \\
