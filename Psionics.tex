@@ -662,11 +662,12 @@ The power's description will indicate additional \define{requirements}
 that must be satisfied before the power can be manifested,
 somewhat akin to the components in a spell's description.
 However, unlike spells,
-powers generally do not have any components.
+many powers are not associated with a verbal component.
 When a power is manifested,
 quite often there are scarcely any hints of its existence,
 save for the actual effect or effects it produces.
-These powers will state
+
+Powers which have no additional requirements will state
 `\textbf{Requirements:} None' in their descriptions.
 Otherwise, the requirement(s) will be listed.
 These include the requirement that the manifester can
@@ -714,7 +715,7 @@ If any of the latter two conditions are not met,
 the power simply does not manifest as a valid target
 cannot be specified.
 If the speaking condition is not met,
-the power fails but no psi dice cost is expended.
+the power fails but no psi dice are expended.
 \textit{Exception:} some powers with the Speech requirement
 will specify that any of the peripheral conditions listed above
 do not apply.
@@ -723,17 +724,21 @@ The manifester's Voice is distinctly audible
 up to the maximum range of the Voice power,
 plus an additional 2d6 times 10 feet
 (roll when the power is manifested).
+Additionally, the use of the Voice is immediately obvious;
+a creature that hears the Voice will be able to distinguish
+it from ordinary speech,
+even if they know not of the Voice or
+the nature of the power which has been manifested.
 
-If the power does not make reference to the manifester
-using their Voice,
+If a power does not make reference to the manifester
+using their Voice and thus lacks the Speech requirement,
 this means that the manifester relies on their
 \define{inner Voice}: the silent projection of their will
 into the mind of another.
-No Speech requirement will be listed in the power's description;
-the manifester need not be able to be speak,
-nor need the target(s) to hear and understand them.
-The manifestation of the power also
-does not produce a physical sound.
+The manifester need not be able to be speak,
+nor need the target(s) to hear and understand them
+when manifesting this power.
+The manifestation also does not produce a physical sound.
 
 \subsubsection{Metacreativity Powers}
 All powers of the Metacreativity discipline have the
@@ -863,7 +868,7 @@ into a carefully-placed trap.
 The tiefling crouches imperceptibly behind the garrison,
 recalling her Prana Bindu training regimen to force
 her body to make no sound.
-Then, she focuses on the sword carried by the guardsmen;
+Then, she focuses on the sword carried by the guardsman;
 before he takes his next step,
 the steel burns a brilliant red before exploding in his
 very hand.
@@ -930,8 +935,8 @@ sublist (see \secref{subs:psion_discipline}),
 choose that over one of the powers given above.
 
 \begin{DndSidebar}[float=htbp]{Multiclassing with the Psion}
-    \tocside{Multiclassing with the Psion}
-    In order to multiclass into the psion class,
+    \tocside{Multiclassing with the Psion}In order to
+    multiclass into the psion class,
     a character must have a minimum Intelligence score of 13
     (in addition to the usual score requirement for their base class).
     When you multiclass into the psion class,
@@ -1172,7 +1177,7 @@ your hone your ability to see through time.
 Once during an encounter,
 if a hostile creature takes a turn immediately following yours,
 you may use a free action at the start of your turn
-to ask the DM what the creature will do on their turn,
+to ask the DM once what the creature will do on their turn,
 as conditioned by your explicit choices.
 For example,
 you may ask the DM what the creature will do
@@ -1204,7 +1209,7 @@ The benefits conferred to you end when you finish a long rest.
         Background          & Benefit                                                                   \\
         Warrior             & Gain proficiency in all armours,
                                 martial weapons and Strength (Athletics) \\
-        Battlemage          & You learn three 3rd-level or lower
+        Battlemage          & You learn three 5th-level or lower
                                 evocation spells of your choice
                                 which can be cast without expending a spell slot;
                                 once you cast any of these spells,
@@ -1213,7 +1218,7 @@ The benefits conferred to you end when you finish a long rest.
                                 spells is Intelligence \\
         Commander           & You learn three Uberium faction abilities \\
         Thief               & You gain an extra bonus action \\ 
-        Priest              & You learn three 3rd-level or lower
+        Priest              & You learn three 5th-level or lower
                                 spells from the cleric spell list
                                 of your choice;
                                 these can be cast without expending a spell slot;
@@ -1280,16 +1285,26 @@ you gain telepathy up to 120 feet.
 Once per day,
 you may also send a message up to 10 words long
 to a creature you have seen before and that is
-presently within 10 miles of you.
+presently within 24 miles of you.
+
+Additionally,
+after you have communicated telepathically with a creature
+and that creature is the target of a Voice power with the Speech
+requirement that you manifest,
+the creature no longer needs to be able to understand you.
 
 \subsubsection{Subtle Voice}
 Starting at 10th level,
 your mastery of the Voice allows you to manifest Voice
 powers without arousing suspicion.
-Any Voice power which has an audible component
+Any Voice power with the Speech requirement,
+therefore producing an audible effect
 (see \secref{subs:voice_powers}),
-thus ordinarily alerting creatures that can hear you to your Voice,
 now is indistinguishable from normal speech.
+Namely,
+creatures which would ordinarily be alerted
+to your Voice by distinguishing it from normal speech
+now no longer are.
 \emph{Exception:} Psions who have chosen the Voice discipline
 cannot be affected by Subtle Voice.
 
@@ -1309,10 +1324,10 @@ Subtle Voice also applies for this power.
 Starting at 6th level,
 you learn the \nameref{pwr:psionic_golem} power,
 which allows you to manifest a psionic golem
-from any raw material.
+from mundane matter.
 You are mentally linked to the psionic golem,
 and they answer to your bidding as described in the power.
-The statistics of the golem depends on the level
+The statistics of the golem depend on the level
 at which \nameref{pwr:psionic_golem} is cast.
 For example,
 casting the power at 3rd-level creates a 3rd-level psionic golem.
@@ -1350,6 +1365,7 @@ is above the MP potential of the golem.
 For example,
 a 4th-level golem with an MP potential of 2
 can have two Menu A abilities.
+You may only choose each ability once.
 
 \subsubsection{Improved Psionic Golem}
 \label{subs:menu_b}
@@ -1366,11 +1382,11 @@ The abilities on Menu B cost 2 MP.
         Energy Touch        & The golem deals an extra 1d4 points of
                                 fire, cold, electricity or thunder damage when it
                                 hits with a melee attack \\
-        Extra attack        & Whenever the golem takes the \define{Multiattack} action,
+        Extra Attack        & Whenever the golem takes the \define{Multiattack} action,
                                 it can make one additional slam attack \\
         Auto-reassembly     & The golem heals 5 hit points each round \\ 
-        Heavy Deflection    & The golem gains a +3 bonus to its AC  \\
-        Highly Resilient    & The golem gains an extra 15 hit points \\
+        Heavy Deflection    & The golem gains a +4 bonus to its AC  \\
+        Highly Resilient    & The golem gains an extra 20 hit points \\
         Improved Critical   & The golem lands a critical hit on a roll of either
                                 19 or 20 \\
         Muscular            & The golem gains a +4 bonus to its Strength score \\
@@ -1395,7 +1411,7 @@ The abilities on Menu C cost 4 MP.
         Supreme Resilience  & The golem gains an extra 30 hit points \\
         Metal Carapace      & All incoming damage from separate sources
                                 is reduced by 5 \\ 
-        Shield!             & The golem gains a +5 bonus to its AC \\
+        Shield!             & The golem gains a +6 bonus to its AC \\
         Active Camouflage   & The golem becomes naturally invisible \\
         Energy Bolt         & The golem can manifest the \nameref{pwr:energy_bolt} power
                                 as an action once per round; the energy type is
@@ -1408,7 +1424,7 @@ The abilities on Menu C cost 4 MP.
 Starting at 6th level,
 you become capable of dramatically contracting the space between you
 and another creature with your mind alone. 
-Choose a creature you can see within 60 feet and spend 4 psi dice.
+Choose a creature you can see within 60 feet and spend 3 psi dice.
 That creature is pulled up to 30 feet in your direction as the space
 between you and them is eliminated.
 
@@ -1485,7 +1501,7 @@ longer rolled the maximum value over all dice.
 
 \subsubsection{Signature Power}
 Starting at 14th level,
-one psychokinesis power become so familiar to you that you
+one psychokinesis power becomes so familiar to you that you
 manifest it without straining yourself.
 Choose one 3rd-level psychokinesis power.
 The MB cost for that power is reduced to 0 whenever you manifest it.
@@ -1538,7 +1554,7 @@ with the latent power of their mind to
 achieve victory over their enemies.
 Formidable opponents,
 psi knights are rare and highly accomplished warriors
-who achieve an almost unparalleled balance between mind
+who reach an almost unparalleled balance between mind
 and body.
 Adventuring parties often readily accept a noble psi knight
 by their side,
@@ -1572,8 +1588,8 @@ Third, pick the \nameref{pwr:boots_of_the_demon_king} power
 from the psi knight class power list.
 
 \begin{DndSidebar}[float=htbp]{Multiclassing with the Psi Knight}
-    \tocside{Multiclassing with the Psi Knight}
-    In order to multiclass into the psi knight class,
+    \tocside{Multiclassing with the Psi Knight}In order to
+    multiclass into the psi knight class,
     a character must have a minimum Strength or Dexterity score of 13
     and a minimum Wisdom score of 13
     (in addition to the usual score requirement for their base class).
@@ -1775,7 +1791,13 @@ belonging to the Prana Bindu discipline
 vastly easier.
 Prana Bindu powers require one less mental bandwidth slot
 than mentioned in their description (minimum of 0)
-and cost 1 less psi die (minimum of 1).
+and cost 1 less psi die (minimum of 0).
+If the psi dice cost is reduced to zero in this manner,
+it is called a \define{0PD power}.
+You can only manifest a number of 0PD powers
+equal to your proficiency bonus per long rest.
+Each additional 0PD power you manifest
+beyond this limit costs the usual 1 psi die.
 
 \subsection{Psionic Tradition}
 When you reach 3rd level,
@@ -1829,7 +1851,7 @@ your mind is able to override your body at times
 when the untrained would falter.
 Whenever you are reduced to hit points,
 but not killed outright,
-you can spend 4 psi dice to immediately regain hit points
+you can spend a psi die to immediately regain hit points
 equal to your Wisdom modifier plus the number of levels
 you have in the psi knight class.
 Once you have used this feature,
@@ -1841,7 +1863,7 @@ your unfettered desire to improve mind and body
 has granted you a sense of inner calm.
 You have resistance to psychic damage.
 Moreover, if you start your turn charmed or frightened,
-you can expend a 3 psi dice and end every effect on yourself
+you can expend 3 psi dice and end every effect on yourself
 subjecting you to those conditions.
 In addition, you have advantage on saving throws to resist
 effects from Voice psionic powers.
@@ -1849,7 +1871,7 @@ effects from Voice psionic powers.
 \subsection{Psionic Reserve}
 Starting at 20th level,
 when you roll for initiative and have no psi dice remaining,
-you regain 10 psi dice.
+you regain 8 psi dice.
 
 \subsection{Weirding Way}
 The Weirding Way champions incredible control over one's nerves
@@ -1864,7 +1886,7 @@ almost as if they are teleporting across the battlefield.
 Starting at 3rd level,
 you can choose to learn any Prana Bindu tenet from
 the psion discipline at \secref{sub:prana_bindu_tenets}.
-The level requirement stated there does not apply to you.
+The level requirements stated there do not apply to you.
 
 \subsubsection{Seize the Initiative}
 Starting at 6th level,
@@ -1902,9 +1924,7 @@ if you become restrained or grappled,
 you can use a bonus action on your turn
 to attempt to repeat the save
 or contest respectively which caused that condition.
-You do not have advantage from Slippery Movement
-on either of these rolls,
-but can have advantage from other sources as usual.
+You have advantage on this save.
 
 \subsubsection{Lisan al Gaib}
 Starting at 18th level,
@@ -1930,13 +1950,22 @@ rolls for melee attacks.
 
 \subsubsection{Knowledge is Power}
 Starting at 6th level,
-once per day as an action,
+once per day as a bonus action,
 you choose a hostile creature you can see within
 30 feet of you.
 Your mind links with them,
 and you gain a deep understanding of their
 strengths, weaknesses and peculiarities.
-The DM then hands you the statblock of that creature.
+You may then ask the DM the exact amount of any of the following
+characteristics of the hostile creature:
+\begin{itemize}
+    \item Its full stat array;
+    \item Its AC;
+    \item Its total hit points;
+    \item Its to-hit modifier on one type of attack; or,
+    \item Its damage roll, including modifiers, for one type
+            of attack.
+\end{itemize}
 
 \subsubsection{Order of Battle}
 Starting at 10th level,
@@ -2049,7 +2078,7 @@ of each class.
 This section adds the following feats on top of the already
 existing ones.
 
-\DndFeatHeader{Psionics Initiate}[
+\DndFeatHeader{Psionics Initiate}[%
     Prerequisite: Wisdom 13 (psi knight); Intelligence 13 (psion)]
     Choose either the psi knight or psion class.
     You learn two 1st-level powers from the powers list
@@ -2062,7 +2091,7 @@ existing ones.
     you choose:
     Wisdom for the psi knight class; Intelligence for the psion class.
 
-\DndFeatHeader{Voice Resistance}[
+\DndFeatHeader{Voice Resistance}[%
     Prerequisite: None]
     You have trained extensively and rigorously in the ways
     of resisting the dominating effects of the Voice.
@@ -2071,13 +2100,16 @@ existing ones.
     You also know whenever a Voice power is manifested,
     even if the manifester has the \emph{Subtle Voice} ability.
 
-\DndFeatHeader{Psionic Litany}[
+\DndFeatHeader{Psionic Litany}[%
     Prerequisite: The ability to manifest at least one power
 ]
 You have committed a psionic litany to memory, granting you respite
 and focus in fear-inducing and hostile conditions.
 You gain advantage on Constitution saving throws that you make
-to maintain concentration on powers when you take damage.
+to maintain concentration on powers.
+This applies when you take damage
+or are otherwise subject to a condition which
+threatens your concentration.
 
 \section{Races}
 \label{sec:races}
