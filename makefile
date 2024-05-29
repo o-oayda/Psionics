@@ -1,4 +1,4 @@
-.PHONY: Psionics.pdf all clean scripts copy
+.PHONY: Psionics.pdf all clean scripts copy docs
 
 all: Psionics.pdf
 
@@ -17,3 +17,7 @@ copy:
 scripts:
 				python Scripts/pwrs_to_tex.py
 				python Scripts/create_subclass_tables.py
+
+docs:
+				python Scripts/create_pages.py
+				cd docs && bundle exec jekyll build && bundle exec jekyll serve

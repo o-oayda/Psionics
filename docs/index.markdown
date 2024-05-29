@@ -7,6 +7,10 @@ layout: home
 
 <!-- due to yml structure in powers_final,
     this returns key, val -->
-{% for power in site.data.powers_final %}
+<!-- {% for power in site.data.powers_final %}
 {{ power[1].Name }}
+{% endfor %} -->
+
+{% for power in site.powers %}
+{{ power }}
 {% endfor %}
