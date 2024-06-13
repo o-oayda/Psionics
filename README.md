@@ -6,7 +6,7 @@ This repository houses the psionics system, in which two classes are offered: th
 - [ ] Additional PD based on Wisdom modifier
 - [ ] Add spells interacting with psionics
 - [x] Hyperlinks/index for navigating powers
-- [ ] Fix formatting in psion discipline sublists
+- [x] Fix formatting in psion discipline sublists
 - [ ] Additional high level powers
 
 ## Accessing Psionics

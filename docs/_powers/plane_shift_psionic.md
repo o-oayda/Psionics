@@ -20,7 +20,7 @@ Short Description: Move targets across the planes
 **Requirements:** None
 
 Your mind warps space and time, allowing
-you to move yourself or some other creature to another plane
+you to move yourself or some other willing creature to another plane
 of existence or alternate dimension. If several willing persons
 link hands in a circle, as many as eight can be affected by
 the plane shift at the same time. Unlike the \spell{plane

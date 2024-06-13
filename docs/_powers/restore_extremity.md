@@ -9,7 +9,7 @@ Manifesting Time: 1 action
 Range: Touch
 Duration: Instantaneous
 Requirements: None
-Short Description: Restore lost extremity to creature you touch\\
+Short Description: Restore lost extremity to creature you touch
 ---
 # Restore Extremity
 *5th-level Prana Bindu*\

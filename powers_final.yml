@@ -418,23 +418,59 @@ Conceal Thoughts:
 Confusion, Psionic:
   Name: Confusion, Psionic
   Class: p
-  Level: '4'
+  Level: '3'
   Discipline: Voice
   MB: '3'
-  PD: '7'
+  PD: '5'
   Manifesting Time: 1 action
   Range: 90 feet
   Duration: Concentration, up to 1 minute
   Requirements: Speech, Sight
   Short Description: Target behaves uncontrollably
   Long Description: |
-    As the \spell{confusion} spell, except as
-    noted here. Your Voice targets one creature you can see within
-    range and that can hear and understand you.
+    Your Voice berates and beleaguers the mind of another creature,
+    rendering them dazed and confused.
+    Choose a creature you can see within range that can
+    hear and understand you.
+    That creature must succeed on a Wisdom saving throw or
+    be affected by this power.
+
+    An affected creature cannot take reactions.
+    While the power lasts,
+    at the start of each of that creature's turns
+    you hone your Voice in such a way
+    so as to coarsely influence the actions of the affected creature.
+    Roll a d6. If the result is 1--5,
+    choose freely from the table below
+    to determine the quality of your Voice
+    and the associated effect on the creature for that turn.
+    \begin{table}[htbp]%
+      \begin{DndTable}[width=\columnwidth,
+                       header=Psionic Confusion Effects]{l X}
+        Voice Quality & Effect \\
+        Grating       & The target takes 2d10 psychic damage \\
+        Booming       & The target is deafened \\
+        Discordant    & The target uses all their movement to move
+                        in a random direction (determined by the roll
+                        of a d8) \\
+        Frenetic      & The target makes a single melee attack against
+                        a randomly determined creature in their reach,
+                        if possible \\
+        Pacifying     & The target does nothing
+      \end{DndTable}
+    \end{table}
+    The creature cannot do anything on that turn except for
+    the relevant effect given above.
+    If the result is a 6, the creature is unaffected by your Voice
+    and acts normally (but is still affected by the power).
+    
+    At the end of an affected creature's turns,
+    they may repeat the Wisdom saving throw,
+    ending the power on a success.
   Augment: |
-    For every 2 additional psi dice you spend, this power's
+    For every 3 additional psi dice you spend, this power's
     save DC increases by 1, and the power can affect an additional
-    target. Any additional target canot be more than 15 feet
+    target. Any additional target cannot be more than 10 feet
     from another target of the power.
 Control Sound:
   Name: Control Sound
@@ -1768,7 +1804,7 @@ Plane Shift, Psionic:
   Short Description: Move targets across the planes
   Long Description: |
     Your mind warps space and time, allowing
-    you to move yourself or some other creature to another plane
+    you to move yourself or some other willing creature to another plane
     of existence or alternate dimension. If several willing persons
     link hands in a circle, as many as eight can be affected by
     the plane shift at the same time. Unlike the \spell{plane
@@ -2741,7 +2777,7 @@ Restore Extremity:
   Range: Touch
   Duration: Instantaneous
   Requirements: None
-  Short Description: Restore lost extremity to creature you touch\\
+  Short Description: Restore lost extremity to creature you touch
   Long Description: |
     You restore a severed extremity to a creature
     that has lost a digit, hand, arm, leg, or even its head. This
@@ -2974,13 +3010,36 @@ Banishment, Psionic:
   PD: '7'
   Manifesting Time: 1 action
   Range: 120 feet
-  Duration: Instantaneous
+  Duration: Concentration, up to 1 minute
   Requirements: Sight
   Short Description: 'Return a creature to their native plane
     of existence or a demiplane'
   Long Description: |
-    As the \spell{banishment} spell, except as
-    noted here.
+    You warp space and time,
+    attempting to force a creature to return back to their
+    native plane of existence.
+    The target must succeed on a Charisma saving throw,
+    otherwise they succumb to the effects described below.
+
+    If the target is native to the plane of existence you are on,
+    they are transported to a pocket dimension just large enough
+    to encompass their physical size.
+    The pocket dimension is harmless,
+    and the target is free to take actions as normal.
+    The target remains there until the power ends,
+    in which case they return to the space they previously occupied
+    before being banished or, if that space is occupied,
+    the nearest unoccupied space.
+
+    If the target is not native to the plane of existence you are on,
+    the target is shunted through space and returned to its home plane.
+    The target has a limited degree of control on its homewards journey,
+    and, if they succeed on another Charisma saving throw,
+    may choose the rough location of their arrival.
+    If the power ends before 1 minute has passed,
+    the target returns in the same way as described in the foregoing paragraph.
+    Otherwise,
+    the target does not return.
   Augment: |
     For every 3 additional psi dice you spend, you can
     target one additional creature.
@@ -3414,12 +3473,56 @@ Detect Thoughts, Psionic:
   Manifesting Time: 1 action
   Range: Self
   Duration: Concentration, up to 1 minute
-  Requirements: None
+  Requirements: Sight, see text
   Short Description: 'Read creature''s surface level thoughts
     or probe deeper into their psyche'
   Long Description: |
-    As the \spell{detect thoughts} spell, except
-    as noted here.
+    Your inner Voice peers into the minds of others,
+    gleaning information otherwise concealed to you.
+    When you manifest this power,
+    and as an action on each turn until the power end,
+    you can focus on any one creature you can see within 30 feet of you.
+    If the creature has an Intelligence of 3 or lower,
+    they are unaffected.
+
+    While focusing on a creature,
+    if the creature has an Intelligence of 14 or higher,
+    the sensation of a presence within their mind grows on them.
+    Nonetheless,
+    you learn the surface level thoughts of that creature.
+    `Surface level thoughts' includes what is most
+    immediately on the creature's mind,
+    however does not include information a creature is attempting to conceal
+    unless they are careless or recklessly indifferent
+    towards revealing that information.
+
+    As an action,
+    you can probe deeper into the creature's mind,
+    in which case the creature must make a Wisdom saving throw.
+    If they fail,
+    you gain insight into one of its more inner desires,
+    including something that looms large in its mind.
+    You may then use another action to glean another piece of information
+    from the creature, prompting a further save.
+    If they succeed the original save, the power ends.
+    Regardless,
+    the creature knows that you are probing into its mind
+    and can use an action on its turn to make an Intelligence check
+    contested by a check using your psionics ability modifier.
+    If the creature succeeds on the contest,
+    the power ends.
+
+    You can also use this power to detect the presence of thinking creatures
+    you can't see.
+    When you manifest the power or as your action during the duration,
+    you can search for thoughts within 30 feet of you.
+    The power can penetrate barriers,
+    but 2 feet of rock, 2 inches of any metal other than lead,
+    or a thin sheet of lead blocks you.
+    You can't detect a creature with an Intelligence of 3 or lower.
+    Once you detect the presence of a creature in this way,
+    you can read its thoughts for the rest of the duration as described above,
+    even if you can't see it, but it must still be within range.
   Augment: null
 Compel:
   Name: Compel
@@ -3484,10 +3587,10 @@ Flame Choke:
 Teleport, Psionic:
   Name: Teleport, Psionic
   Class: 'p-S'
-  Level: '7'
+  Level: '6'
   Discipline: 'Spacefolding'
   MB: '7'
-  PD: '13'
+  PD: '11'
   Manifesting Time: 1 action
   Range: 10 feet
   Duration: Instantaneous
@@ -3495,12 +3598,84 @@ Teleport, Psionic:
   Short Description: 'Teleport to a destination on the same plane
     of existence as you'
   Long Description: |
-    As the \spell{teleport} spell,
-    except as noted here.
-    Knowledge of a permanent teleportation circle and
-    its sigil sequence confers no benefit,
-    since your teleportation works by psionic 
-    and not magic means.
+    This power allows you to transport yourself to another location
+    on the same plane of existence as you.
+    You must transport yourself,
+    but may also choose up to four other willing creatures (or one object)
+    that you can see within range.
+    If you target an object, it must be able to fit entirely inside
+    a 10-foot cube, and it can't be held or carried by an unwilling creature.
+    
+    The destination you choose to teleport to must be familiar to you.
+    The degree of your familiarity with the location impacts
+    the likelihood that you end up in that location.
+    The DM rolls a d100 and consults the table below to resolve this.
+    \begin{table}[htbp]%
+      \begin{DndTable}[width=\columnwidth,
+                   header=Psionic Teleportation]{X X X X X}
+        Familiarity & Mishap  & Similar Area & Off Target & On Target \\
+        Very familiar         & 01--05 & 06--13 & 14--24 & 25--100 \\
+        Seen casually         & 01--33 & 34--43 & 44--53 & 54--100 \\
+        Viewed once           & 01--43 & 44--53 & 54--73 & 74--100 \\
+        Description           & 01--43 & 44--53 & 54--73 & 74--100 \\
+        False destination     & 01--50 & 51--100& ---    & ---      
+      \end{DndTable}
+    \end{table}
+    
+    \subparagraph{Familiarity}
+      `Very familiar' is a place you have been very often,
+      a place you have carefully studied,
+      or a place you can see when you cast the spell.
+      `Seen casually' is somewhere you have seen more than once
+      but with which you aren't very familiar.
+      `Viewed once' is a place you have seen once,
+      possibly using magic or psionics.
+      `Description' is a place whose location and appearance you know
+      through someone else's description, perhaps from a map.
+      `False destination' is a place that doesn't exist.
+      Perhaps you tried to scry an enemy's sanctum
+      but instead viewed an illusion,
+      or you are attempting to teleport to a familiar location
+      that no longer exists.
+
+    \subparagraph{On Target}
+      You and your group (or you and the target object)
+      appear where you want to.
+    
+    \subparagraph{Off Target}
+      You and your group (or the target object) appear a random distance away
+      from the destination in a random direction.
+      Your distance off target is 1d10$\times$1d10 percent of the distance
+      that was to be travelled.
+      For example, if you tried to travel 120 miles,
+      landed off target,
+      and rolled a 5 and 3 on the two d10s,
+      then you would be off target by 15 percent, or 18 miles.
+      The DM determines the direction off target randomly
+      by rolling a d8 and designating
+      1 as north,
+      2 as northeast,
+      3 as east,
+      and so on around the points of the compass.
+      If you were teleporting to a coastal city and wound up 18 miles out at sea,
+      you could be in trouble.
+    
+    \subparagraph{Similar Area}
+      You and your group (or the target object) wind up in a different area
+      that's visually or thematically similar to the target area.
+      If you are heading for your home monastery,
+      you might end up in the lodgings of another psionicist
+      or a monk's residence that is visually similar to your monastery.
+      Generally, you appear in the closest similar place,
+      but since the power has no range limit,
+      you could conceivably wind up anywhere on the plane.
+
+    \subparagraph{Mishap}
+      The power's strain on your mind results in a difficult journey.
+      Each teleporting creature (or the target object) takes 3d10 psychic damage,
+      and the DM rerolls on the table to see where you wind up
+      (multiple mishaps can occur, dealing damage each time).
+
   Augment: null
 Timeless Body:
   Name: Timeless Body
