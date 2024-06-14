@@ -18,6 +18,7 @@ clean:
 scripts:
 				python Scripts/pwrs_to_tex.py
 				python Scripts/create_subclass_tables.py
+				python Scripts/items_to_tex.py
 
 docs:
 				python Scripts/create_pages.py
