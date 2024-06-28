@@ -3773,3 +3773,33 @@ Hyperphantasm:
     this power can affect one additional creature.
     The additional creature must be within 15 feet of another creature
     affected by the same manifestation of this power.
+Counterpower:
+  Name: Counterpower
+  Class: 'p'
+  Level: '3'
+  Discipline: 'Prescience'
+  MB: '3'
+  PD: '5'
+  Manifesting Time: |
+    1 reaction, which you take when you see a creature
+    within 60 feet of you manifesting a power
+  Range: 60 feet
+  Duration: Instantaneous
+  Requirements: Sight
+  Short Description: 'Interrupt the manifesting of a power'
+  Long Description: |
+    You briefly peer into a future where another creature
+    has manifested a power. Armed with this uncanny insight,
+    you attempt to interrupt a creature in the process of
+    manifesting that power, preventing that future from actualising.
+    If the creature is manifesting a power
+    of 3rd level or lower, its power fails and has no effect.
+    If it is manifesting a power of 4th level or higher,
+    make an ability check using your psionics ability.
+    The DC equals 10 + the power's level, as usual taking into account
+    whether or not the power you are reacting to has been augmented.
+    On a success, the creature's power fails and has no effect.
+  Augment: |
+    For every 4 psi dice you spend,
+    the base level (3) at which a power is automatically interrupted
+    increases by one.
