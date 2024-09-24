@@ -144,8 +144,8 @@ beings when the reality was moulded to as it is today.
 To do this, they used psionics.
 
 \subsection{Types of Psionic Abilities}
-There are two types of psionic abilities:
-\define{powers} and \define{innate talents}.
+There are three types of psionic abilities:
+\define{powers}, \define{innate talents} and \define{psi-like abilities}.
 
 \subsubsection{Powers}
 Powers are what most psionics users will be
@@ -178,9 +178,27 @@ The rules surrounding manifesting powers
 as innate talents are the same as if
 the power was manifested otherwise, except:
 \begin{itemize}
-    \item There is no mental bandwidth requirement; and,
-    \item There is no psi dice cost.
+    \item There is no mental bandwidth requirement;
+    \item There is no psi dice cost;
+    \item There is no psionic threshold requirement; and,
+    \item An innate talent cannot be augmented unless
+        otherwise specified.
 \end{itemize}
+
+\subsubsection{Psi-like Abilities}
+Lastly, a psi-like ability is a psionic effect produced by an NPC or monster,
+and is generally not accessible to player characters.
+For example, a psi-like ability may be available as a specific
+action in a creature's stat block.
+Psi-like abilities are typically derived from a specific power,
+but have minor alterations, as reflected in the stat block.
+
+Like innate talents,
+psi-like abilities have no mental bandwidth and psionic threshold requirement,
+nor psi dice cost.
+Like all types of psionic abilities,
+psi-like abilities count as psionics for the purposes of, for example,
+psionic resistance or vulnerability.
 
 \begin{DndSidebar}[float=htbp]{Interaction with Magic}
     \tocside{Interaction with Magic}Since
@@ -2041,6 +2059,11 @@ the ability to manifest powers.
 feats into the game.
 \secref{sec:races} tweaks some of the already existing
 races in the game who have significant psionic potential.
+\secref{sec:psionic_traits} gives a list of traits pertaining to psionics
+that may be possessed by creatures.
+\secref{sec:psionic_items} introduces the rules surrounding items with psionic
+properties, with \secref{sec:list_of_psionic_items} detailing
+a handful of the ones that can be found in the world.
 Finally,
 \secref{sec:psionic_golem} gives the stat blocks for the
 psionic golems created by adherents of the
@@ -2160,6 +2183,32 @@ of creatures in the base game.
     so, if you wish,
     you can manifest these powers using psi dice if you have any.
 
+\section{Psionic Traits}
+\label{sec:psionic_traits}
+The following section outlines special traits relating to psionics
+that a creature might possess.
+
+\subsection{Power Resistance}
+\label{sub:power_resistance}
+When a creature with \define{power resistance} is the target of
+or is affected by a psionic power, whether manifested normally or
+as an innate talent, or is the target of or affected by a psi-like ability,
+that creature has a chance of resisting the power or ability's effects.
+This chance is reflected in the value of the power resistance,
+denoted as power resistance ($x$) or PR$x$.
+
+When the conditions for power resistance are met,
+the creature manifesting the power or using the psi-like ability
+must make a d20 check with a DC equal to
+the creature's power resistance value, adding their psionics attack modifier
+to the roll.
+If the check fails, the creature with power resistance
+is not affected by the power or psi-like ability.
+
+A creature with power resistance can choose to voluntarily
+succumb to the effects of a power or psi-like ability, even if
+the check fails.
+
 \section{Psionic Items}
 \label{sec:psionic_items}
 Some items have an affinity for the minds of others.
@@ -2229,6 +2278,7 @@ with the same name and/or powers.
     broken for the duration of the short rest for this process to succeed.
 
 \section{List of Psionic Items}
+\label{sec:list_of_psionic_items}
 \input{Tables/psionic_items.tex}
 
 \section{Psionic Golems}
