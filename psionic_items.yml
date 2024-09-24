@@ -3,10 +3,6 @@
   long_description: |
     While integrated with this armour,
     you gain \textbf{power resistance} $\mathbf{x}$.
-    You therefore cannot be affected by a psionic power
-    unless the manifester succeeds on a manifesting check
-    against a DC of $x$,
-    with modifier equal to their psionic threshold.
 - name: Mindarmour
   subtitle: Psionic Item, MB 0
   long_description: |
@@ -19,8 +15,19 @@
     While integrated with a soulbreaker,
     on a critical hit with a melee weapon attack with the soulbreaker,
     the target must make a Wisdom saving throw.
-    The DC is equal to 8 + psionics attack modifier
+    The DC is equal to 8 + your psionics attack modifier
     (or just 8 + your Wisdom or Intelligence if you have no levels
     in psionic classes).
     If the target fails,
     they are stunned until the end of their next turn.
+- name: Weapon of Mental Static
+  subtitle: Psionic Item, MB 1
+  long_description: |
+    While integrated with a weapon of mental static,
+    a creature hit by the weapon must make an Intelligence saving throw.
+    The DC is equal to 8 + your psionics attack modifier.
+    If the target fails,
+    they have disadvantage on their next saving throw against a psionic power,
+    or a manifester has advantage on their next
+    psionics attack roll against them (but not both).
+    A creature may only be affected in this manner three times per day.
