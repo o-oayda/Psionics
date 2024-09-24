@@ -143,7 +143,7 @@ on a 1 to 1 basis up to their psionic threshold.
 \DndPowerHeader%
     {Biofeedback\label{pwr:biofeedback}}
     {2nd-level Prana Bindu}
-    {1 action}
+    {1 bonus action}
     {Self}
     {MB 2, PD 3}
     {Concentration, up to 1 minute}
@@ -157,7 +157,7 @@ of damage reduced increases by 1.
 \DndPowerHeader%
     {Bite of the Wolf\label{pwr:bite_of_the_wolf}}
     {1st-level Prana Bindu}
-    {1 action}
+    {1 bonus action}
     {Self}
     {MB 1, PD 1}
     {Concentration, up to 1 minute}
@@ -255,14 +255,16 @@ by +1, up to a maximum of three for each.
 \DndPowerHeader%
     {Boots of the Demon King\label{pwr:boots_of_the_demon_king}}
     {1st-level Prana Bindu}
-    {1 action}
+    {1 attack when you take the Attack action}
     {Self (5-foot radius)}
     {MB 1, PD 1}
     {Instantaneous}
     {None}
 Your legs briefly gain incredible strength,
-and your boots crackle with lightning. You make a kick (unarmed
-attack) against an opponent within your melee range. If the
+and your boots crackle with lightning. Whenever you take the Attack
+action, you can manifest this power any time during that action
+to replace one of your attacks with a special unarmed
+kick taken against an opponent within your melee range. If the
 attack hits, the target takes damage from your unarmed strike
 as normal plus 2d4 lightning damage. If the target is above
 half their hit point maximum, they must succeed on a Strength
@@ -1017,10 +1019,10 @@ damage increases by 1d6.
 \DndPowerHeader%
     {Dissolving Touch\label{pwr:dissolving_touch}}
     {2nd-level Prana Bindu}
-    {1 action}
+    {1 bonus action}
     {Touch}
     {MB 2, PD 3}
-    {Instantaneous}
+    {1 minute}
     {None}
 Your touch, claw, or bite is corrosive, and
 sizzling moisture visibly oozes from your natural weapon or
@@ -1205,7 +1207,7 @@ damage floor (base of 5) increases by 1.
     {Self (120-foot line)}
     {MB 3, PD 5}
     {Instantaneous}
-    {None}
+    {Line of Effect}
 Upon manifesting this power, you choose cold,
 lightning, fire, or thunder. You release a powerful stroke
 of energy of the chosen type that emanates from your finger
@@ -1239,7 +1241,7 @@ of damage, this power's save DC increases by 1.
     {Self (30-foot sphere)}
     {MB 3, PD 5}
     {Instantaneous}
-    {None}
+    {Line of Effect}
 Upon manifesting this power, you choose cold,
 lightning, fire, or thunder. You create an explosion of unstable
 energy of the chosen type that radiates over a 30-foot sphere
@@ -1482,7 +1484,7 @@ impervious to physical damage).
 \DndPowerHeader%
     {Fist of Fury\label{pwr:fist_of_fury}}
     {3rd-level Prana Bindu}
-    {1 action}
+    {1 bonus action}
     {Self}
     {MB 3, PD 5}
     {Concentration, up to 10 minutes}
@@ -1495,14 +1497,14 @@ with your fist scores a critical hit on a roll of 18, 19 or
 \DndPowerHeader%
     {Flame Choke\label{pwr:flame_choke}}
     {1st-level Prana Bindu}
-    {1 action}
+    {1 grapple}
     {Self}
     {MB 1, PD 1}
     {Instantaneous}
     {None}
 Your vice-like grip burns those that oppose
-you. As part of the power's manifesting time, take the grapple
-action against a creature within melee range. If the grapple
+you. Whenever you attempt to grapple a creature, you may freely
+manifest this power. If the grapple attempt
 is successful, the target immediately takes 2d6 fire damage.
 On every turn you start while the target is still grappled,
 the target takes an additional 2d6 fire damage. Whenever the
@@ -1525,7 +1527,7 @@ your swim speed by 10 feet if you already have one.
 \DndPowerHeader%
     {Force Screen\label{pwr:force_screen}}
     {1st-level Psychokinesis}
-    {1 action}
+    {1 bonus action}
     {Self}
     {MB 2, PD 1}
     {Concentration, up to 1 minute}
@@ -1739,8 +1741,11 @@ this power as a reaction to being involuntarily moved.
     {MB 1, PD 1}
     {8 hours}
     {None}
-As for the \spell{mage armour} spell, except
-as noted.
+Your mind forms a dampening barrier against physical attacks.
+You touch a willing creature who isn't wearing armour.
+Until the power ends, the target's base AC becomes 13
+plus its Intelligence modifier.
+The power ends early if the target dons armour.
 
 \DndPowerHeader%
     {Inertial Dampener\label{pwr:inertial_dampener}}
@@ -1752,7 +1757,8 @@ as noted.
     {None}
 You create a skin-tight psychokinetic barrier
 around yourself that resists blunt-force blows and explosions.
-You become immune to bludgeoning damage for the power's duration.
+You become immune to all bludgeoning damage for the power's duration,
+including that caused by psionic or magic items.
 
 \DndPowerHeader%
     {Inflict Pain\label{pwr:inflict_pain}}
@@ -2096,7 +2102,7 @@ the power you took control of ends
 \DndPowerHeader%
     {Precognition\label{pwr:precognition}}
     {1st-level Prescience}
-    {1 action}
+    {1 bonus action}
     {Self}
     {MB 2, PD 1}
     {Concentration, up to 1 minute}
@@ -2206,11 +2212,12 @@ This power creates one 1st-level psionic golem
 that attacks your enemies. It appears where you designate
 in range and acts whenever you end your turn (it still technically
 acts on your turn, however). It attacks your opponents to
-the best of its ability. As a free action, you can mentally
+the best of its ability. As a free action, on your turn you can mentally
 direct it not to attack, to attack particular enemies, or
 to perform other actions. The psionic golem acts normally
 on the last round of the power's duration and dissipates
-after you finish your turn.
+after you finish your turn. Otherwise, it dissipates when
+it is reduced to 0 hit points, ending the power.
 \augment{For every 3 additional psi dice you spend, the level
 of the psionic golem increases by 1.
 }
@@ -2224,8 +2231,8 @@ of the psionic golem increases by 1.
     {Mundane matter}
 When laying your hands upon a psionic golem
 that has at least 1 hit point remaining, you reknit its structure
-to repair damage it has taken. The power repairs 3d8 points
-of damage +1 point per psionic threshold. Constructs that
+to repair damage it has taken. The power repairs 3d8 + your psionic
+threshold points of damage. Constructs that
 are immune to psionics or magic cannot be repaired in this
 fashion.
 \augment{For every 2 additional psi dice you spend, this power
@@ -2286,7 +2293,7 @@ threshold.
     {MB 4, PD 9}
     {Instantaneous}
     {Sight}
-You abruptly and brutally crushe
+You abruptly and brutally crush
 the mental essence of any one creature you can see, debilitating
 its acumen. The target must succeed on a Wisdom saving throw
 or take 7d12 psychic damage. If they succeed, they instead
@@ -2297,7 +2304,7 @@ on a successful save increases by 1d6.
 \DndPowerHeader%
     {Psychofeedback\label{pwr:psychofeedback}}
     {5th-level Prana Bindu}
-    {1 action}
+    {1 bonus action}
     {Self}
     {MB 5, PD 9}
     {1 minute}
@@ -2753,7 +2760,7 @@ trance ends 1 minute later.
     {Self (15-foot cone)}
     {MB 2, PD 3}
     {Instantaneous}
-    {Mundane matter}
+    {Mundane matter, Line of Effect}
 Thousands of tiny crystal shards spray forth
 in an arc from your hand. These razor-like crystals slice
 everything in their path. Any creature caught in the cone
@@ -2863,7 +2870,7 @@ The DM rolls a d100 and consults the table below to resolve this.
 \DndPowerHeader%
     {Thicken Skin\label{pwr:thicken_skin}}
     {1st-level Prana Bindu}
-    {1 action}
+    {1 bonus action}
     {Self}
     {MB 1, PD 1}
     {Concentration, up to 10 minutes}
@@ -3042,7 +3049,7 @@ increases to 120 feet.
     {Self (30-feet cone)}
     {MB 3, PD 5}
     {Instantaneous}
-    {Speech$^*$}
+    {Speech$^*$, Line of Effect}
 Your Voice bursts forth from you as tidal
 wave of raw force, knocking creatures down. Any creature that
 lies within a 30-foot cone centred on yourself must make a
@@ -3064,7 +3071,7 @@ damage increases by 1d4.
     {1 hour}
     {None}
 You suffuse yourself with power, gaining
-5 temporary hit points.
+7 temporary hit points.
 \augment{For every additional psi dice you spend, the number
 of hit points you gain increases by 5.
 }

@@ -100,7 +100,7 @@ Biofeedback:
   Discipline: Prana Bindu
   MB: '2'
   PD: '3'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Self
   Duration: Concentration, up to 1 minute
   Requirements: None
@@ -119,7 +119,7 @@ Bite of the Wolf:
   Discipline: Prana Bindu
   MB: '1'
   PD: '1'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Self
   Duration: Concentration, up to 1 minute
   Requirements: None
@@ -237,7 +237,7 @@ Boots of the Demon King:
   Discipline: Prana Bindu
   MB: '1'
   PD: '1'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 attack when you take the Attack action
   Range: Self (5-foot radius)
   Duration: Instantaneous
   Requirements: None
@@ -245,8 +245,10 @@ Boots of the Demon King:
     or send target flying
   Long Description: |
     Your legs briefly gain incredible strength,
-    and your boots crackle with lightning. You make a kick (unarmed
-    attack) against an opponent within your melee range. If the
+    and your boots crackle with lightning. Whenever you take the Attack
+    action, you can manifest this power any time during that action
+    to replace one of your attacks with a special unarmed
+    kick taken against an opponent within your melee range. If the
     attack hits, the target takes damage from your unarmed strike
     as normal plus 2d4 lightning damage. If the target is above
     half their hit point maximum, they must succeed on a Strength
@@ -914,9 +916,9 @@ Dissolving Touch:
   Discipline: Prana Bindu
   MB: '2'
   PD: '3'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Touch
-  Duration: Instantaneous
+  Duration: 1 minute
   Requirements: None
   Short Description: Deal acid damage to creature you hit with
     attack
@@ -1089,7 +1091,7 @@ Energy Bolt:
   Manifesting Time: 1 action
   Range: Self (120-foot line)
   Duration: Instantaneous
-  Requirements: None
+  Requirements: Line of Effect
   Short Description: Strike targets with line of energy of chosen
     type
   Long Description: |
@@ -1188,7 +1190,7 @@ Energy Burst:
   Manifesting Time: 1 action
   Range: Self (30-foot sphere)
   Duration: Instantaneous
-  Requirements: None
+  Requirements: Line of Effect
   Short Description: Produce burst of energy of chosen type centred
     on yourself
   Long Description: |
@@ -1390,7 +1392,7 @@ Fist of Fury:
   Discipline: Prana Bindu
   MB: '3'
   PD: '5'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Self
   Duration: Concentration, up to 10 minutes
   Requirements: None
@@ -1408,7 +1410,7 @@ Force Screen:
   Discipline: Psychokinesis
   MB: '2'
   PD: '1'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Self
   Duration: Concentration, up to 1 minute
   Requirements: None
@@ -1526,8 +1528,11 @@ Inertial Armour:
   Requirements: None
   Short Description: Gain bonus to AC
   Long Description: |
-    As for the \spell{mage armour} spell, except
-    as noted.
+    Your mind forms a dampening barrier against physical attacks.
+    You touch a willing creature who isn't wearing armour.
+    Until the power ends, the target's base AC becomes 13
+    plus its Intelligence modifier.
+    The power ends early if the target dons armour.
   Augment: null
 Inertial Dampener:
   Name: Inertial Dampener
@@ -1544,7 +1549,8 @@ Inertial Dampener:
   Long Description: |
     You create a skin-tight psychokinetic barrier
     around yourself that resists blunt-force blows and explosions.
-    You become immune to bludgeoning damage for the power's duration.
+    You become immune to all bludgeoning damage for the power's duration,
+    including that caused by psionic or magic items.
   Augment: null
 Inflict Pain:
   Name: Inflict Pain
@@ -1867,7 +1873,7 @@ Precognition:
   Discipline: Prescience
   MB: '2'
   PD: '1'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Self
   Duration: Concentration, up to 1 minute
   Requirements: None
@@ -2015,7 +2021,7 @@ Psychic Crush:
   Requirements: Sight
   Short Description: Deal large amount of psychic damage to creature
   Long Description: |
-    You abruptly and brutally crushe
+    You abruptly and brutally crush
     the mental essence of any one creature you can see, debilitating
     its acumen. The target must succeed on a Wisdom saving throw
     or take 7d12 psychic damage. If they succeed, they instead
@@ -2030,7 +2036,7 @@ Psychofeedback:
   Discipline: Prana Bindu
   MB: '5'
   PD: '9'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Self
   Duration: 1 minute
   Requirements: None
@@ -2469,7 +2475,7 @@ Swarm of Crystals:
   Manifesting Time: 1 action
   Range: Self (15-foot cone)
   Duration: Instantaneous
-  Requirements: Mundane matter
+  Requirements: Mundane matter, Line of Effect
   Short Description: Slice targets with cone of crystals which
     always hit
   Long Description: |
@@ -2505,7 +2511,7 @@ Thicken Skin:
   Discipline: Prana Bindu
   MB: '1'
   PD: '1'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 bonus action
   Range: Self
   Duration: Concentration, up to 10 minutes
   Requirements: None
@@ -2670,7 +2676,7 @@ Unrelenting Voice:
   Manifesting Time: 1 action
   Range: Self (30-feet cone)
   Duration: Instantaneous
-  Requirements: Speech$^*$
+  Requirements: Speech$^*$, Line of Effect
   Short Description: Wave of force slams targets, pushing them
     back and knocking them over
   Long Description: |
@@ -2700,7 +2706,7 @@ Vigour:
   Short Description: Gain temporary hit points
   Long Description: |
     You suffuse yourself with power, gaining
-    5 temporary hit points.
+    7 temporary hit points.
   Augment: |
     For every additional psi dice you spend, the number
     of hit points you gain increases by 5.
@@ -3330,11 +3336,12 @@ Psionic Golem:
     that attacks your enemies. It appears where you designate
     in range and acts whenever you end your turn (it still technically
     acts on your turn, however). It attacks your opponents to
-    the best of its ability. As a free action, you can mentally
+    the best of its ability. As a free action, on your turn you can mentally
     direct it not to attack, to attack particular enemies, or
     to perform other actions. The psionic golem acts normally
     on the last round of the power's duration and dissipates
-    after you finish your turn.
+    after you finish your turn. Otherwise, it dissipates when
+    it is reduced to 0 hit points, ending the power.
   Augment: |
     For every 3 additional psi dice you spend, the level
     of the psionic golem increases by 1.
@@ -3353,8 +3360,8 @@ Psionic Golem, Repair:
   Long Description: |
     When laying your hands upon a psionic golem
     that has at least 1 hit point remaining, you reknit its structure
-    to repair damage it has taken. The power repairs 3d8 points
-    of damage +1 point per psionic threshold. Constructs that
+    to repair damage it has taken. The power repairs 3d8 + your psionic
+    threshold points of damage. Constructs that
     are immune to psionics or magic cannot be repaired in this
     fashion.
   Augment: |
@@ -3575,7 +3582,7 @@ Flame Choke:
   Discipline: 'Prana Bindu'
   MB: '1'
   PD: '1'
-  Manifesting Time: 1 action
+  Manifesting Time: 1 grapple
   Range: Self
   Duration: Instantaneous
   Requirements: None
@@ -3583,8 +3590,8 @@ Flame Choke:
     over time'
   Long Description: |
     Your vice-like grip burns those that oppose
-    you. As part of the power's manifesting time, take the grapple
-    action against a creature within melee range. If the grapple
+    you. Whenever you attempt to grapple a creature, you may freely
+    manifest this power. If the grapple attempt
     is successful, the target immediately takes 2d6 fire damage.
     On every turn you start while the target is still grappled,
     the target takes an additional 2d6 fire damage. Whenever the
