@@ -5,3 +5,4 @@
 *.out
 *.aux
 *.toc
+Scripts/__pycache__/*

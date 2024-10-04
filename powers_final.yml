@@ -755,7 +755,7 @@ Detect Psionics:
   Range: Self
   Duration: Concentration, up to 10 minutes
   Requirements: None
-  Short Description: Detect hearby presence of psionic powers
+  Short Description: Detect nearby presence of psionic powers
     and effects
   Long Description: |
     For the power's duration, you sense the
@@ -2946,7 +2946,7 @@ Control Body:
   Range: 60 feet
   Duration: Concentration, up to 1 minute
   Requirements: Sight
-  Short Description: Rudimentarily take control a creature
+  Short Description: Take rudimentary control of a creature
   Long Description: |
     You psychokinetically control the actions
     of any humanoid (including undead or outsiders with a humanoid
@@ -3810,3 +3810,168 @@ Counterpower:
     For every 4 psi dice you spend,
     the base level (3) at which a power is automatically interrupted
     increases by one.
+Alter Ego:
+  Name: Alter Ego
+  Class: 'p'
+  Level: '5'
+  Discipline: Metacreativity
+  MB: '5'
+  PD: '9'
+  Manifesting Time: 1 action
+  Range: Self
+  Duration: 12 hours
+  Requirements: Mundane matter
+  Short Description: 'Creating a copy of yourself'
+  Long Description: |
+    You shape mundane matter in your own likeness, creating a
+    near-perfect physical copy of yourself.
+    You then impress a shard of your own awareness into the copy.
+    The copy is a creature of your own type and inherits your mental statistics,
+    however its Strength, Dexterity and Constitution are all set to 5.
+    In addition, the creature's hit point maximum is half yours.
+    It may manifest any powers you know, except it has half your
+    mental bandwidth, psionics threshold and psi dice (all rounded up).
+    It does not inherit any of your spellcasting ability.
+
+    The copy is loyal to you and any creatures you designate at the
+    moment of its creation. However, the creature's alignment is the
+    diametric opposite of your own. For example, if your own alignment
+    is lawful good, the copy's alignment is chaotic evil. A neutral in
+    either of your alignment axes is preserved for the copy;
+    for example, neutral good becomes neutral evil; true neutral is mapped
+    to true neutral, etc.
+    The copy will therefore carry out objectives you designate
+    as long as those objectives are consistent with their alignment.
+
+    The copy persists until the power's duration ends, the copy
+    is reduced to 0 hit points, or you manifest \nameref{pwr:alter_ego} again,
+    at which point it returns to the matter from which it was constituted.
+  Augment: null
+Self Alchemy:
+  Name: Self Alchemy
+  Class: 'p'
+  Level: '3'
+  Discipline: Metacreativity
+  MB: '3'
+  PD: '5'
+  Manifesting Time: 1 action
+  Range: Self
+  Duration: See text
+  Requirements: Mundane matter
+  Short Description: 'Alter your physical appearance'
+  Long Description: |
+    Aided with mundane matter, you alter your physical appearance
+    at the molecular level, concealing your true physical identity.
+    You can make changes to your physical form, including your facial
+    appearance, however you cannot change your apparent sex nor
+    present features which would be atypical for your race.
+
+    Unlike the \spell{disguise self} spell and use of a Disguise Kit,
+    the changes wrought by \nameref{pwr:self_alchemy} hold up to
+    physical inspection. Use of \nameref{pwr:detect_psionics}
+    and similar powers or abilities, as normal,
+    reveals that you are under some Metacreative psionic effect---but no more.
+    In addition, an observer who sees you, listens to you speak and passes
+    a Wisdom (Insight) check with DC equal to 10 + your psionics attack
+    modifier becomes only aware that something is unnatural about you.
+
+    The alteration to your appearance persists until you willingly
+    reverse it as a free action. It also may be dispelled when you are subject
+    to lightning damage. When this happens, make a Constitution saving
+    throw with DC equal to 8 or half the lightning damage taken
+    (whichever is higher). If you fail, the physical alteration is reversed.
+  Augment: null
+Psychic Beacon:
+  Name: Psychic Beacon
+  Class: 'p'
+  Level: '2'
+  Discipline: Prescience
+  MB: '2'
+  PD: '3'
+  Duration: 24 hours
+  Manifesting Time: 1 action
+  Range: 30 feet
+  Requirements: Sight
+  Short Description: 'Know distance and location of marked target'
+  Source: 'Magic of Eberron 105-6'
+  Long Description: |
+    By manifesting this power, you place a psionic signature on a creature
+    or an unattended object that you can see in range.
+    If you target a creature, the signature is placed on that creature
+    if they fail a Wisdom saving throw.
+    You can automatically detect the presence of the signature
+    whenever it is within 1,000 feet of you,
+    and in such cases you know the direction and approximate distance
+    to the target object or creature.
+
+    If the distance between you and the psychic beacon
+    increases beyond 1,000 feet, you can determine the direction
+    and approximate distance to the signature object or creature
+    by using an action.
+  Augment: |
+    You can augment this power in one or both of the following ways.
+    \begin{itemize}
+      \item For every 2 additional psi dice you spend,
+        this power's save DC (if applicable) increases by 1.
+      \item If you spend 4 additional power points,
+        you can designate a willing creature to detect the beacon.
+        You must touch the creature as you manifest the power.
+        For the duration of the power,
+        that creature senses the location of the beacon instead of you.
+      \end{itemize}
+Uncanny Reach:
+  Name: Uncanny Reach
+  Class: 'pk'
+  Level: '2'
+  Discipline: Prana Bindu
+  MB: '2'
+  PD: '3'
+  Duration: Concentration, up to 1 minute
+  Manifesting Time: 1 bonus action
+  Range: Self
+  Requirements: None
+  Short Description: Increase your reach with unarmed attacks
+  Long Description: |
+    Your uncanny ability to flex and contort your body allows you
+    to strike targets ordinarly unreachable.
+    While concentrating on this power, your reach with unarmed attacks
+    increases by 5 ft.
+  Augment: null
+Assimilate:
+  Name: Assimilate
+  Class: 'p-PB'
+  Level: '9'
+  Discipline: Prana Bindu
+  MB: '10'
+  PD: '17'
+  Duration: Instantaneous
+  Manifesting Time: 1 action
+  Range: Touch
+  Requirements: None
+  Short Description: Assimilate another creature into your form
+  Long Description: |
+    Your index finger turns black as obsidian.
+    A creature touched by you is partially assimilated into your form
+    and takes 20d6 points of damage on a failed Constitution saving throw,
+    or half as much on a success.
+    Any creature reduced to 0 or fewer hit points by this power is killed,
+    entirely assimilated into your form,
+    leaving behind only a trace of fine dust.
+    An assimilated creature's equipment is unaffected.
+
+    A creature that is partially assimilated into your form
+    (that is, a creature that has at least 1 hit point
+    following your use of this power)
+    grants you a number of temporary hit points equal to
+    half the damage you dealt for 1 hour.
+
+    A creature that is completely assimilated grants you
+    a number of temporary hit points equal to
+    the damage you dealt and a
+    +4 bonus to each of your ability scores for 1 hour.
+    If the assimilated creature knows psionic powers,
+    you gain knowledge of one of its powers for 1 hour.
+    You also gain some semblance of a creature you completely assimilate
+    for 1 hour, granting you a +10 bonus on Charisma checks in which you
+    attempt to impersonate that creature during that time.
+  Augment: null

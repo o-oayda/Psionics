@@ -29,6 +29,71 @@ hazardous effect from the environment you are adapting to
 prompted the save.
 
 \DndPowerHeader%
+    {Alter Ego\label{pwr:alter_ego}}
+    {5th-level Metacreativity}
+    {1 action}
+    {Self}
+    {MB 5, PD 9}
+    {12 hours}
+    {Mundane matter}
+You shape mundane matter in your own likeness, creating a
+near-perfect physical copy of yourself.
+You then impress a shard of your own awareness into the copy.
+The copy is a creature of your own type and inherits your mental statistics,
+however its Strength, Dexterity and Constitution are all set to 5.
+In addition, the creature's hit point maximum is half yours.
+It may manifest any powers you know, except it has half your
+mental bandwidth, psionics threshold and psi dice (all rounded up).
+It does not inherit any of your spellcasting ability.
+
+The copy is loyal to you and any creatures you designate at the
+moment of its creation. However, the creature's alignment is the
+diametric opposite of your own. For example, if your own alignment
+is lawful good, the copy's alignment is chaotic evil. A neutral in
+either of your alignment axes is preserved for the copy;
+for example, neutral good becomes neutral evil; true neutral is mapped
+to true neutral, etc.
+The copy will therefore carry out objectives you designate
+as long as those objectives are consistent with their alignment.
+
+The copy persists until the power's duration ends, the copy
+is reduced to 0 hit points, or you manifest \nameref{pwr:alter_ego} again,
+at which point it returns to the matter from which it was constituted.
+
+\DndPowerHeader%
+    {Assimilate\label{pwr:assimilate}}
+    {9th-level Prana Bindu}
+    {1 action}
+    {Touch}
+    {MB 10, PD 17}
+    {Instantaneous}
+    {None}
+Your index finger turns black as obsidian.
+A creature touched by you is partially assimilated into your form
+and takes 20d6 points of damage on a failed Constitution saving throw,
+or half as much on a success.
+Any creature reduced to 0 or fewer hit points by this power is killed,
+entirely assimilated into your form,
+leaving behind only a trace of fine dust.
+An assimilated creature's equipment is unaffected.
+
+A creature that is partially assimilated into your form
+(that is, a creature that has at least 1 hit point
+following your use of this power)
+grants you a number of temporary hit points equal to
+half the damage you dealt for 1 hour.
+
+A creature that is completely assimilated grants you
+a number of temporary hit points equal to
+the damage you dealt and a
++4 bonus to each of your ability scores for 1 hour.
+If the assimilated creature knows psionic powers,
+you gain knowledge of one of its powers for 1 hour.
+You also gain some semblance of a creature you completely assimilate
+for 1 hour, granting you a +10 bonus on Charisma checks in which you
+attempt to impersonate that creature during that time.
+
+\DndPowerHeader%
     {Attraction\label{pwr:attraction}}
     {1st-level Voice}
     {1 action}
@@ -616,7 +681,8 @@ whether or not the power you are reacting to has been augmented.
 On a success, the creature's power fails and has no effect.
 \augment{For every 4 psi dice you spend,
 the base level (3) at which a power is automatically interrupted
-increases by one.}
+increases by one.
+}
 \DndPowerHeader%
     {Create Object With Mind\label{pwr:create_object_with_mind}}
     {5th-level Metacreativity}
@@ -2286,6 +2352,38 @@ past a maximum number of years equal to 200 times your psionic
 threshold.
 
 \DndPowerHeader%
+    {Psychic Beacon\label{pwr:psychic_beacon}}
+    {2nd-level Prescience}
+    {1 action}
+    {30 feet}
+    {MB 2, PD 3}
+    {24 hours}
+    {Sight}
+By manifesting this power, you place a psionic signature on a creature
+or an unattended object that you can see in range.
+If you target a creature, the signature is placed on that creature
+if they fail a Wisdom saving throw.
+You can automatically detect the presence of the signature
+whenever it is within 1,000 feet of you,
+and in such cases you know the direction and approximate distance
+to the target object or creature.
+
+If the distance between you and the psychic beacon
+increases beyond 1,000 feet, you can determine the direction
+and approximate distance to the signature object or creature
+by using an action.
+\augment{You can augment this power in one or both of the following ways.
+\begin{itemize}
+  \item For every 2 additional psi dice you spend,
+    this power's save DC (if applicable) increases by 1.
+  \item If you spend 4 additional power points,
+    you can designate a willing creature to detect the beacon.
+    You must touch the creature as you manifest the power.
+    For the duration of the power,
+    that creature senses the location of the beacon instead of you.
+  \end{itemize}
+}
+\DndPowerHeader%
     {Psychic Crush\label{pwr:psychic_crush}}
     {5th-level Voice}
     {1 action}
@@ -2477,6 +2575,35 @@ Wisdom (Perception). You have a +10 bonus to this check.
 
 If you wish, you may speak through your ethereal form, however
 your voice is whispery and faint.
+
+\DndPowerHeader%
+    {Self Alchemy\label{pwr:self_alchemy}}
+    {3rd-level Metacreativity}
+    {1 action}
+    {Self}
+    {MB 3, PD 5}
+    {See text}
+    {Mundane matter}
+Aided with mundane matter, you alter your physical appearance
+at the molecular level, concealing your true physical identity.
+You can make changes to your physical form, including your facial
+appearance, however you cannot change your apparent sex nor
+present features which would be atypical for your race.
+
+Unlike the \spell{disguise self} spell and use of a Disguise Kit,
+the changes wrought by \nameref{pwr:self_alchemy} hold up to
+physical inspection. Use of \nameref{pwr:detect_psionics}
+and similar powers or abilities, as normal,
+reveals that you are under some Metacreative psionic effect---but no more.
+In addition, an observer who sees you, listens to you speak and passes
+a Wisdom (Insight) check with DC equal to 10 + your psionics attack
+modifier becomes only aware that something is unnatural about you.
+
+The alteration to your appearance persists until you willingly
+reverse it as a free action. It also may be dispelled when you are subject
+to lightning damage. When this happens, make a Constitution saving
+throw with DC equal to 8 or half the lightning damage taken
+(whichever is higher). If you fail, the physical alteration is reversed.
 
 \DndPowerHeader%
     {Sense Link\label{pwr:sense_link}}
@@ -3042,6 +3169,19 @@ end of the trace beyond the mental coordinates of the location.
 \augment{If you spend 2 additional psi dice, this power's range
 increases to 120 feet.
 }
+\DndPowerHeader%
+    {Uncanny Reach\label{pwr:uncanny_reach}}
+    {2nd-level Prana Bindu}
+    {1 bonus action}
+    {Self}
+    {MB 2, PD 3}
+    {Concentration, up to 1 minute}
+    {None}
+Your uncanny ability to flex and contort your body allows you
+to strike targets ordinarly unreachable.
+While concentrating on this power, your reach with unarmed attacks
+increases by 5 ft.
+
 \DndPowerHeader%
     {Unrelenting Voice\label{pwr:unrelenting_voice}}
     {3rd-level Voice}
