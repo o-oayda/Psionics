@@ -22,3 +22,28 @@ Logorrhea:
     Constitution saving throws made to maintain concentration on
     a spell or power until the end of their next turn. 
   Upcast: null
+Mental Link:
+  Name: Mental Link
+  Class: Wizard, Cleric
+  Level: '3'
+  School: Abjuration
+  Casting Time: 1 action
+  Range: Touch
+  Duration: 1 hour
+  Components: V, S, M (a silver chain worth 50 gp)
+  Short Description: Protect an ally from psionic effects
+  Long Description: |
+    You link your mind with a willing creature, cushioning it from
+    the malign effects of hostile psionics.
+    While the target is within 60 feet of you, they have resistance
+    to any damage incurred from a psionic power
+    or psi-like ability, and may add a d4 to any saving throw
+    they make to resist a psionic power or psi-like ability.
+    However, whenever they take psychic damage---regardless
+    of whether it is caused by a psionic effect
+    or not---you take half that damage (after applying resistances),
+    with the target taking the other half.
+
+    The spell ends when either you or your target drops to 0 hit points.
+    You can also dismiss the spell as a free action on your turn.
+  Upcast: null
