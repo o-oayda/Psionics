@@ -1,25 +1,23 @@
 import yaml
 import os
-from funcs import name_to_ref
+from funcs import name_to_ref, integer_to_ordinal, load_yml
 
-with open("powers_final.yml") as stream:
-    try:
-        yml_powers = yaml.safe_load(stream)
-    except yaml.YAMLError as exc:
-        print(exc)
+yml_powers = load_yml('powers_final.yml')
 
-yml_powers = dict(sorted(yml_powers.items()))
 strings = []
 print('Reading {} powers.'.format(len(yml_powers)))
+
 for key, val in yml_powers.items():
-    ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n//10%10!=1)*(n%10<4)*n%10::4])
-    hdr = ordinal(int(val['Level'])) + '-level ' + val['Discipline']
-    cost = 'MB {}, PD {}'.format(val['MB'], val['PD'])
+    ordinal = integer_to_ordinal(int(val['Level']))
+    hdr = f'{ordinal}-level {val['Discipline']}'
+    cost = f'MB {val['MB']}, PD {val['PD']}'
+    
     if val['Augment'] is not None:
         augment = rf'\augment{{{val['Augment']}}}'
     else:
         augment = ''
-    ref = name_to_ref(key)
+    
+    ref = name_to_ref(key, power=True)
     title = '{}{}'.format(key, ref)
 
     long_power_string = f'''\DndPowerHeader%
