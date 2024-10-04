@@ -12,8 +12,9 @@ for key, val in spells.items():
     if val['Upcast'] is not None:
         upcast = rf'\upcast{{{val['Upcast']}}}'
     else:
-        augment = ''
+        upcast = ''
     
+    classes = rf'\classes{{{val['Class']}}}'
     ref = name_to_ref(key, power=False)
     title = f'{key}{ref}'
 
@@ -24,8 +25,9 @@ for key, val in spells.items():
     {{{val['Range']}}}
     {{{val['Components']}}}
     {{{val['Duration']}}}
-{val['Long Description'][:-1]}
-{augment}'''
+{val['Long Description'][:-1]}%
+{upcast}%
+{classes}'''
     strings.append(long_spell_string)
 
 print('Writing full list to spells.tex.')
