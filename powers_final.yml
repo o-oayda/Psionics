@@ -3324,13 +3324,15 @@ Psionic Golem:
   PD: '1'
   Manifesting Time: 1 action
   Range: 30 feet
-  Duration: Up to 1 minute
+  Duration: Up to 1 hour
   Requirements: Mundane matter
   Short Description: 'Create a psionic golem that you control'
   Long Description: |
     \textit{Note: you cannot manifest this power
-    unless you have learnt the create golem Metacreativity tenet.}
+    unless you have learnt the \secref{subs:menu_a} Metacreativity tenet.}
 
+    You weave mundane matter into an autonomous construct---vaguely
+    resembling a humanoid creature of your choosing---that acts as you command.
     This power creates one 1st-level psionic golem
     (see \secref{sec:psionic_golem})
     that attacks your enemies. It appears where you designate
