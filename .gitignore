@@ -5,4 +5,7 @@
 *.out
 *.aux
 *.toc
+*.idx
+*.ilg
+*.ind
 Scripts/__pycache__/*
