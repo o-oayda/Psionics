@@ -1,4 +1,3 @@
-import yaml
 import os
 from funcs import name_to_ref, integer_to_ordinal, load_yml
 

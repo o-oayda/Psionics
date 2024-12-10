@@ -1,5 +1,7 @@
 .DS_store
-.psi-env*
+.psi-env/*
+md_powers/*
+.venv*
 *.pdf
 *.log
 *.out
