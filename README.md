@@ -15,3 +15,15 @@ The latest psionics release can be found at the [release page](https://github.co
 
 ## Changelogs
 The full changelogs are also available on the [release page](https://github.com/o-oayda/Psionics/releases).
+
+## Compiling the PDF
+If you wish to compile the latest PDF from scratch (instead of choosing an
+appropriate release from above), follow these steps.
+1. Ensure that you have a working local tex installation.
+2. `git clone` the [D&D LaTeX template](https://github.com/o-oayda/DND-5e-LaTeX-Template)
+into your `TEXMFHOME` directory:
+```sh
+git clone https://github.com/o-oayda/DND-5e-LaTeX-Template.git "$(kpsewhich -var-value TEXMFHOME)/tex/latex/dnd"
+```
+3. `git clone` this repo somewhere and `cd` into it.
+4. Run `make` in the command line.
