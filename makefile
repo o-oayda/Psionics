@@ -5,7 +5,7 @@ all: Psionics.pdf
 Psionics.pdf: Psionics.tex
 				make scripts
 				lualatex Psionics.tex -synctex=1 -interaction=nonstopmode -file-line-error -pdf %DOC%
-				open -a Skim.app Psionics.pdf
+				open Psionics.pdf
 
 clean:
 				latexmk -CA
