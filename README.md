@@ -19,11 +19,13 @@ The full changelogs are also available on the [release page](https://github.com/
 ## Compiling the PDF
 If you wish to compile the latest PDF from scratch (instead of choosing an
 appropriate release from above), follow these steps.
-1. Ensure that you have a working local tex installation.
-2. `git clone` the [D&D LaTeX template](https://github.com/o-oayda/DND-5e-LaTeX-Template)
+1. Ensure that you have a working local tex installation and have Python 3 installed.
+2. `git clone` the [fork of the D&D LaTeX template](https://github.com/o-oayda/DND-5e-LaTeX-Template)
 into your `TEXMFHOME` directory:
 ```sh
 git clone https://github.com/o-oayda/DND-5e-LaTeX-Template.git "$(kpsewhich -var-value TEXMFHOME)/tex/latex/dnd"
 ```
 3. `git clone` this repo somewhere and `cd` into it.
-4. Run `make` in the command line.
+4. Make a python virtual environment with `python3 -m venv .venv` and activate it.
+5. Install the Python requirements (`pip install -r requirements.txt`).
+6. Now you should be good to go. Run `make` in the command line to build the PDF.
