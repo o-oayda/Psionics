@@ -4,7 +4,7 @@ all: Psionics.pdf
 
 Psionics.pdf: Psionics.tex
 				make scripts
-				lualatex Psionics.tex -synctex=1 -interaction=nonstopmode -file-line-error -pdf %DOC%
+				latexmk Psionics.tex -synctex=1 -interaction=nonstopmode -file-line-error -pdf
 				open Psionics.pdf
 
 clean:

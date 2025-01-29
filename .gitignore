@@ -10,4 +10,7 @@ md_powers/*
 *.idx
 *.ilg
 *.ind
+*.fls
+*.fdb_latexmk
+*.synctex.gz
 Scripts/__pycache__/*
