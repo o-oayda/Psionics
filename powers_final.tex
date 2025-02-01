@@ -29,6 +29,31 @@ hazardous effect from the environment you are adapting to
 prompted the save.
 
 \DndPowerHeader%
+    {Affinity Field\label{pwr:affinity_field}}
+    {6th-level Prana Bindu}
+    {1 action}
+    {Self (20-foot radius)}
+    {MB 6, PD 11}
+    {Concentration, up to 1 minute}
+    {None}
+You create an affinity feedback loop with all creatures within a 20-foot
+radius surrounding you that fail a Constitution saving throw.
+Throughout the power's duration, affected creatures take all damage
+as you do and heal all wounds as you do.
+Hit points gained or lost persist after this power ends.
+In addition, any ability score increase or decrease you incur is passed
+onto affected creatures.
+
+If you are affected by a psionic power of 3rd level or lower while this power is active,
+creatures with an affinity to you are also affected as if they were the target
+or one of the targets.
+All psionic effects transferred in this manner cease
+at the end of this power's duration.
+If you suddenly become immune to a particular effect or power,
+the effect or power to which you are immune cannot be transferred
+to creatures that have affinity to you.
+
+\DndPowerHeader%
     {Alter Ego\label{pwr:alter_ego}}
     {5th-level Metacreativity}
     {1 action}
@@ -684,6 +709,29 @@ the base level (3) at which a power is automatically interrupted
 increases by one.
 }
 \DndPowerHeader%
+    {Create Armour With Mind\label{pwr:create_armour_with_mind}}
+    {1st-level Metacreativity}
+    {1 action}
+    {Touch}
+    {MB 1, PD 1}
+    {Concentration, up to 1 minute}
+    {Mundane matter}
+You touch any mundane matter in front of
+you, morphing it into armour of your choosing from the armour
+table (phb 144). The armour is made of ordinary materials
+as appropriate for its kind, and you can mould it around your person
+such that it is immediately donned.
+If you lose contact with the armour you created for 2
+or more consecutive rounds, it loses its coherence and returns
+to the substance(s) it originated as.
+\augment{You can augment this power in one or both of the following ways.
+  \begin{itemize}
+    \item For every 6 additional psi dice you spend,
+      this power adds a +1 bonus to the armour's AC (to a maximum of +3).
+    \item If you spend 8 psi dice,
+      the armour gains power resistance equal to your psionics save DC.
+  \end{itemize}}
+\DndPowerHeader%
     {Create Object With Mind\label{pwr:create_object_with_mind}}
     {5th-level Metacreativity}
     {1 minute}
@@ -1197,6 +1245,35 @@ that you choose). In addition, you must continually use your
 action on your turn to use the power. If the subject is left
 with 0 psi dice or has totally expended their uses of innate
 talents, the power ends.
+
+\DndPowerHeader%
+    {Duplicate Power\label{pwr:duplicate_power}}
+    {8th-level Prescience}
+    {1 action}
+    {See text}
+    {MB 6, PD 15}
+    {See text}
+    {See text}
+Duplicate Power lets you replicate many types of psionic effects,
+allowing you to do any of the following:
+\begin{itemize}
+  \item Duplicate any psion power of 6th level or lower,
+        provided the power is not on a discipline sublist unavailable to you.
+  \item Duplicate any other power of 5th level or lower,
+        provided the power is not on a discipline sublist unavailable to you.
+  \item Duplicate any psion power of 5th level or lower,
+        even if it's on a discpline sublist unavailable to you.
+  \item Combine the effects of any two powers known to you
+        as long as sum of the two powers' levels is less than or equal to 8.
+\end{itemize}
+A duplicated power allows saving throws as normal, and has the same
+duration, requirements, range, etc. as the original power.
+If the original power specifies concentration as a requirement,
+that also applies when replicated with Duplicate Power.
+If you have replicated the effects of two powers with different requirements,
+the more restrictive requirement applies.
+For example, when combining two powers with a 60 ft. and 30 ft. range,
+the 30 ft. range applies for the overall combined effect produced with Duplicate Power. 
 
 \DndPowerHeader%
     {Déjà Vu\label{pwr:déjà_vu}}
@@ -3043,6 +3120,23 @@ or both of the following ways.
 Your vision awakens to those that were hitherto
 concealed from you. You gain \emph{truesight} out to 120 feet.
 
+\DndPowerHeader%
+    {Tidal Disruption\label{pwr:tidal_disruption}}
+    {5th-level Spacefolding}
+    {1 action}
+    {60 feet}
+    {MB 4, PD 9}
+    {Instantaneous}
+    {Sight}
+In a fleeting moment, you aggressively mould the fabric of space and time
+and expose a target you can see to extreme tidal forces.
+The target must make a Strength saving throw,
+taking 10d6 bludgeoning damage on a failed save, or half as much on a success.
+\augment{For every additional psi die you spend,
+this power's damage increases by 1d6.
+For each extra 2d6 points of damage,
+this power's save DC increases by 1.
+}
 \DndPowerHeader%
     {Time Warp\label{pwr:time_warp}}
     {3rd-level Spacefolding}

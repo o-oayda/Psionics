@@ -595,7 +595,7 @@ Create Sound:
   Augment: null
 Create Weapon With Mind:
   Name: Create Weapon With Mind
-  Class: pk
+  Class: ppk
   Level: '1'
   Discipline: Metacreativity
   MB: '1'
@@ -3979,7 +3979,7 @@ Assimilate:
   Augment: null
 Ironflesh:
   Name: Ironflesh
-  Class: 'pk'
+  Class: 'ppk'
   Level: '5'
   Discipline: Prana Bindu
   MB: '5'
@@ -3999,3 +3999,118 @@ Ironflesh:
     immunity to poison damage,
     and you become resistant to all damage.
   Augment: null
+Affinity Field:
+  Name: Affinity Field
+  Class: 'p'
+  Level: '6'
+  Discipline: Prana Bindu
+  MB: '6'
+  PD: '11'
+  Duration: Concentration, up to 1 minute
+  Manifesting Time: 1 action
+  Range: Self (20-foot radius)
+  Requirements: None
+  Short Description: Transfer damage, healing and powers onto others within the field
+  Long Description: |
+    You create an affinity feedback loop with all creatures within a 20-foot
+    radius surrounding you that fail a Constitution saving throw.
+    Throughout the power's duration, affected creatures take all damage
+    as you do and heal all wounds as you do.
+    Hit points gained or lost persist after this power ends.
+    In addition, any ability score increase or decrease you incur is passed
+    onto affected creatures.
+
+    If you are affected by a psionic power of 3rd level or lower while this power is active,
+    creatures with an affinity to you are also affected as if they were the target
+    or one of the targets.
+    All psionic effects transferred in this manner cease
+    at the end of this power's duration.
+    If you suddenly become immune to a particular effect or power,
+    the effect or power to which you are immune cannot be transferred
+    to creatures that have affinity to you.
+  Augment: null
+Tidal Disruption:
+  Name: Tidal Disruption
+  Class: 'p-S'
+  Level: '5'
+  Discipline: Spacefolding
+  MB: '4'
+  PD: '9'
+  Duration: Instantaneous
+  Manifesting Time: 1 action
+  Range: 60 feet
+  Requirements: Sight
+  Short Description: Assault target with tidal forces
+  Long Description: |
+    In a fleeting moment, you aggressively mould the fabric of space and time
+    and expose a target you can see to extreme tidal forces.
+    The target must make a Strength saving throw,
+    taking 10d6 bludgeoning damage on a failed save, or half as much on a success.
+  Augment: |
+    For every additional psi die you spend,
+    this power's damage increases by 1d6.
+    For each extra 2d6 points of damage,
+    this power's save DC increases by 1.
+Duplicate Power:
+  Name: Duplicate Power
+  Class: 'p'
+  Level: '8'
+  Discipline: Prescience
+  MB: '6'
+  PD: '15'
+  Duration: See text
+  Manifesting Time: 1 action
+  Range: See text
+  Requirements: See text
+  Short Description: Recreate the effect of powers potentially unknown to you
+  Long Description: |
+    Duplicate Power lets you replicate many types of psionic effects,
+    allowing you to do any of the following:
+    \begin{itemize}
+      \item Duplicate any psion power of 6th level or lower,
+            provided the power is not on a discipline sublist unavailable to you.
+      \item Duplicate any other power of 5th level or lower,
+            provided the power is not on a discipline sublist unavailable to you.
+      \item Duplicate any psion power of 5th level or lower,
+            even if it's on a discpline sublist unavailable to you.
+      \item Combine the effects of any two powers known to you
+            as long as sum of the two powers' levels is less than or equal to 8.
+    \end{itemize}
+    A duplicated power allows saving throws as normal, and has the same
+    duration, requirements, range, etc. as the original power.
+    If the original power specifies concentration as a requirement,
+    that also applies when replicated with Duplicate Power.
+    If you have replicated the effects of two powers with different requirements,
+    the more restrictive requirement applies.
+    For example, when combining two powers with a 60 ft. and 30 ft. range,
+    the 30 ft. range applies for the overall combined effect produced with Duplicate Power. 
+  Augment: null
+Create Armour With Mind:
+  Name: Create Armour With Mind
+  Class: ppk
+  Level: '1'
+  Discipline: Metacreativity
+  MB: '1'
+  PD: '1'
+  Manifesting Time: 1 action
+  Range: Touch
+  Duration: Concentration, up to 1 minute
+  Requirements: Mundane matter
+  Short Description: Create any armour from mundane matter
+  Long Description: |
+    You touch any mundane matter in front of
+    you, morphing it into armour of your choosing from the armour
+    table (phb 144). The armour is made of ordinary materials
+    as appropriate for its kind, and you can mould it around your person
+    such that it is immediately donned.
+    If you lose contact with the armour you created for 2
+    or more consecutive rounds, it loses its coherence and returns
+    to the substance(s) it originated as.
+  Augment: |
+    You can augment this power in one or both of the following ways.
+      \begin{itemize}
+        \item For every 6 additional psi dice you spend,
+          this power adds a +1 bonus to the armour's AC (to a maximum of +3).
+        \item If you spend 8 psi dice,
+          the armour gains power resistance equal to your psionics save DC.
+      \end{itemize}
