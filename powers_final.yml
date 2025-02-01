@@ -3977,3 +3977,25 @@ Assimilate:
     for 1 hour, granting you a +10 bonus on Charisma checks in which you
     attempt to impersonate that creature during that time.
   Augment: null
+Ironflesh:
+  Name: Ironflesh
+  Class: 'pk'
+  Level: '5'
+  Discipline: Prana Bindu
+  MB: '5'
+  PD: '9'
+  Duration: Concentration, up to 1 minute
+  Manifesting Time: 1 action
+  Range: Self
+  Requirements: None
+  Short Description: Harden your body and improve its resistance to damage
+  Long Description: |
+    Your skin turns as solid as iron, rendering it profoundly
+    more resistant to physical assaults.
+    Reduce your Dexterity score by 4 but increase your Strength by 2,
+    up to a maximum of 22.
+    You gain damage resistance (10) and a +5 bonus to your AC.
+    You also gain immunity to the deafened, poisoned and stunned conditions,
+    immunity to poison damage,
+    and you become resistant to all damage.
+  Augment: null
