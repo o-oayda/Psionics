@@ -1,0 +1,249 @@
+\chapter{Miscellany}
+\label{chap:miscellany}
+\DndDropCapLine{L}{astly, some additional features}
+peripheral to the core rules are given here.
+\secref{sec:psion_psi_knight_multiclassing} deals with the
+possibility of multiclassing into two classes both with
+the ability to manifest powers.
+\secref{sec:feats} adds a selection of psionics-related
+feats into the game.
+\secref{sec:races} tweaks some of the already existing
+races in the game who have significant psionic potential.
+\secref{sec:psionic_traits} gives a list of traits pertaining to psionics
+that may be possessed by creatures.
+\secref{sec:psionic_items} introduces the rules surrounding items with psionic
+properties, with \secref{sec:list_of_psionic_items} detailing
+a handful of the ones that can be found in the world.
+\secref{sec:spells} details a selection of new spells which are intended
+to interact with powers and psi-like abilities.
+Finally,
+\secref{sec:psionic_golem} gives the stat blocks for the
+psionic golems created by adherents of the
+Metacreativity discipline.
+
+\section{Psion/Psi Knight Multiclassing}
+\label{sec:psion_psi_knight_multiclassing}
+There is the possibility that a character chooses to multiclass
+into both the psion and psi knight classes.
+If this is the case,
+the following rules apply with respect to the Powers feature
+of each class.
+\subparagraph{Psi Dice}
+    Psi dice add cumulatively between the two classes.
+    For example,
+    if a character has 3 levels in psion (6 psi dice)
+    and then multiclass into psi knight,
+    they would gain 1 psi dice,
+    since at first level the psi knight starts at 1 psi dice.
+    If they took a further level in psi knight,
+    they would gain 1 psi dice,
+    and so on.
+\subparagraph{Mental Bandwidth}
+    Your mental bandwidth is the highest mental bandwidth you
+    have across both classes.
+\subparagraph{Powers Known}
+    The same logic as for psi dice applies for
+    determining the number of powers you know.
+\subparagraph{Psionic Threshold}
+    The same logic as for mental bandwidth applies for
+    determining your psionic threshold.
+
+\section{Feats}
+\label{sec:feats}
+This section adds the following feats on top of the already
+existing ones.
+
+\DndFeatHeader{Psionics Initiate}[%
+    Prerequisite: Wisdom 13 (psi knight); Intelligence 13 (psion)]
+    Choose either the psi knight or psion class.
+    You learn two 1st-level powers from the powers list
+    (see \secref{sec:class_lists})
+    of that class assuming you meet the prerequisites
+    for the nominated class given above.
+    Each power counts as a (1/day) innate talent for you.
+
+    Your psionics ability for these powers depends on the class
+    you choose:
+    Wisdom for the psi knight class; Intelligence for the psion class.
+
+\DndFeatHeader{Voice Resistance}[%
+    Prerequisite: None]
+    You have trained extensively and rigorously in the ways
+    of resisting the dominating effects of the Voice.
+    You gain advantage on all saving throws against
+    Voice powers.
+    You also know whenever a Voice power is manifested,
+    even if the manifester has the \emph{Subtle Voice} ability.
+
+\DndFeatHeader{Psionic Litany}[%
+    Prerequisite: The ability to manifest at least one power
+]
+You have committed a psionic litany to memory, granting you respite
+and focus in fear-inducing and hostile conditions.
+You gain advantage on Constitution saving throws that you make
+to maintain concentration on powers.
+This applies when you take damage
+or are otherwise subject to a condition which
+threatens your concentration.
+
+\section{Races}
+\label{sec:races}
+This section makes the following changes to the racial traits
+of creatures in the base game.
+
+\subsection{Gith}
+\subsubsection{Githyanki}
+\emph{Githyanki Psionics} is replaced as follows.
+\subparagraph{Githyanki Psionics}
+    Your psionic heritage grants you a limited selection of
+    psionic powers as innate talents.    
+    You know the \nameref{pwr:psi_hand} power (3/day innate talent).
+    Starting at 3rd level,
+    you can manifest the \nameref{pwr:leap} power (1/day innate talent).
+    Starting at 5th level,
+    you can manifest the \nameref{pwr:psionic_step} power (1/day innate talent).
+    Intelligence or Wisdom is your psionics ability for these powers
+    (choose when you select this race).
+    If you select the psion or psi knight class,
+    the psionics ability becomes the underlying ability
+    associated with manifesting powers for that class.
+
+    Each innate talent also counts as powers known for you,
+    so, if you wish,
+    you can manifest these powers using psi dice if you have any.
+
+\subsubsection{Githzerai}
+\emph{Githzerai Psionics} is replaced as follows.
+\subparagraph{Githzerai Psionics}
+    Your psionic heritage grants you a limited selection of
+    psionic powers as innate talents.    
+    You know the \nameref{pwr:psi_hand} power (3/day innate talent).
+    Starting at 3rd level,
+    you know the \nameref{pwr:sacrificial_shell} power or the
+    \nameref{pwr:detect_thoughts_psionic} power.
+    Each count as a 1/day innate talent.
+    Starting at 5th level,
+    you know the \nameref{pwr:leap} power (1/day innate talent).
+
+    Intelligence or Wisdom is your psionics ability for these powers
+    (choose when you select this race).
+    If you select the psion or psi knight class,
+    the psionics ability becomes the underlying ability
+    associated with manifesting powers for that class.
+
+    Each innate talent also counts as powers known for you,
+    so, if you wish,
+    you can manifest these powers using psi dice if you have any.
+
+\section{Psionic Traits}
+\label{sec:psionic_traits}
+The following section outlines special traits relating to psionics
+that a creature might possess.
+
+\subsection{Power Resistance}
+\label{sub:power_resistance}
+When a creature with \define{power resistance}\index{power!resistance} is the target of
+or is affected by a psionic power, whether manifested normally or
+as an innate talent, or is the target of or affected by a psi-like ability,
+that creature has a chance of resisting the power or ability's effects.
+This chance is reflected in the value of the power resistance,
+denoted as power resistance ($x$) or PR$x$.
+
+When the conditions for power resistance are met,
+the creature manifesting the power or using the psi-like ability
+must make a d20 check with a DC equal to
+the creature's power resistance value, adding their psionics attack modifier
+to the roll.
+If the check fails, the creature with power resistance
+is not affected by the power or psi-like ability.
+
+A creature with power resistance can choose to voluntarily
+succumb to the effects of a power or psi-like ability, even if
+the check fails.
+
+\section{Psionic Items}
+\label{sec:psionic_items}
+Some items have an affinity for the minds of others.
+Such special items are called \textbf{psionic items}\index{psionics items},
+and are analogous to magic items.
+However, unlike magic items,
+a psionic item is generally totally inert unless
+it is harnessed by a trained psyche.
+To such individuals,
+psionic items can offer an incredible reserve of power,
+as well as great boons which supplement an individual's own powers.
+
+\subsection{Integration}
+A magic item is attuned to by its user.
+Similarly, a psionic item is \define{integrated}\index{integrate} by its user;
+the psionic powers conferred by a magic item cannot be used
+unless it is integrated.
+However, the rules for psionic item integration are different to
+those for magic item attunement.
+
+\subsubsection{MB Cost}
+Each psionic item is associated with a mental bandwidth cost.
+While a psionic item is integrated by a user,
+a number of mental bandwidth slots equal to the MB cost of the item
+are permanently occupied.
+In addition, in order to integrate a psionic item,
+the user must have available a number of mental bandwidth slots
+equal to the MB cost of the item.
+A user cannot integrate with a psionic item if, after integration,
+all of their mental bandwidth slots are fully occupied.
+This calculation includes slots occupied by powers that a manifester
+is currently concentrating on.
+Thus,
+the limit on the number of psionic items a user can integrate
+is determined by their mental bandwidth.
+
+For example,
+suppose a psion has 2 available mental bandwidth slots.
+They have also integrated a psionic item with an MB cost of 1.
+Thus, they have only 1 available mental bandwidth slot.
+This slot could be occupied by a power or another psionic item,
+but not if that psionic item has an MB cost greater than 1.
+
+\subparagraph{0MB Items}
+    Some psionic items have an MB cost of 0.
+    Such items can be integrated by a user even if they do not
+    have any free mental bandwidth slots.
+    They can also be integrated by users with no mental bandwidth slots,
+    such as those without any levels in psionic classes.
+
+\subsection{Process of Integration}
+Assuming a user meets the requirements set out above,
+they must spend a short rest concentrating on and maintaining physical contact with
+the item in order to integrate it.
+The user may not spend hit die during this short rest.
+In addition, if at any point the user's concentration is broken,
+the integration process is broken and the user must start again.
+
+A user cannot begin the process of integration if another user has already
+integrated the item, or if they have already integrated a psionic item
+with the same name and/or powers. 
+
+\subparagraph{Ending Integration}
+    After integrating a psionic item,
+    a user may voluntarily end integration by spending another short rest
+    concentrating on the item. As above, the user's concentration must not be
+    broken for the duration of the short rest for this process to succeed.
+
+\section{Spells}
+\label{sec:spells}
+In this section, a list of new spells designed to interact
+with psionics are given.
+\input{spells.tex}
+
+
+\section{List of Psionic Items}
+\label{sec:list_of_psionic_items}
+\input{Tables/psionic_items.tex}
+
+\section{Psionic Golems}
+\label{sec:psionic_golem}
+The statblocks for the psionic golems described in
+\secref{sub:metacreativity_tenets}
+are given here, beginning on the following page.
+
+\clearpage\input{psionic_golems.tex}
