@@ -1,4 +1,5 @@
 import yaml
+import pandas as pd
 
 def name_to_ref(name, label=True, power=True):
     ref = name.lower().replace(' ', '_')
@@ -22,4 +23,9 @@ def load_yml(path: str) -> dict:
         except yaml.YAMLError as exc:
             print(exc)
     
-    return dict(sorted(yml_info.items()))
+    return dict(sorted(yml_info.items()))\
+
+def get_internal_latex(latex: str) -> str:
+    ind1 = latex.find('\n')
+    ind2 = latex.rfind('\n')
+    return latex[ind1+1:ind2]

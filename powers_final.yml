@@ -162,16 +162,13 @@ Blow Up Object With Mind:
     The object can be carried or worn by a
     creature. Make a psionics attack roll against the object.
     The AC is determined by the size of object, shown below.
-    \begin{table}[htbp]%
-      \begin{DndTable}[width=\columnwidth,
-                   header=Object AC and Damage]{X c c}
-        Size & AC & Damage Die \\
-        Tiny (bottle, pancakes)        & 11 & 2d6 \\
-        Small (chest, lute, sword)     & 13 & 2d8 \\
-        Medium (barrel, chandelier)    & 15 & 2d10 \\
-        Large (cart, 10x10 ft. window) & 17 & 2d12
-      \end{DndTable}
-    \end{table}
+    
+    | Size | AC | Damage Die |
+    | --- | --- | --- |
+    | Tiny (bottle, pancakes) | 11 | 2d6 |
+    | Small (chest, lute, sword)  | 13 | 2d8  |
+    | Medium (barrel, chandelier) | 15 | 2d10 |
+    | Large (cart, 10x10 ft. window) | 17 | 2d12 |
     
     If the attack hits,
     the object explodes. Any creature within 10 feet of the
@@ -185,6 +182,8 @@ Blow Up Object With Mind:
     For every 2 additional psi dice you spend, roll one
     extra die using the same damage die as given for the object's
     size.
+  Table Header: Object AC and Damage
+  Table Align: X c c
 Body Equilibrium:
   Name: Body Equilibrium
   Class: ppk
@@ -447,26 +446,19 @@ Confusion, Psionic:
     choose freely from the table below
     to determine the quality of your Voice
     and the associated effect on the creature for that turn.
-    \begin{table}[htbp]%
-      \begin{DndTable}[width=\columnwidth,
-                       header=Psionic Confusion Effects]{l X}
-        Voice Quality & Effect \\
-        Grating       & The target takes 2d10 psychic damage \\
-        Booming       & The target is deafened \\
-        Discordant    & The target uses all their movement to move
-                        in a random direction (determined by the roll
-                        of a d8) \\
-        Frenetic      & The target makes a single melee attack against
-                        a randomly determined creature in their reach,
-                        if possible \\
-        Pacifying     & The target does nothing
-      \end{DndTable}
-    \end{table}
     The creature cannot do anything on that turn except for
     the relevant effect given above.
     If the result is a 6, the creature is unaffected by your Voice
     and acts normally (but is still affected by the power).
     
+    | Voice Quality | Effect |
+    | ---           | ---    |
+    | Grating       | The target takes 2d10 psychic damage |
+    | Booming       | The target is deafened |
+    | Discordant    | The target uses all their movement to move in a random direction (determined by the roll of a d8) |
+    | Frenetic      | The target makes a single melee attack against a randomly determined creature in their reach, if possible |
+    | Pacifying     | The target does nothing |
+
     At the end of an affected creature's turns,
     they may repeat the Wisdom saving throw,
     ending the power on a success.
@@ -475,6 +467,8 @@ Confusion, Psionic:
     save DC increases by 1, and the power can affect an additional
     target. Any additional target cannot be more than 10 feet
     from another target of the power.
+  Table Header: Psionic Confusion Effects
+  Table Align: l X
 Control Sound:
   Name: Control Sound
   Class: p
@@ -3626,17 +3620,14 @@ Teleport, Psionic:
     The degree of your familiarity with the location impacts
     the likelihood that you end up in that location.
     The DM rolls a d100 and consults the table below to resolve this.
-    \begin{table}[htbp]%
-      \begin{DndTable}[width=\columnwidth,
-                   header=Psionic Teleportation]{X X X X X}
-        Familiarity & Mishap  & Similar Area & Off Target & On Target \\
-        Very familiar         & 01--05 & 06--13 & 14--24 & 25--100 \\
-        Seen casually         & 01--33 & 34--43 & 44--53 & 54--100 \\
-        Viewed once           & 01--43 & 44--53 & 54--73 & 74--100 \\
-        Description           & 01--43 & 44--53 & 54--73 & 74--100 \\
-        False destination     & 01--50 & 51--100& ---    & ---      
-      \end{DndTable}
-    \end{table}
+    
+    | Familiarity       | Mishap  | Similar Area | Off Target | On Target |
+    | ---               | ---     | ---          | ---        | ---       |
+    | Very familiar     | 01--05  | 06--13       | 14--24     | 25--100   |
+    | Seen casually     | 01--33  | 34--43       | 44--53     | 54--100   |
+    | Viewed once       | 01--43  | 44--53       | 54--73     | 74--100   |
+    | Description       | 01--43  | 44--53       | 54--73     | 74--100   |
+    | False destination | 01--50  | 51--100      | ---        | ---       |     
     
     \subparagraph{Familiarity}
       `Very familiar' is a place you have been very often,
@@ -3692,6 +3683,8 @@ Teleport, Psionic:
       and the DM rerolls on the table to see where you wind up
       (multiple mishaps can occur, dealing damage each time).
   Augment: null
+  Table Header: Psionic Teleportation
+  Table Align: X X X X X
 Timeless Body:
   Name: Timeless Body
   Class: 'p'

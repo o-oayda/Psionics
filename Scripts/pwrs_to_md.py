@@ -1,6 +1,7 @@
-from funcs import load_yml, integer_to_ordinal
+from funcs import load_yml, integer_to_ordinal, get_internal_latex
 from slugify import slugify
 import re
+import mdpd
 
 PATH = 'md_powers/'
 yml_powers = load_yml('powers_final.yml')
@@ -15,7 +16,7 @@ for key, val in yml_powers.items():
     # format long description to replace single line breaks with whitespace,
     # but keep double line breaks (so it appears properly in a markdown renderer)
     long_desc = val['Long Description'][:-1]
-    long_desc = re.sub(r'(.)\n(?!\n)', r'\1 ', long_desc)
+    long_desc = re.sub(r'([^\s|])\n(?!\n)', r'\1 ', long_desc)
     
     if val['Augment'] is not None:
         augment = f'''
