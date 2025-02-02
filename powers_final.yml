@@ -369,7 +369,7 @@ Cloud Mind, Mass:
   Requirements: None
   Short Description: Erase yourself from many targets' mind
   Long Description: |
-    As the \power{cloud mind} power, except as
+    As the \nameref{pwr:cloud-mind} power, except as
     noted here. Each creature within a 30-foot radius is affected
     individually.
   Augment: null
@@ -3282,7 +3282,7 @@ Sublime Insight:
     cogitating countless impressions and predictions
     involving any creature you have seen before,
     whether personally or by means of another power
-    such as \nameref{pwr:scrying_psionic}.
+    such as \nameref{pwr:scrying-psionic}.
 
     This process gives you an uncannily accurate vision
     of the creature's nature,
@@ -3851,7 +3851,7 @@ Alter Ego:
     as long as those objectives are consistent with their alignment.
 
     The copy persists until the power's duration ends, the copy
-    is reduced to 0 hit points, or you manifest \nameref{pwr:alter_ego} again,
+    is reduced to 0 hit points, or you manifest \nameref{pwr:alter-ego} again,
     at which point it returns to the matter from which it was constituted.
   Augment: null
 Self Alchemy:
@@ -3874,8 +3874,8 @@ Self Alchemy:
     present features which would be atypical for your race.
 
     Unlike the \spell{disguise self} spell and use of a Disguise Kit,
-    the changes wrought by \nameref{pwr:self_alchemy} hold up to
-    physical inspection. Use of \nameref{pwr:detect_psionics}
+    the changes wrought by \nameref{pwr:self-alchemy} hold up to
+    physical inspection. Use of \nameref{pwr:detect-psionics}
     and similar powers or abilities, as normal,
     reveals that you are under some Metacreative psionic effect---but no more.
     In addition, an observer who sees you, listens to you speak and passes

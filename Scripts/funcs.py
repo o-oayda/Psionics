@@ -2,7 +2,7 @@ import yaml
 import pandas as pd
 
 def name_to_ref(name, label=True, power=True):
-    ref = name.lower().replace(' ', '_')
+    ref = name.lower().replace(' ', '-')
     key = 'pwr' if power else 'spl'
     if label:
         ref = '\\label{{{}:{}}}'.format(key, ref)

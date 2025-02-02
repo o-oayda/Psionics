@@ -17,6 +17,14 @@ for key, val in yml_powers.items():
     # but keep double line breaks (so it appears properly in a markdown renderer)
     long_desc = val['Long Description'][:-1]
     long_desc = re.sub(r'([^\s|])\n(?!\n)', r'\1 ', long_desc)
+
+    # format links to other powers and spells
+    regex = re.compile(r'\\nameref{pwr:([^\s]*)}')
+    ref_match = regex.search(long_desc)
+    if ref_match:
+        long_desc = re.sub(
+            r'\\nameref{pwr:([^\s]*)}', r'[[\1]]', long_desc, flags=re.M
+        )
     
     if val['Augment'] is not None:
         augment = f'''
