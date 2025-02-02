@@ -339,7 +339,7 @@ Cloud Mind:
     First, you are invisible and inaudible to the creature. It
     cannot even detect your presence by means of blindsight, scent,
     or tremorsense. It cannot pinpoint your location by any means.
-    \textit{Exception:} Creatures with truesight are still able
+    *Exception:* Creatures with truesight are still able
     to discern your location, and therefore the power has no effect
     on them.
 
@@ -1097,19 +1097,19 @@ Energy Bolt:
     takes 6d6 points of damage of the chosen type on a failed
     save, or half as much on a successful save.
 
-    \subparagraph{Cold} A bolt of this energy type deals +1 point
+    ***Cold.*** A bolt of this energy type deals +1 point
     of damage per die. The saving throw to reduce damage from
     a cold bolt is a Constitution save instead of a Dexterity
     save.
 
-    \subparagraph{Lightning} Manifesting a bolt of this energy
+    ***Lightning.*** Manifesting a bolt of this energy
     type provides a +2 bonus to the save DC if the target is wearing
     metal armour.
 
-    \subparagraph{Fire} A bolt of this energy type deals +1 point
+    ***Fire.*** A bolt of this energy type deals +1 point
     of damage per die.
 
-    \paragraph{Thunder} A bolt of this energy type deals -1 point
+    ***Thunder.*** A bolt of this energy type deals -1 point
     of damage per die but provides a +1 bonus to the save DC.
   Augment: |
     For every additional psi die you spend, this power's
@@ -1147,23 +1147,23 @@ Energy Push:
     slams into the object and takes an extra 2d6 points of damage
     from the impact (no save).
     
-    \subparagraph{Cold}
+    ***Cold.***
     A blast of this energy type
     deals +1 point of damage per die.
     This does not apply to the slam damage.
     The saving throw to reduce damage from a cold push
     is a Constitution save instead of a Dexterity save.
     
-    \subparagraph{Lightning}
+    ***Lightning.***
     Manifesting a blast of this energy type provides a +2 bonus
     to the save DC if the target is wearing metal armour.
     
-    \subparagraph{Fire}
+    ***Fire.***
     A blast of this energy type deals +1
     point of damage per die (damage from impact remains at
     2d6 points).
     
-    \subparagraph{Thunder}
+    ***Thunder.***
     A blast of this energy
     type deals -1 point of damage per die
     (damage from impact
@@ -1197,19 +1197,19 @@ Energy Burst:
     The explosion creates almost no pressure. Since this power
     extends outward from you, you are not affected by the damage.
 
-    \subparagraph{Cold} A burst of this energy type deals +1 point
+    ***Cold.*** A burst of this energy type deals +1 point
     of damage per die. The saving throw to reduce damage from
     a cold burst is a Constitution save instead of a Dexterity
     save.
 
-    \subparagraph{Lightning} Manifesting a burst of this energy
+    ***Lightning.*** Manifesting a burst of this energy
     type provides a +2 bonus to the save DC to creatures wearing
     metal armour.
 
-    \subparagraph{Fire} A burst of this energy type deals +1 point
+    ***Fire.*** A burst of this energy type deals +1 point
     of damage per die.
 
-    \subparagraph{Thunder} A burst of this energy type deals -1
+    ***Thunder.*** A burst of this energy type deals -1
     point of damage per die but provides a +1 bonus to the save
     DC.
   Augment: |
@@ -1239,14 +1239,18 @@ Energy Ray:
     ranged psionics attack with the ray.
     The type of damage depends on
     the type of energy of the ray you manifest. 
-    \subparagraph{Cold}
+    
+    ***Cold.***
       A ray of this energy deals +1 point of cold damage per die.
-    \subparagraph{Lightning}
+    
+    ***Lightning.***
       Manifesting a ray of this energy type provides a
       +2 bonus on your attack roll if the target is wearing metal armour.
-    \subparagraph{Fire}
+    
+    ***Fire.***
       A ray of this energy type deals +1 point of fire damage per die.
-    \subparagraph{Thunder}
+    
+    ***Thunder.***
       A ray of this energy type deals -1 point of thunder damage per die
       but reduces an opponent's AC by 1.
   Augment: |
@@ -1273,7 +1277,7 @@ Energy Transformation:
     that has been reduced is `absorbed'. You also have advantage
     on saving throws to maintain concentration on powers if the
     saving throw was prompted by damage of the aforementioned
-    types. \emph{Note:} if a separate source of damage is absorbed
+    types. *Note:* if a separate source of damage is absorbed
     and reduced to zero damage,
     you do not need to make a Constitution saving throw
     to maintain concentration on any powers.
@@ -1316,21 +1320,21 @@ Energy Wave:
     This power originates at your hand
     and extends outward in a 60-foot cone.
     
-    \subparagraph{Cold}
+    ***Cold.***
     A wave of this energy type deals +1 point
     of damage per die.
     The saving throw to reduce damage from a cold wave
     is a Constitution save instead of a Dexterity save.  
     
-    \subparagraph{Lightning}
+    ***Lightning.***
     Manifesting a wave of this energy type
     provides a +2 bonus to the save DC if the target is wearing
     metal armour.
     
-    \subparagraph{Fire}
+    ***Fire.***
     A wave of this energy type deals +1 point of damage per die.
     
-    \subparagraph{Thunder}
+    ***Thunder.***
     A wave of this energy type deals -1 point of damage per die
     but grants a +1 bonus to the save DC.
   Augment: |
@@ -1607,14 +1611,16 @@ Matter Agitation:
     The agitation grows more intense in the second and third rounds
     after you manifest the power, as described below.
 
-    \subparagraph{1st Round}
+    ***1st Round.***
       Readily flammable material
       (paper, dry grass, tinder, torches) ignites.
-    \subparagraph{2nd Round}
+    
+    ***2nd Round.***
       Wood smoulders and smokes,
       metal becomes hot to the touch,
       paint shrivels, water boils.
-    \subparagraph{3rd and Subsequent Rounds}
+    
+    ***3rd and Subsequent Rounds.***
       Wood ignites, metal scorches
       (1d4 points of damage for those holding metallic objects),
       lead melts.
@@ -1729,8 +1735,9 @@ Mind Palace, Power:
     talents taken by subjects inside the area of the mind palace
     is halved. This lowering takes place prior to the effects
     of other powers or abilities that lessen damage. The palace
-    lasts until the start of your next turn. $^*$Not to be confused
-    with the \emph{mind palace} ability.
+    lasts until the start of your next turn.
+    
+    *Note:* not to be confused with the *mind palace* ability.
   Augment: |
     For every additional psi die you spend, this power's
     duration increases by 1 round.
@@ -1880,13 +1887,13 @@ Precognition:
     The nature of the benefit conferred to you
     depends on the chosen variant.
     
-    \subparagraph{Defensive}
+    ***Defensive.***
       You gain a +2 bonus to your AC and all saving throws.
     
-    \subparagraph{Anticipatory}
+    ***Anticipatory.***
       You gain a +2 bonus to attack rolls.
     
-    \subparagraph{Offensive}
+    ***Offensive.***
       You gain a +3 to bonus to your damage rolls.
   Augment: |
     For every 3 additional psi dice you spend, the bonus you
@@ -2536,7 +2543,7 @@ Third Eye:
   Short Description: Gain truesight out to 120 feet
   Long Description: |
     Your vision awakens to those that were hitherto
-    concealed from you. You gain \emph{truesight} out to 120 feet.
+    concealed from you. You gain *truesight* out to 120 feet.
   Augment: null
 Time Warp:
   Name: Time Warp
@@ -2911,19 +2918,19 @@ Energy Missile:
     of damage of the chosen type. You cannot hit the same target
     multiple times with the same manifestation of this power.
 
-    \subparagraph{Cold} A missile of this energy type deals +1
+    ***Cold.*** A missile of this energy type deals +1
     point of damage per die. The saving throw to reduce damage
     from a cold missile is a Constitution save instead of a Dexterity
     save.
 
-    \subparagraph{Lightning} Manifesting a missile of this energy
+    ***Lightning.*** Manifesting a missile of this energy
     type provides a +2 bonus to the attack roll against creatures
     wearing metal armour.
 
-    \subparagraph{Fire} A missile of this energy type deals +1
+    ***Fire.*** A missile of this energy type deals +1
     point of damage per die.
 
-    \subparagraph{Thunder} A missile of this energy type deals
+    ***Thunder.*** A missile of this energy type deals
     -1 point of damage per die but reduces an opponent's AC by
     1 for this attack only.
   Augment: |
@@ -3129,17 +3136,22 @@ Object Reading:
     The amount of information revealed depends
     on how long you study a particular object.
 
-    \subparagraph{1st Minute}
+    ***1st Minute.***
       Last owner's race.
-    \subparagraph{2nd Minute}
+    
+    ***2nd Minute.***
       Last owner's gender.
-    \subparagraph{3rd Minute}
+    
+    ***3rd Minute.***
       Last owner's age.
-    \subparagraph{4th Minute}
+    
+    ***4th Minute.***
       Last owner's alignment.
-    \subparagraph{5th Minute}
+    
+    ***5th Minute.***
       How last owner gained and lost the object.
-    \subparagraph{6th+ Minute}
+    
+    ***6th+ Minute.***
       Next-to-last owner's race, and so on.
 
     The power always correctly identifies the last owner of the item,
@@ -3322,8 +3334,8 @@ Psionic Golem:
   Requirements: Mundane matter
   Short Description: 'Create a psionic golem that you control'
   Long Description: |
-    \textit{Note: you cannot manifest this power
-    unless you have learnt the \secref{subs:menu_a} Metacreativity tenet.}
+    *Note: you cannot manifest this power
+    unless you have learnt the \secref{subs:menu_a} Metacreativity tenet.*
 
     You weave mundane matter into an autonomous construct---vaguely
     resembling a humanoid creature of your choosing---that acts as you command.
@@ -3629,7 +3641,7 @@ Teleport, Psionic:
     | Description       | 01--43  | 44--53       | 54--73     | 74--100   |
     | False destination | 01--50  | 51--100      | ---        | ---       |     
     
-    \subparagraph{Familiarity}
+    ***Familiarity.***
       `Very familiar' is a place you have been very often,
       a place you have carefully studied,
       or a place you can see when you cast the spell.
@@ -3645,11 +3657,11 @@ Teleport, Psionic:
       or you are attempting to teleport to a familiar location
       that no longer exists.
 
-    \subparagraph{On Target}
+    ***On Target.***
       You and your group (or you and the target object)
       appear where you want to.
     
-    \subparagraph{Off Target}
+    ***Off Target.***
       You and your group (or the target object) appear a random distance away
       from the destination in a random direction.
       Your distance off target is 1d10$\times$1d10 percent of the distance
@@ -3667,7 +3679,7 @@ Teleport, Psionic:
       If you were teleporting to a coastal city and wound up 18 miles out at sea,
       you could be in trouble.
     
-    \subparagraph{Similar Area}
+    ***Similar Area.***
       You and your group (or the target object) wind up in a different area
       that's visually or thematically similar to the target area.
       If you are heading for your home monastery,
@@ -3677,7 +3689,7 @@ Teleport, Psionic:
       but since the power has no range limit,
       you could conceivably wind up anywhere on the plane.
 
-    \subparagraph{Mishap}
+    ***Mishap.***
       The power's strain on your mind results in a difficult journey.
       Each teleporting creature (or the target object) takes 3d10 psychic damage,
       and the DM rerolls on the table to see where you wind up

@@ -43,6 +43,20 @@ for key, val in yml_powers.items():
         long_description = regexp.sub(
             repl=dnd_table_string, string=long_description
         )
+    
+    # replace subparagraph (bold and italics, e.g. ***Cold.***)
+    long_description = re.sub(
+        pattern=r'\*\*\*([\S\s]*?)\.\*\*\*',
+        repl=r'\\subparagraph{\1}',
+        string=long_description
+    )
+
+    # replace italics, e.g. *Exception.*
+    long_description = re.sub(
+        pattern=r'\*([\S\s]*?)\*',
+        repl=r'\\emph{\1}',
+        string=long_description
+    )
 
     long_power_string = f'''\DndPowerHeader%
     {{{title}}}
