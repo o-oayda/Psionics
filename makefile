@@ -1,4 +1,4 @@
-.PHONY: Psionics.pdf all clean scripts copy docs
+.PHONY: Psionics.pdf all clean scripts copy docs md
 
 all: Psionics.pdf
 
@@ -24,3 +24,6 @@ scripts:
 docs:
 				python Scripts/create_pages.py
 				cd docs && bundle exec jekyll build && bundle exec jekyll serve
+
+md:
+				python Scripts/pwrs_to_md.py

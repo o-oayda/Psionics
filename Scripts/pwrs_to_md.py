@@ -1,5 +1,6 @@
 from funcs import load_yml, integer_to_ordinal
 from slugify import slugify
+import re
 
 PATH = 'md_powers/'
 yml_powers = load_yml('powers_final.yml')
@@ -10,6 +11,11 @@ for key, val in yml_powers.items():
     ordinal = integer_to_ordinal(int(val['Level']))
     header = f'{ordinal}-level {val['Discipline']}'
     cost = f'MB {val['MB']}, PD {val['PD']}'
+    
+    # format long description to replace single line breaks with whitespace,
+    # but keep double line breaks (so it appears properly in a markdown renderer)
+    long_desc = val['Long Description'][:-1]
+    long_desc = re.sub(r'(.)\n(?!\n)', r'\1 ', long_desc)
     
     if val['Augment'] is not None:
         augment = f'''
@@ -36,7 +42,7 @@ aliases: ["{key}"]
 - **Duration:** {val['Duration']}
 - **Requirements:** {val['Requirements']}
 
-{val['Long Description'][:-1]}{augment}'''
+{long_desc}{augment}'''
     
     fname = f'{file_title}.md'
     full_path = f'{PATH}{fname}'
