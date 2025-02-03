@@ -19,7 +19,7 @@ The full changelogs are also available on the [release page](https://github.com/
 ## Compiling the PDF
 If you wish to compile the latest PDF from scratch (instead of choosing an
 appropriate release from above), follow these steps.
-1. Ensure that you have a working local tex installation and have Python 3 installed.
+1. Ensure that you have a working local tex installation and have Python 3 installed (3.13 not supported).
 2. `git clone` the [fork of the D&D LaTeX template](https://github.com/o-oayda/DND-5e-LaTeX-Template)
 into your `TEXMFHOME` directory:
 ```sh
