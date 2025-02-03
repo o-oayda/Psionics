@@ -610,14 +610,12 @@ Create Weapon With Mind:
     to the substance(s) it originated as.
   Augment: |
     You can augment this power in one or both of the following ways.
-      \begin{itemize}
-        \item For every 4 additional psi dice you spend,
-          this power adds a +1 bonus to the weapon's
-          attack and damage rolls (to a maximum of +3).
-        \item If you spend 3 psi dice,
-          the weapon overcomes a creature's
-          resistance to non-magical weapons.
-      \end{itemize}
+    - For every 4 additional psi dice you spend,
+      this power adds a +1 bonus to the weapon's
+      attack and damage rolls (to a maximum of +3).
+    - If you spend 3 psi dice,
+      the weapon overcomes a creature's resistance to non-magical weapons.
+
 Cushion Fall:
   Name: Cushion Fall
   Class: ppk
@@ -1043,12 +1041,11 @@ Empath's Understanding:
   Augment: |
     You can augment this power in one or both of the
     following ways.
-    \begin{itemize}
-      \item For every additional psi die you spend,
+    - For every additional psi die you spend,
       this power's range increases by 5 feet.
-      \item If you spend 2 additional psi dice, this power's
+    - If you spend 2 additional psi dice, this power's
       maximum duration increases to 1 hour.
-    \end{itemize}
+
 Empathic Feedback:
   Name: Empathic Feedback
   Class: ppk
@@ -1853,16 +1850,15 @@ Power Pirate:
 
     Once you wrest control of the power from the target,
     you have several options.
-    \begin{itemize}
-      \item Allow the power to function as normal.
-      \item Keep the power targeted on the manifesting creature
+    - Allow the power to function as normal.
+    - Keep the power targeted on the manifesting creature
             (if a power with a target of self) but decide how
             the power fulfils its function each round.
-      \item Retarget the power on yourself
+    - Retarget the power on yourself
             (if a power with a target of self).
-      \item Choose not to concentrate on the usurped power
+    - Choose not to concentrate on the usurped power
               in the next round, ending the power at that point.
-    \end{itemize}
+    
     When the duration of \power{power pirate} expires,
     the power you took control of ends
     (even if this would mean that the power ends earlier than normal).
@@ -2229,13 +2225,12 @@ Sense Link:
   Augment: |
     You can augment this power in one or
     both of the following ways:
-    \begin{itemize}
-      \item If you spend 2 additional psi dice,
+    - If you spend 2 additional psi dice,
             you can have the target perceive one of your senses
             instead of the other way around.
-      \item If you spend 4 additional psi dice,
+    - If you spend 4 additional psi dice,
             you can link to a second sense of the same target.
-    \end{itemize}
+
 Sense Link, Forced:
   Name: Sense Link, Forced
   Class: p
@@ -2332,14 +2327,13 @@ Shockwave:
     Nonmagical, unattended objects (including doors, walls, locks,
     and so on) may also be damaged by this power.
   Augment: |
-    \begin{itemize}
-      \item For every 2 additional psi dice you spend,
+    - For every 2 additional psi dice you spend,
             this power's damage increases by 1d6 points.
-      \item For every 2 additional psi dice you spend,
+    - For every 2 additional psi dice you spend,
             this power can affect an additional target.
             Any additional target cannot be more than 15 feet
             from another target of the power.
-    \end{itemize}
+
 Skate:
   Name: Skate
   Class: ppk
