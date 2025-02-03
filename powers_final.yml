@@ -585,7 +585,7 @@ Create Sound:
     Wisdom (Insight) check to avoid arousing suspicion.
 
     Create sound can be used to bring sounds into existence that
-    you later manipulate by manifesting \power{control sound}.
+    you later manipulate by manifesting \nameref{pwr:control-sound}.
   Augment: null
 Create Weapon With Mind:
   Name: Create Weapon With Mind
@@ -1859,7 +1859,7 @@ Power Pirate:
     - Choose not to concentrate on the usurped power
               in the next round, ending the power at that point.
     
-    When the duration of \power{power pirate} expires,
+    When the duration of \nameref{pwr:power-pirate} expires,
     the power you took control of ends
     (even if this would mean that the power ends earlier than normal).
   Augment: null
@@ -1974,7 +1974,7 @@ Psi Wall:
     with a successful Strength check with DC equal to 15 + the
     number of inches it is thick.
 
-    The wall is susceptible to the \power{dispel psionics} power,
+    The wall is susceptible to the \nameref{pwr:dispel-psionics} power,
     but it gains a +4 bonus on any check to determine whether
     the wall is negated in such a way. Spells and breath weapons
     cannot pass through the wall in either direction, since the
@@ -2245,7 +2245,7 @@ Sense Link, Forced:
   Short Description: Forcibly perceive through one of the target's
     senses
   Long Description: |
-    As the \power{sense link} power, except you
+    As the \nameref{pwr:sense-link} power, except you
     can use this power on any creature---willing or unwilling---and
     this power can't be augmented.
   Augment: null
@@ -2295,7 +2295,7 @@ Shatter Mind Blank:
   Long Description: |
     Your inner Voice is an illuminating light, revealing
     minds which have been hidden from you. This power can negate
-    the \power{psionic mind blank} power or the \spell{mind blank}
+    the \nameref{pwr:mind-blank-psionic} power or the \spell{mind blank}
     spell, affecting all creatures within 30 feet of you. You
     can shatter each creature's mind blank by succeeding on a
     contest between your roll of 1d20 + your psionic attack modifier
