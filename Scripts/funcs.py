@@ -1,5 +1,5 @@
 import yaml
-import pandas as pd
+import re
 
 def name_to_ref(name, label=True, power=True):
     ref = name.lower().replace(' ', '-')
@@ -29,3 +29,26 @@ def get_internal_latex(latex: str) -> str:
     ind1 = latex.find('\n')
     ind2 = latex.rfind('\n')
     return latex[ind1+1:ind2]
+
+def mdlist_to_latex(text):
+    if text:
+        # Split the text into lines and iterate over
+        lines = text.split('\n')
+        print(lines)
+        in_list = False
+        result = []
+        for line in lines:
+            if re.match(r'^\s*-\s+', line):
+                if not in_list:
+                    result.append('\\begin{itemize}')
+                    in_list = True
+                result.append(re.sub(r'^\s*-\s+', r'\\item ', line))
+            else:
+                if in_list and (line == '}' or line == ''):
+                    result.append('\\end{itemize}')
+                    in_list = False
+                result.append(line)
+        if in_list:
+            result.append('\\end{itemize}')
+        return '\n'.join(result)
+    return text

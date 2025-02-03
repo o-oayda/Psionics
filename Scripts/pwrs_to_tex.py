@@ -1,6 +1,7 @@
 import os
 from funcs import (
-    name_to_ref, integer_to_ordinal, load_yml, get_internal_latex
+    name_to_ref, integer_to_ordinal, load_yml, get_internal_latex,
+    mdlist_to_latex
 )
 import re
 import mdpd
@@ -57,6 +58,14 @@ for key, val in yml_powers.items():
         repl=r'\\emph{\1}',
         string=long_description
     )
+
+    # check for markdown lists
+    # Extract the list items
+    if re.search(r'^\s*-\s+', long_description, re.MULTILINE):
+        long_description = mdlist_to_latex(long_description)
+
+    if re.search(r'^\s*-\s+', augment, re.MULTILINE):
+        augment = mdlist_to_latex(augment)
 
     long_power_string = f'''\DndPowerHeader%
     {{{title}}}
