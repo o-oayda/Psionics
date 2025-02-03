@@ -13,7 +13,7 @@ This repository houses the psionics system, in which two classes are offered: th
 ## Accessing Psionics
 The latest psionics release can be found at the [release page](https://github.com/o-oayda/Psionics/releases).
 
-> [!IMPORTANT] Obsidian Users
+> [!IMPORTANT]
 > Obsidian users can run the command `make md` after following the steps
 > [below](https://github.com/o-oayda/Psionics?tab=readme-ov-file#compiling-the-pdf)
 > (no need to have a LaTeX installation or clone the LaTeX template).
