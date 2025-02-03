@@ -2,8 +2,11 @@ from funcs import load_yml, integer_to_ordinal, get_internal_latex
 from slugify import slugify
 import re
 import mdpd
+import os
 
 PATH = 'md_powers/'
+if not os.path.exists(PATH):
+    os.makedirs(PATH)
 yml_powers = load_yml('powers_final.yml')
 print('Reading {} powers.'.format(len(yml_powers)))
 
