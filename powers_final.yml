@@ -4010,16 +4010,16 @@ Affinity Field:
     You create an affinity feedback loop with all creatures within a 20-foot
     radius surrounding you that fail a Constitution saving throw.
     Throughout the power's duration, affected creatures take all damage
-    as you do and heal all wounds as you do.
-    Hit points gained or lost persist after this power ends.
+    as you do and regain hit points as you do.
+    Hit points and temporary hit points gained or lost persist after this power ends.
     In addition, any ability score increase or decrease you incur is passed
     onto affected creatures.
 
     If you are affected by a psionic power of 3rd level or lower while this power is active,
-    creatures with an affinity to you are also affected as if they were the target
-    or one of the targets.
-    All psionic effects transferred in this manner cease
-    at the end of this power's duration.
+    creatures with an affinity to you are also affected
+    as if they were the target or one of the targets.
+    All psionic effects (except for changes to hit points or temporary hit points)
+    transferred in this manner cease at the end of this power's duration.
     If you suddenly become immune to a particular effect or power,
     the effect or power to which you are immune cannot be transferred
     to creatures that have affinity to you.
