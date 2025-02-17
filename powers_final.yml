@@ -1639,7 +1639,7 @@ Manipulate Creature With Mind:
     against creatures you can see. For the power's duration,
     you can perform the shove, disarm or grapple action without
     needing to be in melee range (however, the target needs to
-    be within the power's range).
+    be within the power's range) and without needing a free hand.
     Resolve these attempts as normal. Wherever you
     would make a Strength (Athletics) check or attack roll, use
     your psionics attack modifier for the roll.
@@ -1739,6 +1739,9 @@ Mind Palace, Power:
     For every additional psi die you spend, this power's
     duration increases by 1 round.
 Mind Thrust:
+  # NOTES
+  # - damage is decently balanced compare 7th-level fireball to 7-th level mind thurst https://anydice.com/program/3b54b
+  # - highly efficient 1 PD augment cost, which puts 7d12 damage at 7 PD (4th-level power)
   Name: Mind Thrust
   Class: p
   Level: '1'
