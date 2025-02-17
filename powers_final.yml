@@ -3997,10 +3997,10 @@ Ironflesh:
 Affinity Field:
   Name: Affinity Field
   Class: 'p'
-  Level: '6'
+  Level: '7'
   Discipline: Prana Bindu
-  MB: '6'
-  PD: '11'
+  MB: '8'
+  PD: '13'
   Duration: Concentration, up to 1 minute
   Manifesting Time: 1 action
   Range: Self (20-foot radius)
