@@ -16,11 +16,6 @@ for key, val in yml_powers.items():
     hdr = f'{ordinal}-level {val['Discipline']}'
     cost = f'MB {val['MB']}, PD {val['PD']}'
     
-    if val['Augment'] is not None:
-        augment = rf'\augment{{{val['Augment']}}}'
-    else:
-        augment = ''
-    
     ref = name_to_ref(key, power=True)
     title = '{}{}'.format(key, ref)
 
@@ -64,8 +59,13 @@ for key, val in yml_powers.items():
     if re.search(r'^\s*-\s+', long_description, re.MULTILINE):
         long_description = mdlist_to_latex(long_description)
 
-    if re.search(r'^\s*-\s+', augment, re.MULTILINE):
-        augment = mdlist_to_latex(augment)
+    augment = val['Augment']
+    if augment is not None:
+        if re.search(r'^\s*-\s+', augment, re.MULTILINE):
+            augment = mdlist_to_latex(augment)
+        augment = rf'\augment{{{augment}}}'
+    else:
+        augment = ''
 
     long_power_string = f'''\DndPowerHeader%
     {{{title}}}

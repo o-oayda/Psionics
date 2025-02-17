@@ -34,7 +34,6 @@ def mdlist_to_latex(text):
     if text:
         # Split the text into lines and iterate over
         lines = text.split('\n')
-        print(lines)
         in_list = False
         result = []
         for line in lines:
