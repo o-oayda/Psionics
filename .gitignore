@@ -14,3 +14,4 @@ md_powers/*
 *.fdb_latexmk
 *.synctex.gz
 Scripts/__pycache__/*
+export/*
