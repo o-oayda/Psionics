@@ -138,7 +138,8 @@ Bite of the Wolf:
     or a replacement for one of your attacks when you take the attack action.
     Your fangs are a natural weapon which you are proficient with,
     but you may not use them to make unarmed strikes. 
-    If you hit, the bite deals 1d8 piercing damage if you are a Medium creature.
+    If you hit, the bite deals 1d8 plus your Strength modifier piercing damage
+    if you are a Medium creature.
     If you are not a Medium creature, your bite attack's base damage varies as follows:
     Tiny 1d4; Small 1d6; Large 1d10; Huge 1d12; Gargantuan 2d12.    
     Your bite can be affected by powers, spells, and effects that enhance weapons.
@@ -3339,7 +3340,9 @@ Psionic Golem:
     to perform other actions. The psionic golem acts normally
     on the last round of the power's duration and dissipates
     after you finish your turn. Otherwise, it dissipates when
-    it is reduced to 0 hit points, ending the power.
+    it is reduced to 0 hit points or when you manifest this power again,
+    in either case ending the power
+    (or, in the latter case, the first instance of the power).
   Augment: |
     For every 3 additional psi dice you spend, the level
     of the psionic golem increases by 1.
