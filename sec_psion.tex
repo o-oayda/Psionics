@@ -1,0 +1,649 @@
+\section{Psion}
+\label{sec:psion}
+\DndSetThemeColor[DmgLavender]
+In the audience chamber of the Duke of Baradstone,
+a half-elf pries into the pathways of Duke's mind---their
+thoughts, feelings, desires revealed to her
+with lucid precision.
+All the while, the Duke's retinue remain totally oblivious
+to the psionic intrusion.
+
+In a vanishing instant of time,
+the githzerai projects the movements of his
+githyanki foes two seconds into the future,
+giving himself the edge he needs to lure them
+into a carefully-placed trap.
+
+The tiefling crouches imperceptibly behind the garrison,
+recalling her Prana Bindu training regimen to force
+her body to make no sound.
+Then, she focuses on the sword carried by the guardsman;
+before he takes his next step,
+the steel burns a brilliant red before exploding in his
+very hand.
+
+In the underbelly of the city,
+the dwarf brushes his hand against the ancient stone.
+Its feeling, its texture, ignite a subconscious
+awareness within his mind,
+and he is borne back to the memory of countless aeons
+past.
+He watches in striking detail as the genetic memory unravels,
+showing his forebears laying the same stone---one piece
+of a much larger city which has been lost to the entropic
+assault of time.
+
+\subsection{Masters of the Mind}
+While psions are diverse in their abilities and training,
+all are unified by a common thread---their unparalleled
+mastery over the latent powers that lie within their mind.
+While some turn to the magic essence which suffuses the cosmos,
+psions peer inwards,
+unlocking powers which might have laid dormant over many years.
+Only through strict training and profound mental discipline
+can these powers be unlocked,
+which all psions have been through in one way or another.
+
+Psions manifest distinct effects known as powers, which,
+depending on their discipline, achieve myriad effects.
+Powers are integral to the effectiveness of a psion,
+and the more experience they accrue,
+the more powers they unlock from deep within.
+
+\subsection{Creating a Psion}
+Creating a character with the psion class prompts
+important questions.
+How did your character first become aware of the
+powers of the mind?
+Perhaps they found an old, forgotten tome
+describing the \emph{Old Way} and the monks who adhered
+to it.
+Or they might have been awoken to it abruptly,
+awakening a dormant power which manifested fleetingly.
+
+One additional line of inquiry should be about the nature
+of their training.
+How did your character hone their psionic abilities?
+Did they train with the githzerai in their floating citadels
+on Limbo?
+Did they live with a reclusive order who have knowledge
+of psionic powers?
+Or did they train by themselves,
+experimenting with their mind through trial and error?
+
+\subsubsection{Quick Build}
+You can make a psion quickly by following these suggestions.
+First, Intelligence should be your highest ability score,
+followed by Constitution.
+Second, choose the following three 1st-level psion powers:
+\nameref{pwr:blow-up-object-with-mind},
+\nameref{pwr:mind-thrust}
+and \nameref{pwr:precognition}.
+If you have access to a 1st level power on your discipline
+sublist (see \secref{subs:psion_discipline}),
+choose that over one of the powers given above.
+
+\begin{DndSidebar}[float=htbp]{Multiclassing with the Psion}
+    \tocside{Multiclassing with the Psion}In order to
+    multiclass into the psion class,
+    a character must have a minimum Intelligence score of 13
+    (in addition to the usual score requirement for their base class).
+    When you multiclass into the psion class,
+    you gain proficiency with
+    light armour, quarterstaffs and daggers.
+\end{DndSidebar}
+
+\begin{figure*}[t]
+    \begin{ornamentedtabular}{c c p{4.3cm} c c c c}[title={The Psion}]
+        \textbf{Level} & \textbf{P. Bonus} & \textbf{Features} & \textbf{Psi Dice} & \textbf{Mental Bandwidth} & \textbf{Powers Known} & \textbf{Psionic Threshold} \\
+        1st  & +2 & Powers, Discipline        & 1   & 2  & 3  & 1 \\
+        2nd  & +2 & Microsleep (one use)      & 3   & 2  & 5  & 1 \\
+        3rd  & +2 & ---                       & 6  & 3  & 7  & 2 \\
+        4th  & +2 & Ability Score Improvement & 9  & 3  & 9  & 2 \\
+        5th  & +3 & ---                       & 12  & 4  & 11 & 3 \\
+        6th  & +3 & Discipline Tenet          & 15  & 4  & 13 & 3 \\
+        7th  & +3 & Mind Palace               & 18  & 4  & 15 & 4 \\
+        8th  & +3 & Ability Score Improvement & 21  & 5  & 17 & 4 \\
+        9th  & +4 & ---                       & 24  & 5  & 19 & 5 \\
+        10th & +4 & Discipline Tenet          & 28  & 6  & 21 & 5 \\
+        11th & +4 & Microsleep (two uses)     & 32  & 6  & 22 & 6 \\
+        12th & +4 & Ability Score Improvement & 36  & 6  & 24 & 6 \\
+        13th & +5 & ---                       & 40  & 7  & 25 & 7 \\
+        14th & +5 & Discipline Tenet          & 44  & 7  & 27 & 7 \\
+        15h  & +5 & ---                       & 48 & 7  & 28 & 8 \\
+        16th & +5 & Ability Score Improvement & 52 & 8  & 30 & 8 \\
+        17th & +6 & ---                       & 57 & 8  & 31 & 9 \\
+        18th & +6 & ---                       & 61 & 8  & 33 & 9 \\
+        19th & +6 & Ability Score Improvement & 66 & 9  & 34 & 9 \\
+        20th & +6 & Ascendance                & 71 & 10 & 36 & 9 \\
+    \end{ornamentedtabular}
+\end{figure*}
+
+\subsection{Class Features}
+As a psion, you gain the following features.
+
+\subsubsection{Hit Points}
+
+\begin{description}
+    \item[Hit Dice:] 1d6 per psion level
+    \item[Hit Points at 1st Level:] 6 + your Constitution modifier
+    \item[Hit Points at Higher Levels:] 1d6 (or 4) +
+        your Constitution modifier per psion level after 1st
+\end{description}
+
+\subsubsection{Proficiencies}
+
+\begin{description}
+    \item[Armour:] Light armour
+    \item[Weapons:] Clubs, daggers, heavy crossbows, light crossbows,
+        quarterstaffs, spears
+    \item[Tools:] None \vspace{4pt}
+    \item[Saving Throws:] Intelligence, Wisdom
+    \item[Skills:] Choose two from History, Religion, Nature,
+        Insight and Perception
+\end{description}
+
+In addition, depending on the psion's chosen discipline,
+they acquire an additional skill proficiency.
+This is shown in the table below.
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Additional Proficiency]{
+                     X X}
+        Discipline & Proficiency \\
+        Prescience & Investigation \\
+        Prana Bindu & Athletics, Acrobatics or Stealth \\
+        Voice & Persuasion \\
+        Metacreativity & Survival \\
+        Spacefolding & Arcana \\
+        Psychokinesis & Intimidation
+    \end{DndTable}
+\end{table}
+
+\subsubsection{Equipment}
+You start with the following equipment,
+in addition to the equipment granted by your background:
+\begin{itemize}
+    \item (a) a club or (b) a dagger
+    \item a light crossbow and 20 bolts
+    \item (a) a scholar's pack or (b) a dungeoneer's pack
+    \item Leather armour
+\end{itemize}
+
+\subsection{Powers}
+\subsubsection{Psi Dice}
+The number of powers that you can manifest
+is limited by the number of psi dice that
+you have available.
+This is the principal limit on the output of a psion.
+For example, a 9-th level psion with 24 psi dice
+can manifest a power costing 1 psi dice 24 times.
+
+The number of available psi dice per level
+is shown in the psion class table.
+You regain all expended psi dice when you finish
+a long rest.
+
+\subsubsection{Mental Bandwidth}
+The powers you can manifest without straining yourself
+is reflected by your mental bandwidth.
+The total number of mental bandwidth slots you have
+is shown in the class table.
+
+\subsubsection{Discipline}
+\label{subs:psion_discipline}
+At 1st level,
+you must decide upon a discipline.
+Your discipline grants you a specific sublist of powers
+which cannot be accessed by other disciplines.
+This is called the \define{discipline sublist}\index{discipline sublist}.
+These are given at \secref{sub:discipline_sublists}.
+In addition, your discipline grants you different abilities
+when you reach certain levels.
+These are called \define{tenets}\index{tenet},
+and are given later on in this section.
+
+\subsubsection{Powers Known}
+At 1st level,
+you choose three psion powers of your choice
+from either the psion class power list
+or your chosen discipline sublist.
+You cannot choose powers from discipline sublists
+other than that of the discipline you have nominated.
+When you gain a psion level,
+you can, subject to the same restrictions,
+learn additional powers on top of the ones you already know.
+The total numbers of powers you know cannot
+exceed your powers known value,
+as shown in the class table.
+
+The powers you have selected in this fashion have been committed
+to memory, and you need not prepare a selection of them each long rest.
+Also,
+whenever you take a long rest,
+you may substitute any number of powers you already know
+for ones you do not know
+on the psion class list or your discipline sublist.
+The power that has been replaced counts as no longer being known.
+
+\subparagraph{Psionic Threshold}
+You cannot learn nor manifest powers with a level
+greater than your psionic threshold,
+shown in the class table.
+As mentioned in \secref{sub:augmenting},
+you also cannot augment powers to a level
+beyond your psionic threshold.
+
+\subsubsection{Manifesting Ability}
+Your psionic ability modifier is your Intelligence modifier.
+The save DC against your psionic powers and your
+psionic attack modifier are therefore respectively:
+\small\begin{equation*}
+    \begin{gathered}
+        \text{\textbf{Psionics save DC}}
+            = 8 + \text{your proficiency bonus} + \\
+                  \text{your Intelligence modifier} \\
+        \text{\textbf{Psionics attack modifier}}
+            = \text{your proficiency bonus} + \\
+              \text{your Intelligence modifier}
+    \end{gathered}
+\end{equation*}\normalsize
+
+\subsection{Microsleep}
+Starting at 2nd level,
+as a bonus action on your turn,
+you may recover a number of psi dice equal to
+your Intelligence modifier multiplied by your psionic threshold.
+
+Once you use this feature,
+you must finish a long rest before you can use it again.
+Starting at 11th level,
+you can use it twice before a long rest.
+
+\subsection{Ability Score Improvement}
+When you reach 4th level,
+and again at 8th, 12th, 16th and 19th level,
+you can increase one ability score of your choice by 2,
+or you can increase two of your ability scores by 1.
+As normal,
+you can't increase an ability score above 20 using this feature.
+
+\subsection{Mind Palace}
+Starting at 7th level,
+your mind becomes your sanctuary---a palace constructed
+from pure thought.
+Whenever you are asleep,
+you return to this sanctuary,
+which exists in a perfect equilibrium between
+external and internal influences.
+You are fully alert to your surroundings
+while you are asleep.
+In addition, you can communicate telepathically to other
+creatures who are also sleeping within 30 feet of you,
+in which case you appear as a character in their dreams.
+
+\subsection{Ascendance}
+Starting at 20th level,
+your body becomes only a vessel for the vast potential
+of your mind.
+Your mind alters your biological makeup to better resist damage,
+granting you resistance to bludgeoning, piercing and slashing damage.
+In addition,
+you no longer age,
+but you can still be killed otherwise.
+
+\subsection{Prescience Tenets}
+
+\subsubsection{Precognitive Step}
+% phb3(4e) 89
+% prescience
+Starting at 6th level,
+you can peer through the mists obscuring the future,
+learning how one event unfolds.
+At the start of every encounter, roll a d20.
+Once during the same encounter,
+you can at any time replace one of your attack rolls,
+saving throws or skill checks with that roll,
+adding modifiers on top of it as usual.
+You can also replace an enemy's attack roll against you.
+
+\subsubsection{Epitaph}
+Starting at 10th level,
+your hone your ability to see through time.
+Once during an encounter,
+if a hostile creature takes a turn immediately following yours,
+you may use a free action at the start of your turn
+to ask the DM once what the creature will do on their turn,
+as conditioned by your explicit choices.
+For example,
+you may ask the DM what the creature will do
+if you move 30 feet in a given direction and manifest a power.
+If you deviate at all from your stated conditions,
+or if you leave any ambiguity or uncertainty as to those choices,
+the prediction may not necessarily come true.
+If you do exactly as you say,
+the creature is bound to act in exactly the way the DM described.
+
+If multiple hostile creatures follow your turn,
+you may use this ability for each of those creatures
+until the turn order reaches a friendly creature
+or the round ends.
+
+\subsubsection{Other Memory}
+Starting at 14th level,
+your unlock the hereditary memories of your forebears,
+allowing you to use their knowledge in your time of need.
+Once per day, as an action you may call upon a particular ancestor
+with a certain background as shown in the table below.
+The nature of the benefit conferred to you depends on the background.
+The benefits conferred to you end when you finish a long rest.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Other Memory Benefit]{
+                     l X}
+        Background          & Benefit                                                                   \\
+        Warrior             & Gain proficiency in all armours,
+                                martial weapons and Strength (Athletics) \\
+        Battlemage          & You learn three 5th-level or lower
+                                evocation spells of your choice
+                                which can be cast without expending a spell slot;
+                                once you cast any of these spells,
+                                you can't cast the same spell again;
+                                the spellcasting ability for these
+                                spells is Intelligence \\
+        Commander           & You learn three Uberium faction abilities \\
+        Thief               & You gain an extra bonus action \\ 
+        Priest              & You learn three 5th-level or lower
+                                spells from the cleric spell list
+                                of your choice;
+                                these can be cast without expending a spell slot;
+                                once you cast any of these spells,
+                                you can't cast the same spell again;
+                                the spellcasting ability for these
+                                spells is Intelligence \\\
+        Musician            & You gain proficiency in a musical instrument
+                                and Charisma (Performance), or expertise if
+                                you are already proficient in that skill
+    \end{DndTable}
+\end{table}
+
+If you spend subsequent days relying on the same ancestor
+and their abilities,
+you run the risk of them usurping your personality.
+For each consecutive day you use the same ancestor,
+make a Wisdom saving throw with DC equal to 10 plus the number
+of consecutive days.
+This roll cannot be influenced by any Prescience powers
+or other abilities which allow you to replace rolls.
+If you fail the save,
+hand your character sheet to the DM and roll a new character.
+
+\subsection{Prana Bindu Tenets}
+\label{sub:prana_bindu_tenets}
+
+\subsubsection{Lightning Warfare}
+Starting at 6th level,
+your mastery of nerve and muscle
+allows you to move at incredible speeds.
+Your movement speed increases by 20 ft.
+In addition, your movement no longer provokes
+opportunity attacks.
+
+\subsubsection{Optimised Reflexes}
+Starting at 10th level,
+your reaction times become almost negligible.
+You gain an additional reaction on top of the one
+you already have, which can be used in the same way
+as the latter.
+
+\subsubsection{Alter Metabolism}
+Starting at 14th level,
+your mastery over body now extends to your metabolism,
+and you are able to by thought alone
+alter the chemical makeup of malign substances.
+You become immune to the effects of all poisons,
+poison damage, the poisoned condition, and any toxic venoms
+or secretions.
+You also gain resistance to acid damage,
+and you become immune to disease.
+
+Additionally, you become immune to the maluses of extreme heat,
+extreme cold and high altitude,
+unless the conditions are so severe
+that the DM decides otherwise.
+
+\subsection{Voice Tenets}
+
+\subsubsection{Inner Voice}
+Starting at 6th level,
+you gain telepathy up to 120 feet.
+Once per day,
+you may also send a message up to 10 words long
+to a creature you have seen before and that is
+presently within 24 miles of you.
+
+Additionally,
+after you have communicated telepathically with a creature
+and that creature is the target of a Voice power with the Speech
+requirement that you manifest,
+the creature no longer needs to be able to understand you.
+
+\subsubsection{Subtle Voice}
+Starting at 10th level,
+your mastery of the Voice allows you to manifest Voice
+powers without arousing suspicion.
+Any Voice power with the Speech requirement,
+therefore producing an audible effect
+(see \secref{subs:voice_powers}),
+now is indistinguishable from normal speech.
+Namely,
+creatures which would ordinarily be alerted
+to your Voice by distinguishing it from normal speech
+now no longer are.
+\emph{Exception:} Psions who have chosen the Voice discipline
+cannot be affected by Subtle Voice.
+
+\subsubsection{Enthrall Creature}
+Starting at 14th level,
+you gain the ability to dominate other creatures and have them
+carry out your bidding.
+Twice per day,
+you may manifest the \spell{geas} spell as a power,
+which counts as a 5th-level Voice power with no PD or MB cost.
+Subtle Voice also applies for this power.
+
+\subsection{Metacreativity Tenets}
+\label{sub:metacreativity_tenets}
+\subsubsection{Create Golem}
+\label{subs:menu_a}
+Starting at 6th level,
+you learn the \nameref{pwr:psionic-golem} power,
+which allows you to manifest a psionic golem
+from mundane matter.
+You are mentally linked to the psionic golem,
+and they answer to your bidding as described in the power.
+The statistics of the golem depend on the level
+at which \nameref{pwr:psionic-golem} is cast.
+For example,
+casting the power at 3rd-level creates a 3rd-level psionic golem.
+The statblocks by golem level are given in \secref{sec:psionic_golem}.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Psionic Golem Abilities (Menu A)]{
+                     l X}
+        Name                & Benefit   \\
+        Resilient           & The golem gains an extra 10 hit points \\
+        Sturdy              & The golem gains a +2 bonus to its AC \\
+        Vertical Propulsion & The golem gains a fly speed equal to 15 feet \\ 
+        Celerity            & The golem gains the mobile feat \\
+        Resistance          & The golem gains resistance to fire, lightning, cold
+                                or thunder damage \\
+        Seaworthy           & The golem gains a swim speed of 30 feet \\
+        Aggressive          & If the golem hits a creature with a melee attack,
+                                it can use its reaction to attempt to shove
+                                that creature prone
+    \end{DndTable}
+\end{table}
+
+Each manifested golem has a certain number of
+\define{metacreative points} (MP)\index{metacreative point (MP)}.
+This is called the \define{MP potential}\index{MP potential} of the golem.
+Metacreative points allow you to augment the golem
+with particular abilities.
+At 6th level,
+you have access to the abilities given in Menu A
+(see the corresponding table),
+all of which have an MP cost of 1.
+You cannot add abilities to the golem such that the total MP cost
+is above the MP potential of the golem.
+For example,
+a 4th-level golem with an MP potential of 2
+can have two Menu A abilities.
+You may only choose each ability once.
+
+\subsubsection{Improved Psionic Golem}
+\label{subs:menu_b}
+Starting at 10th level,
+you gain access to psionic golem abilities on Menu B,
+as shown in the table below.
+The abilities on Menu B cost 2 MP.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Psionic Golem Abilities (Menu B)]{
+                     l X}
+        Name                & Benefit   \\
+        Energy Touch        & The golem deals an extra 1d4 points of
+                                fire, cold, electricity or thunder damage when it
+                                hits with a melee attack \\
+        Extra Attack        & Whenever the golem takes the \define{Multiattack} action,
+                                it can make one additional slam attack \\
+        Auto-reassembly     & The golem heals 5 hit points each round \\ 
+        Heavy Deflection    & The golem gains a +4 bonus to its AC  \\
+        Highly Resilient    & The golem gains an extra 20 hit points \\
+        Improved Critical   & The golem lands a critical hit on a roll of either
+                                19 or 20 \\
+        Muscular            & The golem gains a +4 bonus to its Strength score \\
+    \end{DndTable}
+\end{table}
+
+\subsubsection{Heart of Ascension}
+\label{subs:menu_c}
+Starting at 14th level,
+any golem you manifest with \nameref{pwr:psionic-golem}
+becomes Ascendant.
+You gain access to psionic golem abilities on Menu C,
+as shown in the table below.
+The abilities on Menu C cost 4 MP.
+
+\begin{table}[htbp]%
+    \begin{DndTable}[width=\columnwidth,
+                     header=Psionic Golem Abilities (Menu C)]{
+                     l X}
+        Name                & Benefit   \\
+        WTF is Truesight!?  & The golem gains truesight out to 60 feet \\
+        Supreme Resilience  & The golem gains an extra 30 hit points \\
+        Metal Carapace      & All incoming damage from separate sources
+                                is reduced by 5 \\ 
+        Shield!             & The golem gains a +6 bonus to its AC \\
+        Active Camouflage   & The golem becomes naturally invisible \\
+        Energy Bolt         & The golem can manifest the \nameref{pwr:energy-bolt} power
+                                as an action once per round; the energy type is
+                                chosen when the golem is initially manifested
+    \end{DndTable}
+\end{table}
+
+\subsection{Spacefolding Tenets}
+\subsubsection{Length Contraction}
+Starting at 6th level,
+you become capable of dramatically contracting the space between you
+and another creature with your mind alone. 
+As an action,
+choose a creature you can see within 60 feet and spend 3 psi dice.
+That creature is pulled up to 30 feet in your direction as the space
+between you and them is eliminated.
+
+\subsubsection{Wormhole}
+Starting at 10th level,
+you alter the fabric of space and time such that
+you can link two different locations together.
+Once per day as an action,
+you may create a wormhole mouth at a point you are standing on.
+The mouth is a 10-foot radius sphere and is presently closed.
+At a later point in time,
+as an action you may create another mouth at a different location
+(no per day restriction).
+The location need not be on the same plane of existence
+as the mouth.
+When you do so, the two mouths become adjacent to each other.
+Creatures on either side can see to the other side of the wormhole
+through the 10-foot sphere,
+and can step through using their movement.
+
+You may choose to collapse the wormhole at any time using an action.
+However, it is not stable.
+For every hour that has elapsed since you placed the second mouth,
+roll a d10.
+On a roll of 1--5,
+the wormhole collapses and the bridge between the two locations
+is lost.
+You must then create a new wormhole.
+
+\subsubsection{Master of Spacetime}
+Starting at 14th level,
+you can effortlessly warp space and time locally to
+move yourself across the battlefield.
+The \nameref{pwr:psionic-step} power costs no psi dice
+and occupies no mental bandwidth slots
+whenever you manifest it.
+The power still costs 4 psi dice to augment,
+however if you do so,
+you can manifest the power as a free action
+instead of a bonus action
+(limit of once per turn).
+
+\subsection{Psychokinesis Tenets}
+\subsubsection{Sculpt Psioncs}
+Starting at 6th level,
+akin to the evocation wizard's ability to sculpt spells,
+you can alter the direction that hazardous effects
+created by your psychokinesis powers propagate.
+When you manifest a psychokinesis power that affects
+other creatures that you can see,
+you can choose a number of them equal to your
+psionic threshold.
+The chosen creatures automatically succeed on any saving
+throws they make to resist the power,
+taking no damage on a successful save if they would
+otherwise take half.
+If the power does not prompt a saving throw
+(e.g. if it automatically hits),
+the chosen creatures also take no damage.
+
+\subsubsection{Signature Damage}
+Starting at 10th level,
+you become highly proficient in dealing damage
+with a specific energy manifested by your psionic powers.
+Choose a damage type from fire, cold, lightning and thunder.
+Each die of damage you deal with the chosen type
+become \define{exploding die}\index{exploding die}.
+If you roll the maximum result on an exploding die,
+you can reroll that die again and add the result to the
+total damage.
+If the result is again the maximum,
+you may `explode' the die again.
+This continues until you no
+longer rolled the maximum value over all dice.
+
+\subsubsection{Signature Power}
+Starting at 14th level,
+one psychokinesis power becomes so familiar to you that you
+manifest it without straining yourself.
+Choose one 3rd-level psychokinesis power.
+The MB cost for that power is reduced to 0 whenever you manifest it.
+In addition, you can manifest this power without expending
+any psi die.
+Once you do so,
+you can't do so again until you finish a short or long rest.
