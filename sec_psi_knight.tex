@@ -525,9 +525,16 @@ Enemies thus learn to fear the Soulwarrior's unshakable bond between mind and we
 
 \subsubsection{Soulweapon}
 When you reach 3rd level,
-you designate one weapon currently in your possession as your \define{Soulweapon}.
-The type of the weapon must belong on the weapons table.
-Your Soulweapon has a handful of unique properties.
+you designate a weapon currently in your possession as your \define{Soulweapon}.
+The type of the weapon must belong on the weapons table,
+but can be magical or psionic in nature.
+You can only have one Soulweapon at a time.
+In order to designate a weapon in such a way,
+you must spend 1 minute maintaining concentration with the weapon in your hand.
+Once this bond has been formed, 
+you can break it by again concentrating on the weapon for 1 minute while holding it.
+
+Your Soulweapon has a handful of unique properties, as described below.
 
 \subparagraph{Disarm Resistance}
 Whenever you would be disarmed of your Soulweapon,
@@ -544,8 +551,65 @@ in which case it takes the shortest possible unobstructed path.
 While the weapon is moving in this way,
 you may make a single attack with the weapon against any creature
 whose space intersects the path of the weapon.
-If another creature is holding the weapon,
+If another creature is holding the weapon when you try to move it,
 they must succeed on a Strength saving throw with DC equal to your psionics save DC
-or have the weapon forced from their hand.
+or have the weapon forced from their hands.
 
 \subsubsection{Forms of Combat}
+Starting at 3rd level,
+you gain access to combat \define{Forms}.
+A Form is a type of combat stance which grants a \define{passive} and \define{finisher} effect.
+The passive effect is always realised while you are \define{adopting} the Form,
+while the finisher effect is typically triggered by use of an action or bonus action.
+You may use a bonus action to adopt a Form at any time,
+as long as your Soulweapon is in your hands.
+There are a number of ways in which you \define{release} the Form:
+\begin{itemize}
+    \item By using the finisher effect of your current Form;
+    \item By spending another bonus action;
+    \item By becoming incapacitated or dying; or,
+    \item By losing grip of your Soulweapon.
+\end{itemize}
+In any case, whenever you release a Form, the passive and active effects cease.
+
+When you reach higher levels,
+you learn more combat forms;
+otherwise, at this level, you may only prepare one Form for use.
+You can change the Form (and later Forms) you have prepared
+whenever you finish a long rest.
+The list of all Forms is shown in the table below.
+\begin{table*}[htbp]%
+    \begin{DndTable}[
+        width=\textwidth,
+        header=Forms
+    ]{l X X}
+        Form           & Passive                        & Finisher                                    \\
+        Heat Haze Fury & Your weapon attacks have
+                         advantage, but attacks made
+                         against you have advantage.    & As part of one of your attacks when you
+                                                          take the attack action, your weapon explodes
+                                                          with fiery energy. The target of the attack
+                                                          takes additional fire damage equal to
+                                                          the weapon die or dice.                      \\
+        Wind Within    & Subtract your proficiency
+                         bonus from the total damage
+                         you take from an attack against
+                         you as well as the total damage
+                         you deal with an attack.       & As an action, you rapid movements create
+                                                          a forceful current that forces creatues back.
+                                                          Each creature within 20 feet of you must
+                                                          succeed on a Strength saving throw against
+                                                          your psionics save DC or be pushed back 15
+                                                          feet and knocked prone.                       \\
+        Stalwart Heart & You cannot make weapon attacks
+                         or unarmed strikes, but your
+                         psionic attacks are made with
+                         advantage and the MB cost of
+                         powers you manifest is reduced
+                         to zero.                       & As an action, you recover the PD expended for
+                                                          the last power you manifested.
+        
+
+                         
+    \end{DndTable}
+\end{table*}
