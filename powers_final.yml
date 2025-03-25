@@ -86,12 +86,16 @@ Bestow Power:
   Short Description: Grant a creature psi dice
   Long Description: |
     You Voice creates a link between your own
-    mind and that of another psionic creature mind you can see
-    and that can hear and understand you,
-    creating a brief conduit through which mental energy can be
-    shared. When you manifest this power, the subject gains up
-    to 2 psi dice. You can then transfer psi dice to a subject
-    on a 1 to 1 basis up to their psionic threshold.
+    mind and that of another creature you can see in range
+    and that can hear and understand you.
+    This link is a conduit through which mental energy can be shared.
+    When you manifest this power, the subject gains 2 psi dice.
+    You can then transfer psi dice from your reserve to the subject on a 1 to 1 basis.
+    The total number of psi dice transferred after the initial 2
+    cannot exceed the target's psionic threshold.
+    If the creature cannot accrue psi dice normally through their class,
+    or if they are already at their maximum number of psi dice,
+    the power has no effect.
   Augment: null
 Biofeedback:
   Name: Biofeedback
