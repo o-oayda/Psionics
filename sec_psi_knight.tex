@@ -560,7 +560,7 @@ Starting at 3rd level,
 you gain access to a single combat \define{Form}.
 A Form is a type of combat stance which grants a \define{passive} and \define{finisher} effect.
 The passive effect is always realised while you are \define{adopting} the Form,
-while the finisher effect is typically triggered by use of an action or bonus action.
+while the finisher effect is typically triggered by use of an action.
 You may use a bonus action to adopt a Form at any time,
 as long as your Soulweapon is in your hands.
 There are a number of ways in which you \define{release} the Form:
@@ -592,8 +592,10 @@ The list of all Forms is shown in the table below.
                                                           take the attack action, your weapon explodes
                                                           with fiery energy. The target of the attack
                                                           takes additional fire damage equal to
-                                                          the weapon die or dice.                      \\
-        Wind Within    & Subtract your proficiency
+                                                          the weapon die or dice if the attack lands.
+                                                          If not, the form remains unreleased and
+                                                          you may attempt then finisher again.        \\
+        Wind Within    & Subtract double your proficiency
                          bonus from the total damage
                          you take from an attack against
                          you as well as the total damage
@@ -624,7 +626,8 @@ The list of all Forms is shown in the table below.
                                                           like range and line of effect,
                                                           also apply for this attack.                    \\
         Emotionless
-        Retribution    & Whenever a creature misses
+        Retribution    & You cannot manifest powers.
+                         However, whenever a creature misses
                          you with a melee attack,
                          you can make a ranged psionics
                          attack against the creature.
@@ -633,8 +636,7 @@ The list of all Forms is shown in the table below.
                          the enemy. If the attack hits,
                          the target is pushed back
                          15 feet with a
-                         telekinetic thrust.
-                         You cannot manifest powers.    & As an action, you assault a single creature
+                         telekinetic thrust.            & As an action, you assault a single creature
                                                           with a barrage of loose material.
                                                           Choose a 5-foot cube of mundane matter.
                                                           This cube hurtles towards a target,
@@ -646,6 +648,18 @@ The list of all Forms is shown in the table below.
                                                           on a success.                                 \\
     \end{DndTable}
 \end{table*}
+% When an enemy hits you with a
+% weapon attack
+% or unarmed strike,
+% you may make a
+% Dexterity (Acrobatics) or
+% Strength (Athletics) check
+% with DC equal to the
+% attacker's attack roll.
+% If you succeed, you tumble
+% out of harm's way or deflect
+% the strike,
+% causing the attack to miss.
 
 \subsubsection{Forms of Combat II}
 Starting at 6th level,
