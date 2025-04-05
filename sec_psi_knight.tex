@@ -565,24 +565,38 @@ A Form is a type of combat stance which grants a
 The passive effect is always realised
 while you are \define{adopting}\index{adopting} the Form,
 while the finisher effect is typically triggered by use of an action.
+
 You may use a bonus action to adopt a Form at any time,
 as long as your Soulweapon is in your hands.
+You cannot have more than one Form adopted at any given time.
+% You must concentrate on the Form while you are adopting it,
+% however you may freely concentrate on both a Form and any
+% number of powers.
+% That being said, if you fail a Constituion saving throw to maintain concentration,
+% you lose concentration on both the Form and the power(s).
 There are a number of ways in which you \define{release}\index{release} the Form:
 \begin{itemize}
     \item By using the finisher effect of your current Form;
-    \item By spending another bonus action;
+    \item By using a bonus action,
+        noting that the earliest time at which you can do so
+        is the end of the turn after you adopted your current Form;
     \item By becoming incapacitated or dying; or,
-    \item By losing grip of your Soulweapon.
+    \item By involuntarily losing grip of your Soulweapon.
 \end{itemize}
-In any case, whenever you release a Form, the passive and finisher effects cease.
+In any case, whenever you release a Form,
+the passive and finisher effects cease.
 If you have released a Form by using the finisher effect,
 you cannot adopt the same Form again until you finish a long rest.
+Ordinarily, a Form must be released before you can adopt a new form.
+However, if you have used the finisher effect,
+you may immediately adopt a new Form for free after
+the effects of the finisher are realised.
 
 When you reach higher levels,
 you learn more combat forms;
 otherwise, at this level, you may only prepare one Form for use.
 You can change the Form (and later Forms) you have prepared
-whenever you finish a long rest.
+whenever you finish a long or short rest.
 The list of all Forms is shown in the table below.
 \begin{table*}[htbp]%
     \begin{DndTable}[
@@ -593,7 +607,8 @@ The list of all Forms is shown in the table below.
         Heat Haze Fury & Your weapon attacks have
                          advantage, but attacks made
                          against you have advantage.
-                         This passive effect persists
+                         If you have made use of this
+                         passive, the effect persists
                          until the start of your next
                          turn even if you release the
                          form before your current turn
@@ -601,8 +616,13 @@ The list of all Forms is shown in the table below.
                                                           take the attack action, your weapon explodes
                                                           with fiery energy. The target of the attack
                                                           takes additional fire damage equal to
-                                                          the weapon die or dice if the attack lands.
-                                                          If not, the form remains unreleased and
+                                                          the weapon die or dice if the attack hits,
+                                                          and, if the target fails a Constitution
+                                                          saving throw with DC equal to your psionics
+                                                          save DC, they are stunned until the start
+                                                          of their next turn.
+                                                          If the attack misses,
+                                                          the form remains unreleased and
                                                           you may attempt the finisher again.        \\
         Wind Within    & Subtract double your proficiency
                          bonus from the total damage
@@ -624,9 +644,11 @@ The list of all Forms is shown in the table below.
         Peerless Poise & Any ranged attacks that hit
                          you are instead deflected
                          back to the attacker,
-                         hitting them instead,
-                         but melee attacks made
-                         against you always hit.        & As an action, you unleash a duplicate of the
+                         hitting them instead.
+                         However, your speed is
+                         reduced to zero, and
+                         any melee attack made
+                         against you always hits.        & As an action, you unleash a duplicate of the
                                                           last ranged attack that hit you. Make a
                                                           ranged psionics attack against a single target.
                                                           The damage dealt on a hit is the same as the
@@ -635,9 +657,10 @@ The list of all Forms is shown in the table below.
                                                           like range and line of effect,
                                                           also apply for this attack.                    \\
         Emotionless
-        Retribution    & You cannot manifest powers.
-                         However, whenever a creature misses
-                         you with a melee attack,
+        Retribution    & You cannot manifest nor
+                         concentrate on powers.
+                         However, whenever a creature
+                         misses you with a melee attack,
                          you can make a ranged psionics
                          attack against the creature.
                          You do not have disadvantage
