@@ -883,7 +883,7 @@ You can sense the presence of danger before
 your senses would normally allow it. Your intuitive sense
 alerts you to danger from traps, giving you advantage on Dexterity
 saving throws to avoid traps and a +4 bonus to your AC when
-targetted by any attack made by a trap.
+targeted by any attack made by a trap.
 
 \DndPowerHeader%
     {Deceleration\label{pwr:deceleration}}
@@ -1230,14 +1230,14 @@ their psionic power reserves to you. Choose a target that
 you can see within range
 and that can hear and understand you.
 The target must succeed on a Wisdom
-saving throw or immediately lose 1d6 psi dice, one of which
+saving throw or immediately lose 1d12 psi dice, one of which
 is added to your pool of psi dice. If the target has innate
 talents, you may instead nominate to expend one use of any
 of their innate talents which,
 if manifested as a power,
-would have a psi dice cost of up to 6.
+would have a psi dice cost of up to 7.
 
-The target continues to lose 1d6 psi dice each round you maintain
+The target continues to lose 1d12 psi dice each round you maintain
 concentration on the power and the subject remains in range
 (or, alternatively, continues to expend uses of innate talents
 that you choose). In addition, you must continually use your
@@ -1851,8 +1851,17 @@ affected by the same manifestation of this power.
     {MB 1, PD 1}
     {Instantaneous}
     {None}
-As the \spell{identify} spell, except for
-items imbued with psionics and creatures manifesting powers.
+You choose one object that you must touch throughout the
+manifesting of the power.
+If it is a psionic item or some other psionically-imbued object,
+you learn its properties and how to use them,
+whether it requires integration to use,
+and how many charges it has, if any. 
+You learn whether any powers are affecting the item and what they are.
+If the item was created by a power, you learn which power created it.
+
+If you instead touch a creature throughout the manifesting,
+you learn what powers, if any, are currently affecting it.
 
 \DndPowerHeader%
     {Immovability\label{pwr:immovability}}
@@ -1944,6 +1953,83 @@ immunity to poison damage,
 and you become resistant to all damage.
 
 \DndPowerHeader%
+    {Kinaesthetic Disruption\label{pwr:kinaesthetic-disruption}}
+    {2nd-level Voice}
+    {1 action}
+    {60 feet}
+    {MB 2, PD 3}
+    {Concentration, up to 1 minute}
+    {Sight}
+You disrupt and confuse a creature's connection between mind and body.
+Choose a creature that you can see within range.
+Whenever that creature would use an unbroken portion of their movement
+to move to a specific location (proposed movement),
+they must make an Intelligence saving throw.
+If they pass, they move as desired and the power ends;
+if they fail, they must move in the opposite direction
+to the desired location.
+They move a distance equal to the original distance proposed
+and cannot use any further movement until the start of their next turn.
+
+\DndPowerHeader%
+    {Latent Presence\label{pwr:latent-presence}}
+    {6th-level Prescience}
+    {1 hour}
+    {Touch}
+    {MB 5, PD 11}
+    {1 year}
+    {None}
+By duplicating a shard of your awareness,
+you instil a psionic presence within an object.
+Choose a non-psionic object that you can touch throughout the power's manifesting.
+When the manifesting time concludes,
+the object becomes psionic and sentient as a clone of your psyche now
+resides within it.
+
+The clone shares your alignment, mental statistics, skill proficiencies
+and other similar attributes that you have.
+The clone also has all of your memories,
+but does not share your new experiences after its inception.
+In terms of psionics, the clone knows all the powers you know
+at the time of its creation,
+but has a quarter of your total psi dice and none of your innate talents.
+The clone may manifest powers,
+although it can never recover psi dice of its own accord
+unless an external power allows it to.
+Your clone can also be the target of powers.
+
+You can choose whether or not the clone acts independent of you.
+If you choose it to be independent,
+you may instruct the clone to act in a certain way,
+in which case it is bound to carry out your wishes while it remains in the object.
+Although in this case you do not control the clone,
+which is left to the DM,
+it will strive to carry out your orders to its best ability.
+However, since it is a copy your psyche,
+it is susceptible to malign influences and powers.
+
+Alternatively, you may choose to control the clone.
+In this case,
+as long as the clone is present in the object,
+you are able to act for the clone---keeping in mind its limitations.
+Also, the clone consumes two slots of your own mental bandwidth.
+Each subsequent controlled clone you create by manifesting this power
+again on a different object also consumes an additional 2MB.
+
+In any case,
+the clone can communicate telepathically with any creature touching the psionic item,
+or any creature integrated with it (it is a 0MB item)
+or attuned to it if it is also magical.
+You may only have a maximum of three clones created by this power at any time.
+
+When the power ends,
+the clone is destroyed and the object ceases to be psionic.
+Additionally, you may destroy a controlled clone at any time,
+freeing the mental bandwidth slots and ending the instance of this power.
+However, an independent clone cannot be destroyed unless the psionic item
+is destroyed or the power's duration ends.
+
+\DndPowerHeader%
     {Leap\label{pwr:leap}}
     {2nd-level Prana Bindu}
     {1 bonus action}
@@ -1969,10 +2055,20 @@ this fly speed does not provoke opportunity attacks.
     {MB 2, PD 3}
     {Concentration, up to 10 minutes}
     {None}
-As the \spell{levitate} spell, except when
-manifested the target can only be the manifester themselves,
-not any other creature or a loose object.
-
+By altering the shape of space around you,
+you propel yourself as if you can levitate.
+Until the power end, you gain a fly (hover) speed
+equal to your psionics ability score,
+rounded up to the nearest 5 feet.
+\augment{For every 5 additional psi dice you spend,
+the multiple of your psionics ability score ---
+as corresponding to your fly (hover) speed ---
+increases by 1, up to a maximum of 5.
+For example, augmenting this power once increases your fly (hover) speed
+to twice your psionics ability score,
+augmenting the power twice increases the speed to thrice your psionics ability score,
+and so on.
+}
 \DndPowerHeader%
     {Manipulate Creature With Mind\label{pwr:manipulate-creature-with-mind}}
     {3rd-level Psychokinesis}
@@ -2070,10 +2166,14 @@ after you manifest the power, as described below.
     {MB 6, PD 11}
     {24 hours}
     {None}
-As the \spell{mind blank} spell, except as
-noted here. You conceal your mind---or the mind of one creature
-you touch---from outside influence, rendering it effectively
-invisible.
+You conceal your mind---or the mind of one creature
+you touch---from outside influence, rendering it effectively invisible.
+Until the power ends, the target is immune to psychic damage 
+and the the charmed condition.
+In addition, the target cannot be targetted by Voice or Prescience powers,
+and is impervious to any effect, whether psionic or magical in nature,
+that would sense its emotions, read its thoughts, psionically detect its location
+or otherwise rely on telepathic contact with the target.
 
 \DndPowerHeader%
     {Mind Palace, Power\label{pwr:mind-palace-power}}
@@ -2109,7 +2209,7 @@ You instantly deliver a massive assault on
 the thought pathways of any one creature in range. The target
 must succeed on an Intelligence saving throw or take 1d12
 points of psychic damage.
-\augment{For every additional psi dice you spend, the power's
+\augment{For every two additional psi dice you spend, the power's
 damage increases by 1d12.
 }
 \DndPowerHeader%
@@ -2306,11 +2406,31 @@ have gained from a variant increases by 1 to a maximum of 3.
     {1 action}
     {500 feet}
     {MB 3, PD 7}
-    {Instantaneous}
+    {Until the start of your next turn}
     {None}
-As the \spell{dimension door}, except as
-noted here.
-\augment{If you spend 6 additional psi dice, you can manifest
+You momentrily bridge the space between an empty location within 5 ft. of you
+and a distant one.
+The distant location can be a place you can see,
+a place you can internally visualise
+or one that can you can describe with reference to a coordinate system
+within your own frame of reference.
+For example, specifying 100 ft. north and 20 ft. vertically upwards is valid.
+
+Once you manifest this power,
+the space-bridge causes the two locations you have specified
+to be adjacent to each other.
+You may, as part of manifesting this power,
+freely move to the distant location without using any of your movement.
+Until the start of your next turn, which is when the bridge collapses,
+other creatures may use their movement to travel between the two locations.
+
+For each creature (except yourself) that traverses the space-bridge,
+roll 1d10.
+On a roll of 1--4,
+the bridge collapses, and any creature mid-traversal is shunted
+back to the location they entered the space-bridge from.
+They also take 2d10 force damage unless they succeed a Dexterity saving throw.
+\augment{If you spend 8 additional psi dice, you can manifest
 this power as a bonus action.
 }
 \DndPowerHeader%
@@ -2321,7 +2441,20 @@ this power as a bonus action.
     {MB 1, PD 1}
     {Concentration, up to 1 minute}
     {None}
-As the \spell{mage hand} spell.
+By focusing your mental efforts on nearby objects,
+you spookily create action at a distance.
+While concentrating on this power,
+you may choose an object that you can see within 30 ft. of you.
+As part of the action used to manifest this power,
+or using your action on subsequent turns,
+you generate a slight, momentary force on that object.
+This allows you to gently push the object, open it or otherwise interact with it.
+You can also generate a small, continuous force on the object,
+allowing you to levitate it towards you if it weights no more than 10 lbs.
+
+In any case, the force causes the object to move with a speed
+no greater than 30 ft. per round,
+and the force dissipates if the object ever moves more than 30 ft. from you.
 
 \DndPowerHeader%
     {Psi Vision\label{pwr:psi-vision}}
@@ -2331,7 +2464,13 @@ As the \spell{mage hand} spell.
     {MB 2, PD 3}
     {8 hours}
     {None}
-As the \spell{darkvision} spell.
+Your eyes radiate with the pure power of thought.
+For the duration of the power,
+you may use a bonus action to cause light to shine from your eyes.
+This creates a 120 ft. cone of light centred on you,
+the first 60 ft. of which is considered bright light,
+while the remaining 60 ft. is considered dim light.
+You may use another bonus action to supress this cone of light.
 
 \DndPowerHeader%
     {Psi Wall\label{pwr:psi-wall}}
@@ -2867,6 +3006,26 @@ only one-tenth of its normal weight for the purpose of dragging
 it along the ground.
 
 \DndPowerHeader%
+    {Spacetime Redirection\label{pwr:spacetime-redirection}}
+    {2nd-level Spacefolding}
+    {1 action}
+    {60 feet}
+    {MB 2, PD 3}
+    {Concentration, up to 1 minute}
+    {Sight}
+By cleverly and precisely bending space in such a way,
+you can redirect an enemy's attack to another target.
+Choose a creature that you can see within range.
+For the duration of the power,
+attacks against the chosen creature have disadvantage as caused by your
+spacetime distortion.
+
+Nonetheless, if an attack against the chosen creature hits,
+you may use a reaction to redirect the attack to a target
+within 5 ft. of the chosen creature.
+The attacker must roll to new target of the redirected attack.
+
+\DndPowerHeader%
     {Steadfast Perception\label{pwr:steadfast-perception}}
     {3rd-level Prescience}
     {1 action}
@@ -3059,7 +3218,7 @@ False destination & 01--50 & 51--100 & --- & --- \\
 \subparagraph{Familiarity}
   `Very familiar' is a place you have been very often,
   a place you have carefully studied,
-  or a place you can see when you cast the spell.
+  or a place you can see when you cast the power.
   `Seen casually' is somewhere you have seen more than once
   but with which you aren't very familiar.
   `Viewed once' is a place you have seen once,
@@ -3253,13 +3412,13 @@ You generate a subtle telekinetic field of
 mental contact, allowing you to `feel' your surroundings
 even in total darkness or when your sight would otherwise
 be obscured by your physical environment. Your touchsight
-field emanates from you out to 60 feet. You ignore invisibility,
-darkness, and concealment, though you must have line of sight
-to a creature or an object to discern it.
+field emanates from you out to 60 feet.
 
-You do not need to make Wisdom (Perception) checks to notice
-creatures; you can detect and pinpoint all creatures within
-60 feet. In many circumstances, comparing your regular senses
+You ignore invisibility,
+darkness and cover, whether total or partial,
+allowing you to detect and pinpoint all creates within 60 feet
+without making a Wisdom (Perception) check.
+In many circumstances, comparing your regular senses
 to what you learn with touchsight is enough to tell you the
 difference between visible, invisible, hiding, and concealed
 creatures.
@@ -3302,6 +3461,41 @@ end of the trace beyond the mental coordinates of the location.
 \augment{If you spend 2 additional psi dice, this power's range
 increases to 120 feet.
 }
+\DndPowerHeader%
+    {Trap Clairvoyance\label{pwr:trap-clairvoyance}}
+    {2nd-level Prescience}
+    {1 action}
+    {Self}
+    {MB 1, PD 3}
+    {Concentration, up to 10 minutes}
+    {None}
+As your awareness peaks into the future,
+you tacitly attune yourself to the danger of concealed traps.
+While this power is active,
+you gain a +2 bonus on Wisdom (Perception) checks to detect the presence
+of traps, and a +2 bonus on Intelligence (Investigation) checks to understand
+the nature of the trap and the danger it poses.
+In addition, whenever you take damage from a trap,
+you may expend psi dice to reduce that damage.
+For each psi die you spend,
+the damage is reduced by 3.
+
+\DndPowerHeader%
+    {Tunnel Vision\label{pwr:tunnel-vision}}
+    {2nd-level Voice}
+    {1 action}
+    {60 feet}
+    {MB 1, PD 3}
+    {Concentration, up to 1 minute}
+    {Speech, Sight}
+Your Voice distracts the psyche of a creature you can see,
+effectively blinding it to that which is usually plainly visible.
+If the target fails a Wisdom saving throw,
+their sight becomes restricted to a 15 ft. sphere surrounding them.
+Anything beyond that sphere counts as being heavily obscured.
+This power has no effect on creatures that need not rely on sight for perception
+or that have truesight.
+
 \DndPowerHeader%
     {Uncanny Reach\label{pwr:uncanny-reach}}
     {2nd-level Prana Bindu}
