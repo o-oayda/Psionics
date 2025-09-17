@@ -219,18 +219,23 @@ PY
     fi
 
     if ! python3 - "$preamble_file" "$version" <<'PY'
-import re
 import sys
 from pathlib import Path
 
 path, version = sys.argv[1:]
 text = Path(path).read_text()
+token = "Version "
 
-new_text, count = re.subn(r"(Version )\d+(?:\.\d+)*", fr"\1{version}", text, count=1)
-if count != 1:
-    print("Failed to update version placeholder.", file=sys.stderr)
+idx = text.find(token)
+if idx == -1:
+    print("Failed to locate version placeholder.", file=sys.stderr)
     sys.exit(1)
 
+end_idx = idx + len(token)
+while end_idx < len(text) and (text[end_idx].isdigit() or text[end_idx] == '.'):
+    end_idx += 1
+
+new_text = text[:idx] + token + version + text[end_idx:]
 Path(path).write_text(new_text)
 PY
     then
