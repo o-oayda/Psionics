@@ -5,7 +5,6 @@ all: Psionics.pdf
 Psionics.pdf: Psionics.tex
 				make scripts
 				latexmk Psionics.tex -synctex=1 -interaction=nonstopmode -file-line-error -pdf
-				open Psionics.pdf
 
 clean:
 				latexmk -CA
