@@ -1,8 +1,8 @@
-from funcs import load_yml, integer_to_ordinal, get_internal_latex
+from funcs import load_yml, integer_to_ordinal
 from slugify import slugify
 import re
-import mdpd
 import os
+
 
 PATH = 'md_powers/'
 if not os.path.exists(PATH):
@@ -12,14 +12,16 @@ print('Reading {} powers.'.format(len(yml_powers)))
 
 for key, val in yml_powers.items():
     file_title = slugify(key)
-    ordinal = integer_to_ordinal(int(val['Level']))
-    header = f'{ordinal}-level {val['Discipline']}'
-    cost = f'MB {val['MB']}, PD {val['PD']}'
+    ordinal = integer_to_ordinal(int(val["Level"]))
+    header = f"{ordinal}-level {val['Discipline']}"
+    cost = f"MB {val['MB']}, PD {val['PD']}"
+    discipline_slug = slugify(val["Discipline"], separator="_")
     
     # format long description to replace single line breaks with whitespace,
     # but keep double line breaks (so it appears properly in a markdown renderer)
-    long_desc = val['Long Description'][:-1]
+    long_desc = val["Long Description"][:-1]
     long_desc = re.sub(r'([^\s|])\n(?!\n)', r'\1 ', long_desc)
+    long_desc = long_desc.replace('`', "'")
 
     # format links to other powers and spells
     regex = re.compile(r'\\nameref{pwr:([^\s]*)}')
@@ -28,11 +30,22 @@ for key, val in yml_powers.items():
         long_desc = re.sub(
             r'\\nameref{pwr:([^\s]*)}', r'[[\1]]', long_desc, flags=re.M
         )
-    
-    if val['Augment'] is not None:
-        augment = f'''
 
-**Augment.** {val['Augment'][:-1]}'''
+    def replace_spell(match):
+        spell_name = match.group(1).strip()
+        spell_slug = slugify(spell_name, separator='-')
+        return f"[[compendium/spells/{spell_slug}]]"
+
+    long_desc = re.sub(r'\\spell\{([^}]+)\}', replace_spell, long_desc)
+    
+    if val["Augment"] is not None:
+        augment_text = val["Augment"].rstrip('\n')
+        augment_text = re.sub(r'([^\s|])\n(?!\n)', r'\1 ', augment_text)
+        augment_text = augment_text.replace('`', "'")
+        augment_text = re.sub(r'\\spell\{([^}]+)\}', replace_spell, augment_text)
+        augment = f"""
+
+**Augment.** {augment_text}"""
     else:
         augment = ''
 
@@ -42,7 +55,7 @@ cssclasses: json5e-spell
 tags:
 - psionics
 - power/level/{val['Level']}
-- power/discipline/{val['Discipline']}
+- power/discipline/{discipline_slug}
 aliases: ["{key}"]
 ---
 # {key}
@@ -50,7 +63,7 @@ aliases: ["{key}"]
 
 - **Manifesting Time:** {val['Manifesting Time']}
 - **Range:** {val['Range']}
-- **Cost:** {cost}
+- **Base Cost:** {cost}
 - **Duration:** {val['Duration']}
 - **Requirements:** {val['Requirements']}
 

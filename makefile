@@ -26,3 +26,4 @@ docs:
 
 md:
 				python Scripts/pwrs_to_md.py
+				python Scripts/copy_md_to_compendium.py --target "$(TARGET)"
