@@ -193,10 +193,22 @@ update_version_reference() {
         exit 73
     fi
 
-    local current_version
-    current_version=$(awk '/Version[[:space:]][0-9]/{if (match($0, /Version ([0-9]+(\\.[0-9]+)*)/, m)) {print m[1]; exit}}' "$preamble_file") || true
+    require_command python3
 
-    if [[ -z $current_version ]]; then
+    local current_version
+    if ! current_version=$(python3 - "$preamble_file" <<'PY'
+import re
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+text = path.read_text()
+match = re.search(r"Version\s+([0-9]+(?:\.[0-9]+)*)", text)
+if not match:
+    sys.exit(1)
+print(match.group(1))
+PY
+    ); then
         echo "Failed to detect current version string in $preamble_file." >&2
         exit 78
     fi
@@ -205,8 +217,6 @@ update_version_reference() {
         echo "Preamble version already set to $version." >&2
         return
     fi
-
-    require_command python3
 
     if ! python3 - "$preamble_file" "$version" <<'PY'
 import re
