@@ -367,6 +367,128 @@ if they become incapacitated or if they die.
     are described above.
 \end{DndSidebar}
 
+\subsection{Triads}
+\label{sub:triads}
+Being able to weave the effects of powers across multiple disciplines together
+is a profound feat.
+When a manifester achieves this,
+they reach a new rung of awareness,
+unlocking abilities which magnify the effectiveness of their powers.
+
+If at any time a manifester is \define{simultaneously engaged}\index{simultaneously engaged}
+with any number of powers from three unique disciplines,
+they have achieved a \define{triad}\index{triad}.
+To be `simultaneously engaged' with multiple powers,
+a manifester must be either concentrating on each of them,
+or be manifesting an instantaneous power while concentrating on other powers
+(see \secref{sub:duration}).
+The last power manifested that achieves the triad is called a
+\define{triadic power}\index{power!triadic},
+while the other powers that a part of the triad are called
+\define{contingent powers}\index{power!contingent}.
+
+For example, suppose at a given moment that
+a manifester is concentrating on two powers:
+one from the Prana Bindu discipline,
+the other from the Voice discipline.
+In this sense, they are `simultaneously engaged'
+with powers from two unique disciplines.
+If they manifest a third power,
+say an instantaneous power from the Psychokinesis discipline,
+they are considered `simultaneously engaged' with powers from three unique disciplines
+for the instant that the Psychokinesis power is manifested.
+They have therefore achieved a triad,
+and the Psychokinesis power is triadic.
+
+A triadic power is amplified by its contingent powers.
+This grants it a special effect (\define{triadic effect}\index{effect!triadic})
+that differentiates it from a normal power.
+The exact effect of a triadic power is determined by its discipline and its duration,
+as shown in the table below.
+If the duration is instantaneous, the triadic effect is realised immediately.
+If the power's duration requires concentration,
+the effect applies for as long as you maintain concentration on the triadic power.
+These effects are applied on top of the effects ordinarily granted by the power,
+and they last as long as the triadic power's duration.
+Note that if a power has a duration longer than an instant
+but does not require concentration,
+it cannot be a triadic power and therefore cannot have a triadic effect.
+\begin{table*}[htb]%
+    \begin{DndTable}[
+      width=\textwidth,
+      header=Triadic Effects
+      ]{l X X}
+        Discipline     & Instantaneous & Concentration \\
+        Metacreativity & \tablepara{Mould Matter}
+                         When manifesting this power,
+                         choose a cube of Mundane Matter within 60 feet
+                         with side length equal to five times your proficiency bonus.
+                         You can either destroy the Matter in this cube,
+                         or relocate it to an unoccupied space
+                         (as long as one side of the cube makes complete contact
+                         with another surface of Mundane Matter).
+                       & \tablepara{Treacherous Terrain}
+                         You designate a square surface atop Mundane Matter within 60 feet
+                         as difficult terrain. The side length of the square is equal
+                         to five times your proficiency bonus.
+                         As a bonus action or one of your attacks with the Attack action,
+                         you can attempt to grapple any creature currently within
+                         the area regardless of how far away you are from them.
+                         For the grapple attempt, add your psionics attack modifier.
+                         If you are successful, the creature is restrained
+                         instead of grappled, through may break free as if grappled.\\
+        Prana Bindu    & \tablepara{Unassailable Body}
+                         When manifesting this power,
+                         you end one condition affecting yourself.
+                       & \tablepara{`Till the Bitter End}
+                         If you drop to zero hit points but do not die outright,
+                         you do not immediately fall unconscious.
+                         However, if you still have zero hit points when the 
+                         triggering triadic power ends,
+                         you fall unconscious and immediately suffer
+                         a number of death saving throw failures
+                         equal to the number of damage instances you received. \\
+        Prescience     & \tablepara{I See All}
+                         When you manifest this power, 
+                         you gain truesight until the end of your next turn.
+                       & \tablepara{Prescient Mirror}
+                         If you fail a saving throw,
+                         you can choose to pass instead.
+                         However, you must fail the next saving throw you make,
+                         even if you make the save after this power has ended. \\
+        Psychokinesis  & \tablepara{Mind-Space Criticality}
+                         When rolling damage for this power,
+                         use the dice with the next highest 
+                         face value for the damage
+                         (e.g. 6d6 $\to$ 6d8). 
+                         The dice you roll are also exploding.
+                       & \tablepara{Deflect Elements}
+                         You gain resistance to a either
+                         fire, cold, lightning or thunder damage. \\
+        Spacefolding   & \tablepara{Funnel Spacetime}
+                         The range for this power is doubled.
+                       & \tablepara{Reshape}
+                         When you manifest a power with an area of effect
+                         (see \secref{subs:area_of_effect}),
+                         you can change the type of area of effect to another
+                         of your choosing with the same length parameter.
+                         For example, you can change a 30-foot line to a
+                         30-foot cone. \\
+        Voice          & \tablepara{Babel Fish}
+                         You ignore the Speech requirement for this power
+                         if it has one.
+                       & \tablepara{Untouchable Minds}
+                         You and a number of creatures of your choosing
+                         equal to your proficiency bonus cannot be charmed.
+                         These creatures can be chosen any time
+                         after manifesting the triadic.
+    \end{DndTable}
+\end{table*}
+
+Once a triadic power is manifested and its triadic effects come into being,
+you lose concentration on all the contingent powers.
+However, you may still concentrate on the triadic power if applicable.
+
 \section{Power Attributes}
 \label{sec:power_attributes}
 In \secref{chap:list_of_powers},
